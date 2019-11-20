@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="J8w-6n-h3j" customClass="YPPopCornVoucherView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="002" translatesAutoresizingMaskIntoConstraints="NO" id="mUE-dO-qeG">
+                    <rect key="frame" x="30" y="45" width="260" height="235"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="将该页面展示给工作人员" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGf-RQ-nD5">
+                    <rect key="frame" x="64.5" y="375" width="191" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <color key="textColor" red="0.97254901959999995" green="0.21960784310000001" blue="0.2784313725" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="即可领取爆米花一份" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFN-sd-SGo">
+                    <rect key="frame" x="82" y="411" width="156" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <color key="textColor" red="0.97254901959999995" green="0.21960784310000001" blue="0.2784313725" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="领到爆米花之前请勿关闭当前页面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbw-zV-5o3">
+                    <rect key="frame" x="30" y="447" width="260" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <color key="textColor" red="0.97254901959999995" green="0.21960784310000001" blue="0.2784313725" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="否则领取机会作废" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6RO-8B-Imq">
+                    <rect key="frame" x="90.5" y="483" width="139" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <color key="textColor" red="0.97254901959999995" green="0.21960784310000001" blue="0.2784313725" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018年04月08日 11:45:56" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WdJ-cP-Cj5">
+                    <rect key="frame" x="40" y="310" width="240" height="35"/>
+                    <color key="backgroundColor" red="0.9882352941176471" green="0.94117647058823528" blue="0.90588235294117647" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="NKQ-f3-WVs"/>
+                        <constraint firstAttribute="height" constant="35" id="vZx-tf-Ndw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="KFN-sd-SGo" firstAttribute="top" secondItem="nGf-RQ-nD5" secondAttribute="bottom" constant="15" id="0XK-YX-yr1"/>
+                <constraint firstItem="6RO-8B-Imq" firstAttribute="centerX" secondItem="J8w-6n-h3j" secondAttribute="centerX" id="1aA-ub-bMx"/>
+                <constraint firstItem="WdJ-cP-Cj5" firstAttribute="centerX" secondItem="J8w-6n-h3j" secondAttribute="centerX" id="2Pb-ef-tEg"/>
+                <constraint firstItem="nGf-RQ-nD5" firstAttribute="top" secondItem="WdJ-cP-Cj5" secondAttribute="bottom" constant="30" id="BBS-a0-YAL"/>
+                <constraint firstItem="WdJ-cP-Cj5" firstAttribute="top" secondItem="mUE-dO-qeG" secondAttribute="bottom" constant="30" id="FKQ-0L-aGL"/>
+                <constraint firstItem="mUE-dO-qeG" firstAttribute="centerX" secondItem="J8w-6n-h3j" secondAttribute="centerX" id="I8q-q6-HPX"/>
+                <constraint firstItem="nGf-RQ-nD5" firstAttribute="centerX" secondItem="J8w-6n-h3j" secondAttribute="centerX" id="Kdl-Pu-ifA"/>
+                <constraint firstItem="mbw-zV-5o3" firstAttribute="centerX" secondItem="J8w-6n-h3j" secondAttribute="centerX" id="LRM-YX-jXy"/>
+                <constraint firstItem="mUE-dO-qeG" firstAttribute="top" secondItem="J8w-6n-h3j" secondAttribute="top" constant="45" id="PsQ-7V-Wrq"/>
+                <constraint firstItem="mbw-zV-5o3" firstAttribute="top" secondItem="KFN-sd-SGo" secondAttribute="bottom" constant="15" id="UZR-HB-hG3"/>
+                <constraint firstItem="KFN-sd-SGo" firstAttribute="centerX" secondItem="J8w-6n-h3j" secondAttribute="centerX" id="dxi-Hr-WvR"/>
+                <constraint firstItem="6RO-8B-Imq" firstAttribute="top" secondItem="mbw-zV-5o3" secondAttribute="bottom" constant="15" id="m1V-t6-WoG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="timeLabel" destination="WdJ-cP-Cj5" id="zvx-7s-2Q6"/>
+            </connections>
+            <point key="canvasLocation" x="-142" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="002" width="260" height="235"/>
+    </resources>
+</document>

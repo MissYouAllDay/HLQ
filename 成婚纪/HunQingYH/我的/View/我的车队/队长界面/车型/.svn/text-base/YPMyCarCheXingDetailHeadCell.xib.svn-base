@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YPMyCarCheXingDetailHeadCell" rowHeight="240" id="KGk-i7-Jjw" customClass="YPMyCarCheXingDetailHeadCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="239.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="占位图" translatesAutoresizingMaskIntoConstraints="NO" id="PNG-zt-SyT">
+                        <rect key="frame" x="10" y="10" width="300" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="xNi-h9-a4G"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="路虎揽胜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6n-ds-pTh">
+                        <rect key="frame" x="125" y="170" width="70" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="数量:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hew-8t-0cV">
+                        <rect key="frame" x="134.5" y="206.5" width="35" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7X-eM-A3f">
+                        <rect key="frame" x="174.5" y="206.5" width="9.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hew-8t-0cV" firstAttribute="top" secondItem="N6n-ds-pTh" secondAttribute="bottom" constant="15.5" id="0AH-gW-zac"/>
+                    <constraint firstAttribute="trailing" secondItem="PNG-zt-SyT" secondAttribute="trailing" constant="10" id="7S2-sn-UzV"/>
+                    <constraint firstAttribute="bottom" secondItem="hew-8t-0cV" secondAttribute="bottom" constant="15" id="7hr-Wb-dha"/>
+                    <constraint firstItem="R7X-eM-A3f" firstAttribute="leading" secondItem="hew-8t-0cV" secondAttribute="trailing" constant="5" id="CC1-ec-Z42"/>
+                    <constraint firstItem="PNG-zt-SyT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="CzO-I6-dVR"/>
+                    <constraint firstItem="hew-8t-0cV" firstAttribute="centerX" secondItem="PNG-zt-SyT" secondAttribute="centerX" constant="-8" id="EDD-kL-heC"/>
+                    <constraint firstItem="PNG-zt-SyT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Gmt-Ui-vdV"/>
+                    <constraint firstItem="R7X-eM-A3f" firstAttribute="centerY" secondItem="hew-8t-0cV" secondAttribute="centerY" id="fBw-By-Ofi"/>
+                    <constraint firstItem="N6n-ds-pTh" firstAttribute="centerX" secondItem="PNG-zt-SyT" secondAttribute="centerX" id="hT9-AD-LOx"/>
+                    <constraint firstItem="N6n-ds-pTh" firstAttribute="top" secondItem="PNG-zt-SyT" secondAttribute="bottom" constant="10" id="wpo-j9-BFM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="count" destination="R7X-eM-A3f" id="D6d-1W-RgV"/>
+                <outlet property="iconImgV" destination="PNG-zt-SyT" id="A0d-7l-3XG"/>
+                <outlet property="titleLabel" destination="N6n-ds-pTh" id="FPw-XY-UqN"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="58"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="占位图" width="16" height="16"/>
+    </resources>
+</document>

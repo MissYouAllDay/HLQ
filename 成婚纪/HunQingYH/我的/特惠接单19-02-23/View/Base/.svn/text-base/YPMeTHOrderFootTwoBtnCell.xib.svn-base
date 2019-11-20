@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YPMeTHOrderFootTwoBtnCell" id="KGk-i7-Jjw" customClass="YPMeTHOrderFootTwoBtnCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YqR-7u-Rjg">
+                        <rect key="frame" x="216" y="6" width="74" height="27"/>
+                        <state key="normal" image="MeTH_accept"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eU3-St-wVR">
+                        <rect key="frame" x="132" y="6" width="74" height="27"/>
+                        <state key="normal" image="MeTH_refuse"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YqR-7u-Rjg" firstAttribute="centerY" secondItem="eU3-St-wVR" secondAttribute="centerY" id="7DY-5s-l6O"/>
+                    <constraint firstAttribute="bottom" secondItem="eU3-St-wVR" secondAttribute="bottom" constant="10.5" id="Ipg-SE-WOm"/>
+                    <constraint firstItem="YqR-7u-Rjg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="SEK-nz-aSo"/>
+                    <constraint firstItem="eU3-St-wVR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="VFe-IG-qtR"/>
+                    <constraint firstAttribute="bottom" secondItem="YqR-7u-Rjg" secondAttribute="bottom" constant="10.5" id="Z8k-tg-R2q"/>
+                    <constraint firstAttribute="trailing" secondItem="YqR-7u-Rjg" secondAttribute="trailing" constant="30" id="dC8-ZP-TFs"/>
+                    <constraint firstItem="YqR-7u-Rjg" firstAttribute="leading" secondItem="eU3-St-wVR" secondAttribute="trailing" constant="10" id="gZ5-LT-kUw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="acceptBtn" destination="YqR-7u-Rjg" id="rq4-Yz-Gmh"/>
+                <outlet property="refuseBtn" destination="eU3-St-wVR" id="uQP-lq-Qh9"/>
+            </connections>
+            <point key="canvasLocation" x="-80" y="90"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="MeTH_accept" width="74" height="27"/>
+        <image name="MeTH_refuse" width="74" height="27"/>
+    </resources>
+</document>

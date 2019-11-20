@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/svn/DKSoft/!svn/ver/5645/IOS/HunQingYH/HunQingYH/%E6%88%91%E7%9A%84/Controller/%E9%A2%9D%E5%BA%A6%E5%95%86%E5%9F%8E%204-16/%E9%A2%86%E5%8F%96%E4%BC%B4%E6%89%8B%E7%A4%BC/ViewController
+END
+CXReviceSuccessVC.h
+K 25
+svn:wc:ra_dav:version-url
+V 204
+/svn/DKSoft/!svn/ver/5645/IOS/HunQingYH/HunQingYH/%E6%88%91%E7%9A%84/Controller/%E9%A2%9D%E5%BA%A6%E5%95%86%E5%9F%8E%204-16/%E9%A2%86%E5%8F%96%E4%BC%B4%E6%89%8B%E7%A4%BC/ViewController/CXReviceSuccessVC.h
+END
+CXUserReceiveVC.m
+K 25
+svn:wc:ra_dav:version-url
+V 202
+/svn/DKSoft/!svn/ver/5645/IOS/HunQingYH/HunQingYH/%E6%88%91%E7%9A%84/Controller/%E9%A2%9D%E5%BA%A6%E5%95%86%E5%9F%8E%204-16/%E9%A2%86%E5%8F%96%E4%BC%B4%E6%89%8B%E7%A4%BC/ViewController/CXUserReceiveVC.m
+END
+CXReceiveVC.m
+K 25
+svn:wc:ra_dav:version-url
+V 198
+/svn/DKSoft/!svn/ver/5645/IOS/HunQingYH/HunQingYH/%E6%88%91%E7%9A%84/Controller/%E9%A2%9D%E5%BA%A6%E5%95%86%E5%9F%8E%204-16/%E9%A2%86%E5%8F%96%E4%BC%B4%E6%89%8B%E7%A4%BC/ViewController/CXReceiveVC.m
+END
+CXUserReceiveLogVC.m
+K 25
+svn:wc:ra_dav:version-url
+V 205
+/svn/DKSoft/!svn/ver/5645/IOS/HunQingYH/HunQingYH/%E6%88%91%E7%9A%84/Controller/%E9%A2%9D%E5%BA%A6%E5%95%86%E5%9F%8E%204-16/%E9%A2%86%E5%8F%96%E4%BC%B4%E6%89%8B%E7%A4%BC/ViewController/CXUserReceiveLogVC.m
+END
+CXReviceSuccessVC.m
+K 25
+svn:wc:ra_dav:version-url
+V 204
+/svn/DKSoft/!svn/ver/5645/IOS/HunQingYH/HunQingYH/%E6%88%91%E7%9A%84/Controller/%E9%A2%9D%E5%BA%A6%E5%95%86%E5%9F%8E%204-16/%E9%A2%86%E5%8F%96%E4%BC%B4%E6%89%8B%E7%A4%BC/ViewController/CXReviceSuccessVC.m
+END
+CXSelectGoodSpectionVC.h
+K 25
+svn:wc:ra_dav:version-url
+V 209
+/svn/DKSoft/!svn/ver/5645/IOS/HunQingYH/HunQingYH/%E6%88%91%E7%9A%84/Controller/%E9%A2%9D%E5%BA%A6%E5%95%86%E5%9F%8E%204-16/%E9%A2%86%E5%8F%96%E4%BC%B4%E6%89%8B%E7%A4%BC/ViewController/CXSelectGoodSpectionVC.h
+END
+CXShowDidSelectGoodsVC.h
+K 25
+svn:wc:ra_dav:version-url
+V 209
+/svn/DKSoft/!svn/ver/5645/IOS/HunQingYH/HunQingYH/%E6%88%91%E7%9A%84/Controller/%E9%A2%9D%E5%BA%A6%E5%95%86%E5%9F%8E%204-16/%E9%A2%86%E5%8F%96%E4%BC%B4%E6%89%8B%E7%A4%BC/ViewController/CXShowDidSelectGoodsVC.h
+END
+CXReviceSuccessVC.xib
+K 25
+svn:wc:ra_dav:version-url
+V 206
+/svn/DKSoft/!svn/ver/5645/IOS/HunQingYH/HunQingYH/%E6%88%91%E7%9A%84/Controller/%E9%A2%9D%E5%BA%A6%E5%95%86%E5%9F%8E%204-16/%E9%A2%86%E5%8F%96%E4%BC%B4%E6%89%8B%E7%A4%BC/ViewController/CXReviceSuccessVC.xib
+END
+CXUserReceiveVC.h
+K 25
+svn:wc:ra_dav:version-url
+V 202
+/svn/DKSoft/!svn/ver/5645/IOS/HunQingYH/HunQingYH/%E6%88%91%E7%9A%84/Controller/%E9%A2%9D%E5%BA%A6%E5%95%86%E5%9F%8E%204-16/%E9%A2%86%E5%8F%96%E4%BC%B4%E6%89%8B%E7%A4%BC/ViewController/CXUserReceiveVC.h
+END
+CXReceiveVC.h
+K 25
+svn:wc:ra_dav:version-url
+V 198
+/svn/DKSoft/!svn/ver/5645/IOS/HunQingYH/HunQingYH/%E6%88%91%E7%9A%84/Controller/%E9%A2%9D%E5%BA%A6%E5%95%86%E5%9F%8E%204-16/%E9%A2%86%E5%8F%96%E4%BC%B4%E6%89%8B%E7%A4%BC/ViewController/CXReceiveVC.h
+END
+CXSelectGoodSpectionVC.m
+K 25
+svn:wc:ra_dav:version-url
+V 209
+/svn/DKSoft/!svn/ver/5645/IOS/HunQingYH/HunQingYH/%E6%88%91%E7%9A%84/Controller/%E9%A2%9D%E5%BA%A6%E5%95%86%E5%9F%8E%204-16/%E9%A2%86%E5%8F%96%E4%BC%B4%E6%89%8B%E7%A4%BC/ViewController/CXSelectGoodSpectionVC.m
+END
+CXShowDidSelectGoodsVC.m
+K 25
+svn:wc:ra_dav:version-url
+V 209
+/svn/DKSoft/!svn/ver/5645/IOS/HunQingYH/HunQingYH/%E6%88%91%E7%9A%84/Controller/%E9%A2%9D%E5%BA%A6%E5%95%86%E5%9F%8E%204-16/%E9%A2%86%E5%8F%96%E4%BC%B4%E6%89%8B%E7%A4%BC/ViewController/CXShowDidSelectGoodsVC.m
+END
+CXUserReceiveLogVC.h
+K 25
+svn:wc:ra_dav:version-url
+V 205
+/svn/DKSoft/!svn/ver/5645/IOS/HunQingYH/HunQingYH/%E6%88%91%E7%9A%84/Controller/%E9%A2%9D%E5%BA%A6%E5%95%86%E5%9F%8E%204-16/%E9%A2%86%E5%8F%96%E4%BC%B4%E6%89%8B%E7%A4%BC/ViewController/CXUserReceiveLogVC.h
+END

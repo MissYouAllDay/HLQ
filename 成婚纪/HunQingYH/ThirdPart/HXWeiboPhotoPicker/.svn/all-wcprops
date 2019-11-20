@@ -1,0 +1,365 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/DKSoft/!svn/ver/3085/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker
+END
+HXCameraPreviewViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXCameraPreviewViewController.h
+END
+HXPhotoView.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/DKSoft/!svn/ver/2394/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXPhotoView.m
+END
+HXPhotoEditView.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXPhotoEditView.h
+END
+HXTransition.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXTransition.h
+END
+HXPresentTransition.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXPresentTransition.h
+END
+HXAlbumListView.m
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXAlbumListView.m
+END
+UIImage+HXExtension.m
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/UIImage+HXExtension.m
+END
+HXCameraPreviewViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXCameraPreviewViewController.m
+END
+HXPhotoEditView.m
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXPhotoEditView.m
+END
+HXTransition.m
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/DKSoft/!svn/ver/3044/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXTransition.m
+END
+HXPresentTransition.m
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/DKSoft/!svn/ver/3044/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXPresentTransition.m
+END
+HXFullScreenCameraViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXFullScreenCameraViewController.h
+END
+HXFullScreenCameraViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXFullScreenCameraViewController.m
+END
+UIView+HXExtension.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/UIView+HXExtension.h
+END
+HXAlbumModel.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXAlbumModel.h
+END
+HXPhotoUIManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/DKSoft/!svn/ver/2462/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXPhotoUIManager.h
+END
+HXVideoPresentTransition.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXVideoPresentTransition.h
+END
+HXPhotoManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/DKSoft/!svn/ver/2394/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXPhotoManager.h
+END
+HXPhotoViewCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXPhotoViewCell.h
+END
+UIView+HXExtension.m
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/UIView+HXExtension.m
+END
+HXCollectionView.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXCollectionView.h
+END
+HXAlbumModel.m
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXAlbumModel.m
+END
+HXPhotoPreviewViewCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXPhotoPreviewViewCell.h
+END
+HXCameraViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXCameraViewController.h
+END
+HXPhotoUIManager.m
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXPhotoUIManager.m
+END
+HXVideoPresentTransition.m
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXVideoPresentTransition.m
+END
+HXPhotoViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXPhotoViewController.h
+END
+HXPhotoManager.m
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXPhotoManager.m
+END
+HXPhotoViewCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXPhotoViewCell.m
+END
+HXPhotoPreviewViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXPhotoPreviewViewController.h
+END
+HXCollectionView.m
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXCollectionView.m
+END
+HXPhotoPreviewViewCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXPhotoPreviewViewCell.m
+END
+HXFullScreenCameraPlayView.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXFullScreenCameraPlayView.h
+END
+HXCameraViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/DKSoft/!svn/ver/3044/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXCameraViewController.m
+END
+HXPhotoViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/DKSoft/!svn/ver/3085/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXPhotoViewController.m
+END
+HXPhotoEditViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXPhotoEditViewController.h
+END
+HXAlbumTitleButton.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXAlbumTitleButton.h
+END
+HXPhotoSubViewCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXPhotoSubViewCell.h
+END
+HXPhotoPreviewViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/DKSoft/!svn/ver/3044/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXPhotoPreviewViewController.m
+END
+HXFullScreenCameraPlayView.m
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXFullScreenCameraPlayView.m
+END
+HXAlbumTitleButton.m
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXAlbumTitleButton.m
+END
+HXPhotoEditViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/DKSoft/!svn/ver/3044/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXPhotoEditViewController.m
+END
+HXPhotoSubViewCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXPhotoSubViewCell.m
+END
+HXVideoPreviewViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXVideoPreviewViewController.h
+END
+HXPhotoResultModel.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXPhotoResultModel.h
+END
+HXPhotoModel.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXPhotoModel.h
+END
+HXPhotoTools.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXPhotoTools.h
+END
+HXVideoPreviewViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/DKSoft/!svn/ver/3044/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXVideoPreviewViewController.m
+END
+HXPhotoResultModel.m
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXPhotoResultModel.m
+END
+HXPhotoModel.m
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/DKSoft/!svn/ver/3044/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXPhotoModel.m
+END
+HXPhotoTools.m
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXPhotoTools.m
+END
+HXCircleProgressView.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXCircleProgressView.h
+END
+UIButton+HXExtension.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/UIButton+HXExtension.h
+END
+NSBundle+HXWeiboPhotoPicker.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/NSBundle+HXWeiboPhotoPicker.h
+END
+HXPhotoView.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXPhotoView.h
+END
+HXCircleProgressView.m
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXCircleProgressView.m
+END
+UIButton+HXExtension.m
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/UIButton+HXExtension.m
+END
+HXAlbumListView.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/HXAlbumListView.h
+END
+NSBundle+HXWeiboPhotoPicker.m
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/NSBundle+HXWeiboPhotoPicker.m
+END
+UIImage+HXExtension.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/DKSoft/!svn/ver/2302/IOS/HunQingYH/HunQingYH/ThirdPart/HXWeiboPhotoPicker/UIImage+HXExtension.h
+END

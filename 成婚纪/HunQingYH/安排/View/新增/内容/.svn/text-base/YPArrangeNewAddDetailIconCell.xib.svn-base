@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YPArrangeNewAddDetailIconCell" id="KGk-i7-Jjw" customClass="YPArrangeNewAddDetailIconCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="74.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="占位图" translatesAutoresizingMaskIntoConstraints="NO" id="J8H-lb-bNQ">
+                        <rect key="frame" x="15" y="15" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="Ppq-zs-iHi"/>
+                            <constraint firstAttribute="width" constant="44" id="kLy-HJ-6wd"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="唯爱牵手婚庆服务" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="16z-Cn-iOp">
+                        <rect key="frame" x="69" y="15" width="139" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="宋祖儿" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZd-EC-9Jn">
+                        <rect key="frame" x="69" y="41" width="46" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13500001111" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nng-Tj-7cn">
+                        <rect key="frame" x="125" y="41" width="89" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgH-CA-Qtb">
+                        <rect key="frame" x="281" y="25" width="24" height="24"/>
+                        <state key="normal" image="电话"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="J8H-lb-bNQ" secondAttribute="bottom" constant="15.5" id="0Pa-iB-Myz"/>
+                    <constraint firstItem="J8H-lb-bNQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="8Sn-Ja-94b"/>
+                    <constraint firstItem="16z-Cn-iOp" firstAttribute="leading" secondItem="J8H-lb-bNQ" secondAttribute="trailing" constant="10" id="CrV-M8-528"/>
+                    <constraint firstItem="J8H-lb-bNQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="PD5-aE-QzU"/>
+                    <constraint firstAttribute="trailing" secondItem="bgH-CA-Qtb" secondAttribute="trailing" constant="15" id="UO4-ow-IF6"/>
+                    <constraint firstItem="16z-Cn-iOp" firstAttribute="top" secondItem="J8H-lb-bNQ" secondAttribute="top" id="a0P-tf-ryX"/>
+                    <constraint firstItem="Nng-Tj-7cn" firstAttribute="centerY" secondItem="RZd-EC-9Jn" secondAttribute="centerY" id="eG7-5N-4XR"/>
+                    <constraint firstItem="RZd-EC-9Jn" firstAttribute="bottom" secondItem="J8H-lb-bNQ" secondAttribute="bottom" id="edL-hj-5OR"/>
+                    <constraint firstItem="Nng-Tj-7cn" firstAttribute="leading" secondItem="RZd-EC-9Jn" secondAttribute="trailing" constant="10" id="uYz-00-OVa"/>
+                    <constraint firstItem="bgH-CA-Qtb" firstAttribute="centerY" secondItem="J8H-lb-bNQ" secondAttribute="centerY" id="y2f-kJ-IgC"/>
+                    <constraint firstItem="RZd-EC-9Jn" firstAttribute="leading" secondItem="16z-Cn-iOp" secondAttribute="leading" id="zaD-PL-nI9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImgV" destination="J8H-lb-bNQ" id="Dgj-MX-J4c"/>
+                <outlet property="nameLabel" destination="RZd-EC-9Jn" id="KEr-Vr-uf8"/>
+                <outlet property="phone" destination="Nng-Tj-7cn" id="JcR-YR-d4K"/>
+                <outlet property="phoneBtn" destination="bgH-CA-Qtb" id="q9f-Ry-YsQ"/>
+                <outlet property="titleLabel" destination="16z-Cn-iOp" id="Osv-sV-dCb"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="占位图" width="16" height="16"/>
+        <image name="电话" width="24" height="24"/>
+    </resources>
+</document>

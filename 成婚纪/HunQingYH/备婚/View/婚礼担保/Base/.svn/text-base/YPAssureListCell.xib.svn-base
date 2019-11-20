@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YPAssureListCell" id="KGk-i7-Jjw" customClass="YPAssureListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JJl-Rf-wDW">
+                        <rect key="frame" x="10" y="15.5" width="300" height="64"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AhW-ru-BTV">
+                                <rect key="frame" x="15" y="17" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.99215686274509807" green="0.80784313725490198" blue="0.21176470588235294" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6Gf-Zo-jd0"/>
+                                    <constraint firstAttribute="width" constant="30" id="zCn-Hq-hmS"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="查看婚礼设计图" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lxm-Rm-eRF">
+                                <rect key="frame" x="60" y="22" width="122" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(点击签订合同)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmN-9u-Aj5">
+                                <rect key="frame" x="187" y="23.5" width="103" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Lxm-Rm-eRF" firstAttribute="centerY" secondItem="AhW-ru-BTV" secondAttribute="centerY" id="9WS-yG-eGH"/>
+                            <constraint firstItem="Lxm-Rm-eRF" firstAttribute="leading" secondItem="AhW-ru-BTV" secondAttribute="trailing" constant="15" id="ATp-vI-dSt"/>
+                            <constraint firstItem="rmN-9u-Aj5" firstAttribute="centerY" secondItem="Lxm-Rm-eRF" secondAttribute="centerY" id="IpE-rU-Myc"/>
+                            <constraint firstItem="AhW-ru-BTV" firstAttribute="leading" secondItem="JJl-Rf-wDW" secondAttribute="leading" constant="15" id="Lj8-7a-tdx"/>
+                            <constraint firstItem="rmN-9u-Aj5" firstAttribute="leading" secondItem="Lxm-Rm-eRF" secondAttribute="trailing" constant="5" id="Mj7-52-yHe"/>
+                            <constraint firstItem="AhW-ru-BTV" firstAttribute="top" secondItem="JJl-Rf-wDW" secondAttribute="top" constant="17" id="lkb-y0-prm"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rmN-9u-Aj5" secondAttribute="trailing" constant="10" id="mYw-Sn-VAJ"/>
+                            <constraint firstAttribute="bottom" secondItem="AhW-ru-BTV" secondAttribute="bottom" constant="17" id="otq-GB-vVF"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="JJl-Rf-wDW" secondAttribute="bottom" id="gId-9d-Fyp"/>
+                    <constraint firstItem="JJl-Rf-wDW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15.5" id="oR4-bn-zcH"/>
+                    <constraint firstAttribute="trailing" secondItem="JJl-Rf-wDW" secondAttribute="trailing" constant="10" id="tVT-oF-5um"/>
+                    <constraint firstItem="JJl-Rf-wDW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ttu-Sx-lEg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="backView" destination="JJl-Rf-wDW" id="Wy3-d6-oy0"/>
+                <outlet property="circleView" destination="AhW-ru-BTV" id="Uhe-BF-GvH"/>
+                <outlet property="descLabel" destination="rmN-9u-Aj5" id="dfQ-3K-Kyn"/>
+                <outlet property="titleLabel" destination="Lxm-Rm-eRF" id="Ind-50-jcP"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="51.5"/>
+        </tableViewCell>
+    </objects>
+</document>

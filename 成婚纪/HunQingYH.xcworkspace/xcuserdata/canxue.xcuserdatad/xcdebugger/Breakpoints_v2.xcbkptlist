@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "1B9C2072-9E50-40FD-B792-87AFA02C5954"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "92B19EA0-5CCD-4916-AC62-DAF60C4219CB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HunQingYH/&#x7b2c;&#x4e8c;&#x7248;/Community/CommunityHome/View/SegMentView.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
+            landmarkName = "-selectBtnAction:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "92B19EA0-5CCD-4916-AC62-DAF60C4219CB - f84d3983df9c5c9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[SegMentView selectBtnAction:]"
+                  moduleName = "HunQingYH"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/canxue/Desktop/%E8%B5%84%E6%96%99/%E6%88%90%E5%A9%9A%E7%BA%AA/HunQingYH/%E7%AC%AC%E4%BA%8C%E7%89%88/Community/CommunityHome/View/SegMentView.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "114"
+                  endingLineNumber = "114"
+                  offsetFromSymbolStart = "972">
+               </Location>
+               <Location
+                  uuid = "92B19EA0-5CCD-4916-AC62-DAF60C4219CB - d36452aec794e251"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__31-[SegMentView selectBtnAction:]_block_invoke"
+                  moduleName = "HunQingYH"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/canxue/Desktop/%E8%B5%84%E6%96%99/%E6%88%90%E5%A9%9A%E7%BA%AA/HunQingYH/%E7%AC%AC%E4%BA%8C%E7%89%88/Community/CommunityHome/View/SegMentView.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "114"
+                  endingLineNumber = "114"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            uuid = "F97EEFB9-8AC1-4A31-89BE-E04F51232927"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            scope = "1"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -1,0 +1,36 @@
+//
+//  GoodSepcificationItem.h
+//  loveSearch
+//
+//  Created by mac on 2019/2/28.
+//  Copyright © 2019 mac. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface GoodSpecificationItem : UICollectionViewCell
+
+@property (nonatomic, strong) UILabel *textLabel;
+/** 删除按钮 */
+@property (nonatomic, strong) UIButton *deleteBtn;
+
+// 商家设置规格
+- (void)nomalItem:(NSString *)name;
+- (void)addItem:(NSString *)name;
+- (void)goodSelectItem:(NSString *)name;
+//删除 item
+- (void)goodDeleteItem:(NSString *)name;
+
+// 店铺详情  选择规格
+- (void)goodSpeDefa:(NSString *)name;
+- (void)goodSpeSelect:(NSString *)name;
+
+
+// 服务商设置
+- (void)FWSItem:(NSString *)name;
+
+@end
+
+NS_ASSUME_NONNULL_END

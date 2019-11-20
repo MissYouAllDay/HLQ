@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="YPReMeSelectCell" id="KGk-i7-Jjw" customClass="YPReMeSelectCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="286" height="54.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reMe_分享" translatesAutoresizingMaskIntoConstraints="NO" id="wJc-xZ-BWK">
+                        <rect key="frame" x="20" y="17" width="21" height="21"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="邀请好友来结婚" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ccu-Kz-nc3">
+                        <rect key="frame" x="56" y="17" width="122" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lqF-1a-Yvp">
+                        <rect key="frame" x="0.0" y="53" width="321" height="1"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Lbc-4P-u1c"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="lqF-1a-Yvp" secondAttribute="trailing" constant="-35" id="BXd-F5-zk8"/>
+                    <constraint firstItem="Ccu-Kz-nc3" firstAttribute="leading" secondItem="wJc-xZ-BWK" secondAttribute="trailing" constant="15" id="aMC-id-k2j"/>
+                    <constraint firstItem="Ccu-Kz-nc3" firstAttribute="centerY" secondItem="wJc-xZ-BWK" secondAttribute="centerY" id="dUv-ax-bt6"/>
+                    <constraint firstAttribute="bottom" secondItem="wJc-xZ-BWK" secondAttribute="bottom" constant="16.5" id="f1r-fv-aT1"/>
+                    <constraint firstItem="wJc-xZ-BWK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="hZC-4z-jr5"/>
+                    <constraint firstItem="lqF-1a-Yvp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="i2v-It-CiN"/>
+                    <constraint firstItem="wJc-xZ-BWK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="o4C-5F-Wu4"/>
+                    <constraint firstAttribute="bottom" secondItem="lqF-1a-Yvp" secondAttribute="bottom" id="yKL-LH-hIT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImgV" destination="wJc-xZ-BWK" id="brW-zW-loz"/>
+                <outlet property="titleLabel" destination="Ccu-Kz-nc3" id="1uY-ii-ItB"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="51.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="reMe_分享" width="21" height="21"/>
+    </resources>
+</document>

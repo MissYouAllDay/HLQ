@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YPWeddingOrderListSub1Cell" id="KGk-i7-Jjw" customClass="YPWeddingOrderListSub1Cell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="客户信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Pj-jI-V66">
+                        <rect key="frame" x="25" y="14" width="54" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="审核状态" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEz-8l-EDu">
+                        <rect key="frame" x="25" y="70" width="54" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="李晓峰" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D0d-wt-f21">
+                        <rect key="frame" x="104" y="14" width="40" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12345678901" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scJ-YT-VA4">
+                        <rect key="frame" x="104" y="42" width="84" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未审核" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3u-dV-yOh">
+                        <rect key="frame" x="104" y="70" width="40" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0o-pb-qFC">
+                        <rect key="frame" x="241" y="64" width="54" height="28"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="驳回理由">
+                            <color key="titleColor" red="0.99215686274509807" green="0.61176470588235299" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rEz-8l-EDu" firstAttribute="leading" secondItem="7Pj-jI-V66" secondAttribute="leading" id="1XX-UZ-IWf"/>
+                    <constraint firstItem="D3u-dV-yOh" firstAttribute="leading" secondItem="D0d-wt-f21" secondAttribute="leading" id="2Q4-5k-6vf"/>
+                    <constraint firstItem="w0o-pb-qFC" firstAttribute="centerY" secondItem="D3u-dV-yOh" secondAttribute="centerY" id="Bdu-4r-JEt"/>
+                    <constraint firstItem="D0d-wt-f21" firstAttribute="leading" secondItem="scJ-YT-VA4" secondAttribute="leading" id="HbR-9Z-GIa"/>
+                    <constraint firstItem="D0d-wt-f21" firstAttribute="centerY" secondItem="7Pj-jI-V66" secondAttribute="centerY" id="I40-Uf-SHE"/>
+                    <constraint firstItem="D0d-wt-f21" firstAttribute="leading" secondItem="7Pj-jI-V66" secondAttribute="trailing" constant="25" id="QkG-VS-LU8"/>
+                    <constraint firstAttribute="trailing" secondItem="w0o-pb-qFC" secondAttribute="trailing" constant="25" id="SXN-8y-sII"/>
+                    <constraint firstItem="scJ-YT-VA4" firstAttribute="top" secondItem="D0d-wt-f21" secondAttribute="bottom" constant="12" id="TPy-dP-Or5"/>
+                    <constraint firstAttribute="bottom" secondItem="rEz-8l-EDu" secondAttribute="bottom" constant="13.5" id="XLU-fB-U6N"/>
+                    <constraint firstItem="D3u-dV-yOh" firstAttribute="centerY" secondItem="rEz-8l-EDu" secondAttribute="centerY" id="lKK-xN-YCi"/>
+                    <constraint firstItem="7Pj-jI-V66" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="lfg-6v-v82"/>
+                    <constraint firstItem="7Pj-jI-V66" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="raR-o7-bU1"/>
+                    <constraint firstItem="rEz-8l-EDu" firstAttribute="top" secondItem="7Pj-jI-V66" secondAttribute="bottom" constant="40" id="xDv-Dy-JLt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="phoenLabel" destination="scJ-YT-VA4" id="68y-cP-JOI"/>
+                <outlet property="refuseBtn" destination="w0o-pb-qFC" id="5cw-dS-6cP"/>
+                <outlet property="tagLabel" destination="D3u-dV-yOh" id="Okx-Rv-WRH"/>
+                <outlet property="tiitleLabel" destination="D0d-wt-f21" id="5sC-iw-yLQ"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

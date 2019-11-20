@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YPMyCarAnLiCell" id="KGk-i7-Jjw" customClass="YPMyCarAnLiCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="案例" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJ1-yC-b1p">
+                        <rect key="frame" x="15" y="15" width="35" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="占位" translatesAutoresizingMaskIntoConstraints="NO" id="8TX-2I-XUY">
+                        <rect key="frame" x="65" y="15" width="240" height="179.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="179.5" id="k7T-yd-v6D"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中式婚礼之长安梦" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpK-m9-3vh">
+                        <rect key="frame" x="80" y="158.5" width="139" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rky-SV-sQa">
+                        <rect key="frame" x="27" y="46" width="11" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8TX-2I-XUY" firstAttribute="top" secondItem="fJ1-yC-b1p" secondAttribute="top" id="8F9-4N-bnU"/>
+                    <constraint firstItem="8TX-2I-XUY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="65" id="8Iq-na-DKl"/>
+                    <constraint firstAttribute="bottom" secondItem="jpK-m9-3vh" secondAttribute="bottom" constant="20" id="9Jt-2C-gcm"/>
+                    <constraint firstAttribute="bottom" secondItem="8TX-2I-XUY" secondAttribute="bottom" constant="5" id="MBj-6Q-DJx"/>
+                    <constraint firstItem="rky-SV-sQa" firstAttribute="centerX" secondItem="fJ1-yC-b1p" secondAttribute="centerX" id="ZMY-Eu-rVW"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="rky-SV-sQa" secondAttribute="bottom" constant="15" id="cG7-Mz-j5Y"/>
+                    <constraint firstItem="fJ1-yC-b1p" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="kUV-mE-836"/>
+                    <constraint firstAttribute="trailing" secondItem="8TX-2I-XUY" secondAttribute="trailing" constant="15" id="piI-Io-Vry"/>
+                    <constraint firstItem="fJ1-yC-b1p" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="rRQ-Q4-O7B"/>
+                    <constraint firstItem="rky-SV-sQa" firstAttribute="top" secondItem="fJ1-yC-b1p" secondAttribute="bottom" constant="10" id="saS-wn-0Vo"/>
+                    <constraint firstItem="jpK-m9-3vh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="80" id="vhc-1J-IPj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descLabel" destination="jpK-m9-3vh" id="uXB-2g-4PF"/>
+                <outlet property="iconImgV" destination="8TX-2I-XUY" id="nW5-vf-Cbj"/>
+                <outlet property="numLabel" destination="rky-SV-sQa" id="T0b-Rw-Vob"/>
+                <outlet property="titleLabel" destination="fJ1-yC-b1p" id="JBh-Su-pCv"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="占位" width="400" height="400"/>
+    </resources>
+</document>

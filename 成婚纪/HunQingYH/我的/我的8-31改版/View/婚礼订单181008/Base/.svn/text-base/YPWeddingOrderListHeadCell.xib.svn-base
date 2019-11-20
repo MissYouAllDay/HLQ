@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YPWeddingOrderListHeadCell" id="KGk-i7-Jjw" customClass="YPWeddingOrderListHeadCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订单日期" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrz-vP-LgK">
+                        <rect key="frame" x="25" y="13.5" width="53.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018-08-31 12:23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWH-1f-VvW">
+                        <rect key="frame" x="103.5" y="14" width="110" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="待付款" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGz-AX-48p">
+                        <rect key="frame" x="255" y="14" width="40" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.98039215690000003" green="0.31372549020000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DbV-MK-73F">
+                        <rect key="frame" x="15" y="42.5" width="290" height="1"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="KF9-rE-6QI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jrz-vP-LgK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="0p8-yF-Y4n"/>
+                    <constraint firstItem="DbV-MK-73F" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="6R1-ln-6IM"/>
+                    <constraint firstItem="eGz-AX-48p" firstAttribute="centerY" secondItem="jrz-vP-LgK" secondAttribute="centerY" id="6d3-Th-X4a"/>
+                    <constraint firstAttribute="bottom" secondItem="DbV-MK-73F" secondAttribute="bottom" id="KFS-XD-iYh"/>
+                    <constraint firstItem="eGz-AX-48p" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MWH-1f-VvW" secondAttribute="trailing" constant="10" id="Kaz-uJ-RY9"/>
+                    <constraint firstAttribute="trailing" secondItem="eGz-AX-48p" secondAttribute="trailing" constant="25" id="daH-Av-RqB"/>
+                    <constraint firstAttribute="bottom" secondItem="jrz-vP-LgK" secondAttribute="bottom" constant="13" id="fs7-EN-vLN"/>
+                    <constraint firstItem="MWH-1f-VvW" firstAttribute="leading" secondItem="jrz-vP-LgK" secondAttribute="trailing" constant="25" id="jCL-gv-CGE"/>
+                    <constraint firstItem="jrz-vP-LgK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13.5" id="qRL-6M-QfR"/>
+                    <constraint firstItem="MWH-1f-VvW" firstAttribute="centerY" secondItem="jrz-vP-LgK" secondAttribute="centerY" id="u9V-jg-Rpe"/>
+                    <constraint firstAttribute="trailing" secondItem="DbV-MK-73F" secondAttribute="trailing" constant="15" id="vDC-w2-7rU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="tagLabel" destination="eGz-AX-48p" id="2f2-2T-4IN"/>
+                <outlet property="timeLabel" destination="MWH-1f-VvW" id="1V6-u6-ZK5"/>
+                <outlet property="titleLabel" destination="jrz-vP-LgK" id="ya5-xf-7wD"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

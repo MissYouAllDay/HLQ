@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="dQi-hz-o02" customClass="YPReLoginIdentityView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新人" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUE-gj-UJD">
+                    <rect key="frame" x="82" y="26.5" width="49" height="29"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqP-QB-Enj">
+                    <rect key="frame" x="40" y="92" width="22" height="22"/>
+                    <state key="normal" image="relogin_unselect"/>
+                    <state key="selected" image="relogin_select"/>
+                    <connections>
+                        <action selector="gongyingshangClick:" destination="dQi-hz-o02" eventType="touchUpInside" id="GoL-e4-spx"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="供应商" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NjZ-er-DvC">
+                    <rect key="frame" x="82" y="88.5" width="73" height="29"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l4c-UA-K14">
+                    <rect key="frame" x="40" y="154" width="22" height="22"/>
+                    <state key="normal" image="relogin_unselect"/>
+                    <state key="selected" image="relogin_select"/>
+                    <connections>
+                        <action selector="hotelClick:" destination="dQi-hz-o02" eventType="touchUpInside" id="I12-Me-lLg"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="酒店" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hwd-8P-dKh">
+                    <rect key="frame" x="82" y="150.5" width="49" height="29"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Om6-97-o1u">
+                    <rect key="frame" x="40" y="216" width="22" height="22"/>
+                    <state key="normal" image="relogin_unselect"/>
+                    <state key="selected" image="relogin_select"/>
+                    <connections>
+                        <action selector="companyClick:" destination="dQi-hz-o02" eventType="touchUpInside" id="VAi-PP-otA"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="婚庆公司" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Sk-C5-CjJ">
+                    <rect key="frame" x="82" y="212.5" width="98" height="29"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="02m-OZ-NVl">
+                    <rect key="frame" x="40" y="30" width="22" height="22"/>
+                    <state key="normal" image="relogin_unselect"/>
+                    <state key="selected" image="relogin_select"/>
+                    <connections>
+                        <action selector="xinrenClick:" destination="dQi-hz-o02" eventType="touchUpInside" id="pOD-F5-FZd"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="下拉左" translatesAutoresizingMaskIntoConstraints="NO" id="JJw-yF-Ub4">
+                    <rect key="frame" x="294" y="280" width="8" height="14"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cr3-Iy-7eC">
+                    <rect key="frame" x="40" y="266.5" width="234" height="41"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                    <state key="normal" title="请选择您所在地区">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="areaBtnClick:" destination="dQi-hz-o02" eventType="touchUpInside" id="Qsy-oA-dp9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="JJw-yF-Ub4" firstAttribute="centerY" secondItem="cr3-Iy-7eC" secondAttribute="centerY" id="2SI-Ww-IDe"/>
+                <constraint firstItem="NjZ-er-DvC" firstAttribute="leading" secondItem="rqP-QB-Enj" secondAttribute="trailing" constant="20" id="3Vt-qs-Dyd"/>
+                <constraint firstItem="rqP-QB-Enj" firstAttribute="top" secondItem="02m-OZ-NVl" secondAttribute="bottom" constant="40" id="5hU-UV-cqP"/>
+                <constraint firstAttribute="bottom" secondItem="cr3-Iy-7eC" secondAttribute="bottom" constant="12.5" id="7dn-zf-Njh"/>
+                <constraint firstItem="02m-OZ-NVl" firstAttribute="top" secondItem="dQi-hz-o02" secondAttribute="top" constant="30" id="At9-CA-Dcp"/>
+                <constraint firstItem="JUE-gj-UJD" firstAttribute="leading" secondItem="02m-OZ-NVl" secondAttribute="trailing" constant="20" id="Fdj-KI-TZ4"/>
+                <constraint firstItem="Hwd-8P-dKh" firstAttribute="centerY" secondItem="l4c-UA-K14" secondAttribute="centerY" id="JnI-Ok-quP"/>
+                <constraint firstItem="cr3-Iy-7eC" firstAttribute="leading" secondItem="Om6-97-o1u" secondAttribute="leading" id="QWf-YK-HF9"/>
+                <constraint firstItem="JUE-gj-UJD" firstAttribute="centerY" secondItem="02m-OZ-NVl" secondAttribute="centerY" id="Qhl-ue-BV0"/>
+                <constraint firstItem="JJw-yF-Ub4" firstAttribute="leading" secondItem="cr3-Iy-7eC" secondAttribute="trailing" constant="20" id="SmE-UG-ext"/>
+                <constraint firstAttribute="trailing" secondItem="JJw-yF-Ub4" secondAttribute="trailing" constant="18" id="T9b-Zk-j5Z"/>
+                <constraint firstItem="Hwd-8P-dKh" firstAttribute="leading" secondItem="l4c-UA-K14" secondAttribute="trailing" constant="20" id="cEi-Pl-J83"/>
+                <constraint firstItem="l4c-UA-K14" firstAttribute="leading" secondItem="02m-OZ-NVl" secondAttribute="leading" id="cGU-F0-13D"/>
+                <constraint firstItem="rqP-QB-Enj" firstAttribute="leading" secondItem="02m-OZ-NVl" secondAttribute="leading" id="cJU-IN-QUz"/>
+                <constraint firstItem="l4c-UA-K14" firstAttribute="top" secondItem="rqP-QB-Enj" secondAttribute="bottom" constant="40" id="dXS-To-w3V"/>
+                <constraint firstItem="NjZ-er-DvC" firstAttribute="centerY" secondItem="rqP-QB-Enj" secondAttribute="centerY" id="fLp-LH-sN9"/>
+                <constraint firstItem="cr3-Iy-7eC" firstAttribute="top" secondItem="4Sk-C5-CjJ" secondAttribute="bottom" constant="25" id="fkI-LR-P6t"/>
+                <constraint firstItem="Om6-97-o1u" firstAttribute="leading" secondItem="02m-OZ-NVl" secondAttribute="leading" id="oC0-1y-4S1"/>
+                <constraint firstItem="Om6-97-o1u" firstAttribute="top" secondItem="l4c-UA-K14" secondAttribute="bottom" constant="40" id="vsg-iE-zwW"/>
+                <constraint firstItem="4Sk-C5-CjJ" firstAttribute="leading" secondItem="Om6-97-o1u" secondAttribute="trailing" constant="20" id="wYi-vj-Wpw"/>
+                <constraint firstItem="02m-OZ-NVl" firstAttribute="leading" secondItem="dQi-hz-o02" secondAttribute="leading" constant="40" id="xqN-43-1j1"/>
+                <constraint firstItem="4Sk-C5-CjJ" firstAttribute="centerY" secondItem="Om6-97-o1u" secondAttribute="centerY" id="yOx-nY-NDi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="areaBtn" destination="cr3-Iy-7eC" id="Ilf-5c-1HN"/>
+                <outlet property="company" destination="4Sk-C5-CjJ" id="IoI-Cu-i19"/>
+                <outlet property="companyBtn" destination="Om6-97-o1u" id="CVC-6i-dZo"/>
+                <outlet property="gongyingshang" destination="NjZ-er-DvC" id="Znc-yr-XB3"/>
+                <outlet property="gongyingshangBtn" destination="rqP-QB-Enj" id="nt6-ZT-cIO"/>
+                <outlet property="hotel" destination="Hwd-8P-dKh" id="gqU-dI-ypN"/>
+                <outlet property="hotelBtn" destination="l4c-UA-K14" id="4Xq-aS-nud"/>
+                <outlet property="xinren" destination="JUE-gj-UJD" id="2F1-fH-ZxC"/>
+                <outlet property="xinrenBtn" destination="02m-OZ-NVl" id="yl6-ab-ZdN"/>
+            </connections>
+            <point key="canvasLocation" x="-598.39999999999998" y="-166.41679160419793"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="relogin_select" width="22" height="22"/>
+        <image name="relogin_unselect" width="22" height="22"/>
+        <image name="下拉左" width="8" height="14"/>
+    </resources>
+</document>

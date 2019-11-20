@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="n90-73-GS7" customClass="YPPopCornScanSucView">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="380"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="验证成功" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4v-W8-J3M">
+                    <rect key="frame" x="79" y="25" width="82" height="24"/>
+                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popCorn_small" translatesAutoresizingMaskIntoConstraints="NO" id="fln-i8-8VQ">
+                    <rect key="frame" x="45" y="69" width="150" height="150"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="出示该页面给工作人员" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ah-Zk-SOG">
+                    <rect key="frame" x="33" y="239" width="174" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="领取小桶爆米花一份" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dob-KD-bse">
+                    <rect key="frame" x="42" y="270" width="156" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="不满足?想要大桶?点下面!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wwj-Xc-5zM">
+                    <rect key="frame" x="22" y="301" width="195" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGn-vs-st0">
+                    <rect key="frame" x="20" y="332" width="200" height="38"/>
+                    <color key="backgroundColor" red="0.98823529409999999" green="0.83921568629999999" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                    <state key="normal" title="分享好友 我要大桶">
+                        <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.95686274510000002" green="0.26274509800000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Wwj-Xc-5zM" firstAttribute="top" secondItem="dob-KD-bse" secondAttribute="bottom" constant="10" id="0E8-sZ-ja7"/>
+                <constraint firstItem="j4v-W8-J3M" firstAttribute="centerX" secondItem="n90-73-GS7" secondAttribute="centerX" id="3qt-63-RAY"/>
+                <constraint firstItem="7ah-Zk-SOG" firstAttribute="centerX" secondItem="n90-73-GS7" secondAttribute="centerX" id="5aP-JE-xJX"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Wwj-Xc-5zM" secondAttribute="trailing" constant="5" id="9Vx-sF-Bl9"/>
+                <constraint firstItem="7ah-Zk-SOG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="n90-73-GS7" secondAttribute="leading" constant="5" id="Ajz-aU-wgi"/>
+                <constraint firstItem="fln-i8-8VQ" firstAttribute="centerX" secondItem="n90-73-GS7" secondAttribute="centerX" id="BCR-67-SeO"/>
+                <constraint firstItem="SGn-vs-st0" firstAttribute="leading" secondItem="n90-73-GS7" secondAttribute="leading" constant="20" id="FJl-ae-XBB"/>
+                <constraint firstItem="j4v-W8-J3M" firstAttribute="top" secondItem="n90-73-GS7" secondAttribute="top" constant="25" id="Hyt-jn-695"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7ah-Zk-SOG" secondAttribute="trailing" constant="5" id="J04-pU-hgQ"/>
+                <constraint firstItem="dob-KD-bse" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="n90-73-GS7" secondAttribute="leading" constant="5" id="O70-uO-raN"/>
+                <constraint firstItem="fln-i8-8VQ" firstAttribute="top" secondItem="j4v-W8-J3M" secondAttribute="bottom" constant="20" id="Sxj-ml-qNc"/>
+                <constraint firstItem="Wwj-Xc-5zM" firstAttribute="centerX" secondItem="n90-73-GS7" secondAttribute="centerX" id="UiA-55-vLd"/>
+                <constraint firstItem="dob-KD-bse" firstAttribute="centerX" secondItem="n90-73-GS7" secondAttribute="centerX" id="fkl-b9-KiS"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dob-KD-bse" secondAttribute="trailing" constant="5" id="gYc-x4-s9x"/>
+                <constraint firstAttribute="trailing" secondItem="SGn-vs-st0" secondAttribute="trailing" constant="20" id="j4k-BC-FVG"/>
+                <constraint firstItem="Wwj-Xc-5zM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="n90-73-GS7" secondAttribute="leading" constant="5" id="nnB-Mz-X9O"/>
+                <constraint firstAttribute="bottom" secondItem="SGn-vs-st0" secondAttribute="bottom" constant="10" id="nsF-Bb-YVF"/>
+                <constraint firstItem="SGn-vs-st0" firstAttribute="centerX" secondItem="n90-73-GS7" secondAttribute="centerX" id="rbE-gO-AQJ"/>
+                <constraint firstItem="SGn-vs-st0" firstAttribute="top" secondItem="Wwj-Xc-5zM" secondAttribute="bottom" constant="10" id="swG-KB-tqQ"/>
+                <constraint firstItem="dob-KD-bse" firstAttribute="top" secondItem="7ah-Zk-SOG" secondAttribute="bottom" constant="10" id="tW6-Cq-dlP"/>
+                <constraint firstItem="7ah-Zk-SOG" firstAttribute="top" secondItem="fln-i8-8VQ" secondAttribute="bottom" constant="20" id="vjW-q9-qvk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="getBtn" destination="SGn-vs-st0" id="8FC-Nc-wEG"/>
+                <outlet property="iconImgV" destination="fln-i8-8VQ" id="oDg-37-yLx"/>
+                <outlet property="line1" destination="7ah-Zk-SOG" id="ntR-VS-zmn"/>
+                <outlet property="line2" destination="dob-KD-bse" id="eNH-Q7-7Cs"/>
+                <outlet property="line3" destination="Wwj-Xc-5zM" id="c4b-0Q-bdF"/>
+                <outlet property="titleLabel" destination="j4v-W8-J3M" id="Ifv-M1-bfX"/>
+            </connections>
+            <point key="canvasLocation" x="185" y="-92"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="popCorn_small" width="150" height="150"/>
+    </resources>
+</document>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="U3G-wA-vWb" customClass="YPEDuApplySucView">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="400"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="edu_BackGround" translatesAutoresizingMaskIntoConstraints="NO" id="ux2-80-M27">
+                    <rect key="frame" x="0.0" y="0.0" width="250" height="400"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我们会尽快处理您的请求" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Icr-0t-HGa">
+                    <rect key="frame" x="30" y="250" width="191" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请耐心等待" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6f-Zt-Ydg">
+                    <rect key="frame" x="82" y="281" width="87" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSo-QQ-WsC">
+                    <rect key="frame" x="56" y="342" width="138" height="44"/>
+                    <state key="normal" image="know_yellow"/>
+                    <state key="highlighted" image="know_yellow"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ux2-80-M27" secondAttribute="trailing" id="03t-nM-bB0"/>
+                <constraint firstItem="q6f-Zt-Ydg" firstAttribute="top" secondItem="Icr-0t-HGa" secondAttribute="bottom" constant="10" id="ASQ-Eb-6rf"/>
+                <constraint firstItem="q6f-Zt-Ydg" firstAttribute="centerX" secondItem="U3G-wA-vWb" secondAttribute="centerX" id="BSe-4j-GUQ"/>
+                <constraint firstItem="Icr-0t-HGa" firstAttribute="centerX" secondItem="U3G-wA-vWb" secondAttribute="centerX" id="Dqo-Nq-F6Z"/>
+                <constraint firstItem="ux2-80-M27" firstAttribute="leading" secondItem="U3G-wA-vWb" secondAttribute="leading" id="MmD-ff-KlS"/>
+                <constraint firstAttribute="bottom" secondItem="lSo-QQ-WsC" secondAttribute="bottom" constant="14" id="Owf-Jx-XLq"/>
+                <constraint firstItem="ux2-80-M27" firstAttribute="top" secondItem="U3G-wA-vWb" secondAttribute="top" id="Udt-Ud-2n8"/>
+                <constraint firstItem="lSo-QQ-WsC" firstAttribute="centerX" secondItem="U3G-wA-vWb" secondAttribute="centerX" id="iud-UR-obf"/>
+                <constraint firstItem="Icr-0t-HGa" firstAttribute="top" secondItem="U3G-wA-vWb" secondAttribute="top" constant="250" id="j8k-b3-nY0"/>
+                <constraint firstItem="lSo-QQ-WsC" firstAttribute="top" secondItem="q6f-Zt-Ydg" secondAttribute="bottom" constant="40" id="v2n-3r-Id2"/>
+                <constraint firstAttribute="bottom" secondItem="ux2-80-M27" secondAttribute="bottom" id="ywF-OG-iUM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="knowBtn" destination="lSo-QQ-WsC" id="VsL-WV-OAN"/>
+            </connections>
+            <point key="canvasLocation" x="-100" y="-67"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="edu_BackGround" width="305" height="394"/>
+        <image name="know_yellow" width="138" height="44"/>
+    </resources>
+</document>

@@ -1,0 +1,13 @@
+//
+//  YPGetAPList.m
+//  HunQingYH
+//
+//  Created by Else丶 on 2018/3/1.
+//  Copyright © 2018年 YanpengLee. All rights reserved.
+//
+
+#import "YPGetAPList.h"
+
+@implementation YPGetAPList
+
+@end

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="YPReMyWalletBankCell" rowHeight="59" id="KGk-i7-Jjw" customClass="YPReMyWalletBankCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="286" height="58.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的银行卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AaF-qJ-kUp">
+                        <rect key="frame" x="56" y="20" width="82" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="re_myWallet_bank" translatesAutoresizingMaskIntoConstraints="NO" id="9gI-5w-hRS">
+                        <rect key="frame" x="18" y="23" width="24" height="13"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4s-Bk-CCV">
+                        <rect key="frame" x="254.5" y="19.5" width="17.5" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9gI-5w-hRS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="B8o-as-qIw"/>
+                    <constraint firstItem="AaF-qJ-kUp" firstAttribute="leading" secondItem="9gI-5w-hRS" secondAttribute="trailing" constant="14" id="FFF-nB-uIO"/>
+                    <constraint firstItem="AaF-qJ-kUp" firstAttribute="centerY" secondItem="9gI-5w-hRS" secondAttribute="centerY" id="eMa-uC-7DF"/>
+                    <constraint firstItem="9gI-5w-hRS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="23" id="h7T-g0-iYf"/>
+                    <constraint firstAttribute="bottom" secondItem="9gI-5w-hRS" secondAttribute="bottom" constant="22.5" id="mDz-sM-hJg"/>
+                    <constraint firstAttribute="trailing" secondItem="h4s-Bk-CCV" secondAttribute="trailing" constant="14" id="ndG-z8-YNu"/>
+                    <constraint firstItem="h4s-Bk-CCV" firstAttribute="centerY" secondItem="AaF-qJ-kUp" secondAttribute="centerY" id="yjr-rn-dhQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="countLabel" destination="h4s-Bk-CCV" id="Y0m-3a-lyT"/>
+            </connections>
+            <point key="canvasLocation" x="-91.200000000000003" y="97.601199400299862"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="re_myWallet_bank" width="24" height="24"/>
+    </resources>
+</document>

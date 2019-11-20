@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/DKSoft/!svn/ver/5532/IOS/HunQingYH/Pods/AMapFoundation/AMapFoundationKit.framework/Headers
+END
+AMapURLSearchType.h
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/DKSoft/!svn/ver/5003/IOS/HunQingYH/Pods/AMapFoundation/AMapFoundationKit.framework/Headers/AMapURLSearchType.h
+END
+NSMutableDictionary+AMapSafe.h
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/DKSoft/!svn/ver/5003/IOS/HunQingYH/Pods/AMapFoundation/AMapFoundationKit.framework/Headers/NSMutableDictionary+AMapSafe.h
+END
+NSObject+AMapJsonSerialization.h
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/DKSoft/!svn/ver/5003/IOS/HunQingYH/Pods/AMapFoundation/AMapFoundationKit.framework/Headers/NSObject+AMapJsonSerialization.h
+END
+AMapFoundationVersion.h
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/DKSoft/!svn/ver/5532/IOS/HunQingYH/Pods/AMapFoundation/AMapFoundationKit.framework/Headers/AMapFoundationVersion.h
+END
+AMapFoundationKit.h
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/DKSoft/!svn/ver/5003/IOS/HunQingYH/Pods/AMapFoundation/AMapFoundationKit.framework/Headers/AMapFoundationKit.h
+END
+AMapURLSearchConfig.h
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/DKSoft/!svn/ver/5003/IOS/HunQingYH/Pods/AMapFoundation/AMapFoundationKit.framework/Headers/AMapURLSearchConfig.h
+END
+AMapServices.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/DKSoft/!svn/ver/5532/IOS/HunQingYH/Pods/AMapFoundation/AMapFoundationKit.framework/Headers/AMapServices.h
+END
+AMapUtility.h
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/DKSoft/!svn/ver/5532/IOS/HunQingYH/Pods/AMapFoundation/AMapFoundationKit.framework/Headers/AMapUtility.h
+END
+NSMutableArray+AMapSafe.h
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/DKSoft/!svn/ver/5003/IOS/HunQingYH/Pods/AMapFoundation/AMapFoundationKit.framework/Headers/NSMutableArray+AMapSafe.h
+END
+AMapURLSearch.h
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/DKSoft/!svn/ver/5003/IOS/HunQingYH/Pods/AMapFoundation/AMapFoundationKit.framework/Headers/AMapURLSearch.h
+END

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YPSupplierInfoCanBiaoOtherInputCell" id="KGk-i7-Jjw" customClass="YPSupplierInfoCanBiaoOtherInputCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.0 ¥" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PsF-m8-T82">
+                        <rect key="frame" x="104" y="13" width="168" height="18"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4L8-dv-kv6">
+                        <rect key="frame" x="282" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="b3n-bU-TFP"/>
+                            <constraint firstAttribute="width" constant="20" id="hBG-OR-GMM"/>
+                        </constraints>
+                        <state key="normal" image="canbiao_delete"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PsF-m8-T82" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="104" id="3AL-Sq-nHa"/>
+                    <constraint firstItem="PsF-m8-T82" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Bkb-52-IMZ"/>
+                    <constraint firstItem="4L8-dv-kv6" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="VJS-tz-kCO"/>
+                    <constraint firstItem="4L8-dv-kv6" firstAttribute="leading" secondItem="PsF-m8-T82" secondAttribute="trailing" constant="10" id="YqI-fS-Mxe"/>
+                    <constraint firstAttribute="trailing" secondItem="4L8-dv-kv6" secondAttribute="trailing" constant="18" id="i95-V9-KhK"/>
+                    <constraint firstItem="4L8-dv-kv6" firstAttribute="centerY" secondItem="PsF-m8-T82" secondAttribute="centerY" id="vK0-DF-wtd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="deleteBtn" destination="4L8-dv-kv6" id="njF-jD-X16"/>
+                <outlet property="inputTF" destination="PsF-m8-T82" id="PJT-11-pgT"/>
+            </connections>
+            <point key="canvasLocation" x="49.600000000000001" y="58.47076461769116"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="canbiao_delete" width="16" height="16"/>
+    </resources>
+</document>

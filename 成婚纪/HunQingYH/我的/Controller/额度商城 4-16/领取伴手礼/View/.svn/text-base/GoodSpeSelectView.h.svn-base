@@ -1,0 +1,33 @@
+//
+//  GoodSpeSelectView.h
+//  loveSearch
+//
+//  Created by mac on 2019/3/4.
+//  Copyright © 2019 mac. All rights reserved.
+//
+// - - - - - - - - - - - - - - - - - - 此文件后期做优化修改 - - - - - - - - - - - - - - - - - - 
+
+#import <UIKit/UIKit.h>
+#import "YPGetCommodityTypeTableListData.h"
+NS_ASSUME_NONNULL_BEGIN
+
+@interface GoodSpeSelectView : UIView
+
+/** 商品model */
+@property (nonatomic, strong) YPGetCommodityTypeTableListData *goodModel;
+/** 是否 是第一次通过 */
+@property (nonatomic, assign) BOOL isFirst;
+
+- (void)show;
+- (void)hiddenView;
+@end
+
+NS_ASSUME_NONNULL_END
+
+
+@interface GoodSpeSelectHeadView : UICollectionReusableView
+
+/** 名称 */
+@property (nonatomic, copy) NSString *name;
+
+@end

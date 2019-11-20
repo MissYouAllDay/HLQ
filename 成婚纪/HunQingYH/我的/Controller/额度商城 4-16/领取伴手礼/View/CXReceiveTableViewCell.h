@@ -1,0 +1,38 @@
+//
+//  CXReceiveTableViewCell.h
+//  HunQingYH
+//
+//  Created by apple on 2019/9/20.
+//  Copyright © 2019 YanpengLee. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "YPGetFacilitatorFlowRecord.h"
+NS_ASSUME_NONNULL_BEGIN
+
+@interface CXReceiveTableViewCell : UITableViewCell<UITextFieldDelegate>
+
+@property (weak, nonatomic) IBOutlet UIView *mainBgView;
+@property (weak, nonatomic) IBOutlet UIView *bgView;
+
+@property (weak, nonatomic) IBOutlet UITextField *nameTF;
+@property (weak, nonatomic) IBOutlet UITextField *telTF;
+@property (weak, nonatomic) IBOutlet UILabel *dateLab;
+@property (weak, nonatomic) IBOutlet UITextField *dateTF;
+@property (weak, nonatomic) IBOutlet UITextField *canBiaoTF;
+@property (weak, nonatomic) IBOutlet UITextField *payMoneyTF;
+@property (weak, nonatomic) IBOutlet UITextField *tabNum;
+@property (weak, nonatomic) IBOutlet UIButton *subBtn;
+@property (weak, nonatomic) IBOutlet UILabel *receiveLogLab;
+@property (weak, nonatomic) IBOutlet UILabel *rightJLab;
+@property (weak, nonatomic) IBOutlet UIButton *reveiveLogBtn;
+
+@property (weak, nonatomic) IBOutlet UIView *line0;
+@property (weak, nonatomic) IBOutlet UIView *line1;
+@property (weak, nonatomic) IBOutlet UIView *line2;
+@property (weak, nonatomic) IBOutlet UIView *line3;
+@property (weak, nonatomic) IBOutlet UIView *line4;
+@property (weak, nonatomic) IBOutlet UIView *line5;
+@end
+
+NS_ASSUME_NONNULL_END

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="tBI-R4-mkt" customClass="YPHYTHThreeSelectView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXZ-IP-HGD" customClass="FSCustomButton">
+                    <rect key="frame" x="35" y="0.0" width="83.5" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="黄岛区" image="下三角">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPw-vv-7ga" customClass="FSCustomButton">
+                    <rect key="frame" x="118.5" y="0.0" width="83" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="销量" image="下三角">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnV-Wm-PjH" customClass="FSCustomButton">
+                    <rect key="frame" x="201.5" y="0.0" width="83.5" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="价格" image="下三角">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xzM-z2-yTZ">
+                    <rect key="frame" x="0.0" y="39" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.97254901959999995" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="3pC-3U-1vW"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="CXZ-IP-HGD" firstAttribute="leading" secondItem="tBI-R4-mkt" secondAttribute="leading" constant="35" id="Ccg-9M-GK6"/>
+                <constraint firstAttribute="bottom" secondItem="EPw-vv-7ga" secondAttribute="bottom" id="Hpu-oO-Dh4"/>
+                <constraint firstAttribute="bottom" secondItem="xzM-z2-yTZ" secondAttribute="bottom" id="IPH-xC-f49"/>
+                <constraint firstItem="fnV-Wm-PjH" firstAttribute="height" secondItem="CXZ-IP-HGD" secondAttribute="height" id="KdP-Ze-R5h"/>
+                <constraint firstItem="CXZ-IP-HGD" firstAttribute="top" secondItem="tBI-R4-mkt" secondAttribute="top" id="Onm-PR-vPf"/>
+                <constraint firstAttribute="trailing" secondItem="xzM-z2-yTZ" secondAttribute="trailing" id="RhB-eC-fzF"/>
+                <constraint firstItem="EPw-vv-7ga" firstAttribute="top" secondItem="tBI-R4-mkt" secondAttribute="top" id="Wqj-ml-NiS"/>
+                <constraint firstItem="fnV-Wm-PjH" firstAttribute="top" secondItem="tBI-R4-mkt" secondAttribute="top" id="ayK-MK-D8E"/>
+                <constraint firstItem="fnV-Wm-PjH" firstAttribute="width" secondItem="CXZ-IP-HGD" secondAttribute="width" id="ciu-LA-7eE"/>
+                <constraint firstAttribute="trailing" secondItem="fnV-Wm-PjH" secondAttribute="trailing" constant="35" id="dob-Cj-pKE"/>
+                <constraint firstItem="fnV-Wm-PjH" firstAttribute="leading" secondItem="EPw-vv-7ga" secondAttribute="trailing" id="gVA-nT-7Zd"/>
+                <constraint firstAttribute="bottom" secondItem="CXZ-IP-HGD" secondAttribute="bottom" id="hs7-Xn-3kh"/>
+                <constraint firstItem="EPw-vv-7ga" firstAttribute="leading" secondItem="CXZ-IP-HGD" secondAttribute="trailing" id="pqX-F8-44I"/>
+                <constraint firstAttribute="bottom" secondItem="fnV-Wm-PjH" secondAttribute="bottom" id="van-zJ-9GB"/>
+                <constraint firstItem="xzM-z2-yTZ" firstAttribute="leading" secondItem="tBI-R4-mkt" secondAttribute="leading" id="wop-fS-SaC"/>
+                <constraint firstItem="EPw-vv-7ga" firstAttribute="width" secondItem="CXZ-IP-HGD" secondAttribute="width" id="wzP-62-Kb1"/>
+                <constraint firstItem="EPw-vv-7ga" firstAttribute="height" secondItem="CXZ-IP-HGD" secondAttribute="height" id="xnR-07-KjG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="areaBtn" destination="CXZ-IP-HGD" id="9cb-z8-Qks"/>
+                <outlet property="priceBtn" destination="fnV-Wm-PjH" id="n6c-Bq-l8j"/>
+                <outlet property="xiaoliangBtn" destination="EPw-vv-7ga" id="Awq-kd-pa4"/>
+            </connections>
+            <point key="canvasLocation" x="-61" y="-162"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="下三角" width="11" height="11"/>
+    </resources>
+</document>

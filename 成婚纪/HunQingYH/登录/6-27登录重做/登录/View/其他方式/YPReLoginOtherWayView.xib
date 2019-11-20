@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="44I-OB-jzb" customClass="YPReLoginOtherWayView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="––––––––– 其他方式登录 –––––––––" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYr-6C-3BS">
+                    <rect key="frame" x="31" y="56" width="259" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBL-kt-CRE">
+                    <rect key="frame" x="100.5" y="90" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ZEg-Rb-qwq"/>
+                        <constraint firstAttribute="width" constant="40" id="mhw-cD-eiU"/>
+                    </constraints>
+                    <state key="normal" image="qq"/>
+                    <connections>
+                        <action selector="qqBtnClick:" destination="44I-OB-jzb" eventType="touchUpInside" id="vCr-4M-YUZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNa-jQ-vqS">
+                    <rect key="frame" x="180.5" y="90" width="40" height="40"/>
+                    <state key="normal" image="wechat"/>
+                    <connections>
+                        <action selector="wechatBtnClick:" destination="44I-OB-jzb" eventType="touchUpInside" id="G8q-ch-Ft8"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="登录即接受" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8pm-fx-TBn">
+                    <rect key="frame" x="80" y="170" width="62" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CHJ-vZ-hhw">
+                    <rect key="frame" x="142" y="164" width="111" height="27"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                    <state key="normal" title="《成婚纪用户协议》">
+                        <color key="titleColor" red="0.98039215690000003" green="0.31372549020000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="protocolBtnClick:" destination="44I-OB-jzb" eventType="touchUpInside" id="fEu-bj-duW"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="qNa-jQ-vqS" firstAttribute="height" secondItem="EBL-kt-CRE" secondAttribute="height" id="1g8-kj-cDD"/>
+                <constraint firstItem="EBL-kt-CRE" firstAttribute="centerX" secondItem="NYr-6C-3BS" secondAttribute="centerX" constant="-40" id="6zq-Oy-a3p"/>
+                <constraint firstItem="NYr-6C-3BS" firstAttribute="top" relation="greaterThanOrEqual" secondItem="44I-OB-jzb" secondAttribute="top" constant="10" id="7Kq-Cz-Kqm"/>
+                <constraint firstItem="EBL-kt-CRE" firstAttribute="top" secondItem="NYr-6C-3BS" secondAttribute="bottom" constant="13" id="A6f-be-4OO"/>
+                <constraint firstItem="CHJ-vZ-hhw" firstAttribute="centerY" secondItem="8pm-fx-TBn" secondAttribute="centerY" id="BQ2-JY-8z7"/>
+                <constraint firstItem="NYr-6C-3BS" firstAttribute="centerX" secondItem="44I-OB-jzb" secondAttribute="centerX" id="KlG-bk-9Ed"/>
+                <constraint firstItem="qNa-jQ-vqS" firstAttribute="centerX" secondItem="NYr-6C-3BS" secondAttribute="centerX" constant="40" id="P48-oV-HFN"/>
+                <constraint firstAttribute="bottom" secondItem="8pm-fx-TBn" secondAttribute="bottom" constant="15" id="WDP-uD-T8S"/>
+                <constraint firstItem="qNa-jQ-vqS" firstAttribute="width" secondItem="EBL-kt-CRE" secondAttribute="width" id="d3Z-60-fyv"/>
+                <constraint firstItem="CHJ-vZ-hhw" firstAttribute="leading" secondItem="8pm-fx-TBn" secondAttribute="trailing" id="eQ6-Du-Qrv"/>
+                <constraint firstItem="8pm-fx-TBn" firstAttribute="top" secondItem="EBL-kt-CRE" secondAttribute="bottom" constant="40" id="oJC-OC-0zq"/>
+                <constraint firstItem="qNa-jQ-vqS" firstAttribute="centerY" secondItem="EBL-kt-CRE" secondAttribute="centerY" id="tP8-ca-YY0"/>
+                <constraint firstItem="8pm-fx-TBn" firstAttribute="centerX" secondItem="44I-OB-jzb" secondAttribute="centerX" constant="-49" id="vUp-Fe-E0x"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="protocolBtn" destination="CHJ-vZ-hhw" id="ACH-e8-JYw"/>
+                <outlet property="qqBtn" destination="EBL-kt-CRE" id="Qar-w9-1R4"/>
+                <outlet property="wechatBtn" destination="qNa-jQ-vqS" id="FLS-kf-F2s"/>
+            </connections>
+            <point key="canvasLocation" x="-307" y="-447"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="qq" width="24" height="24"/>
+        <image name="wechat" width="24" height="21"/>
+    </resources>
+</document>

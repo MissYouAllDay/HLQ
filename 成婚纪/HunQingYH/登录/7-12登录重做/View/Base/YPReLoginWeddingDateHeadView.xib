@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Qsv-ta-8wK" customClass="YPReLoginWeddingDateHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YtN-oD-y33">
+                    <rect key="frame" x="0.0" y="40" width="4" height="24"/>
+                    <color key="backgroundColor" red="0.96862745100000003" green="0.23921568630000001" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="rDK-Ct-89T"/>
+                        <constraint firstAttribute="width" constant="4" id="sjo-hs-1K5"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您打算什么时候举办婚礼?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4TR-xf-ghP">
+                    <rect key="frame" x="20" y="37.5" width="280" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="为您定制专属幸福" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTi-Ya-H90">
+                    <rect key="frame" x="20" y="86.5" width="115" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="4TR-xf-ghP" firstAttribute="leading" secondItem="YtN-oD-y33" secondAttribute="trailing" constant="16" id="5K0-HV-6ML"/>
+                <constraint firstItem="cTi-Ya-H90" firstAttribute="top" secondItem="4TR-xf-ghP" secondAttribute="bottom" constant="20" id="9LI-TQ-NYh"/>
+                <constraint firstItem="YtN-oD-y33" firstAttribute="leading" secondItem="Qsv-ta-8wK" secondAttribute="leading" id="HHS-AG-Kd6"/>
+                <constraint firstItem="4TR-xf-ghP" firstAttribute="centerY" secondItem="YtN-oD-y33" secondAttribute="centerY" id="YsJ-Pw-sxO"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4TR-xf-ghP" secondAttribute="trailing" constant="10" id="ew8-B1-PWs"/>
+                <constraint firstAttribute="bottom" secondItem="cTi-Ya-H90" secondAttribute="bottom" constant="16.5" id="h97-iO-WeB"/>
+                <constraint firstItem="YtN-oD-y33" firstAttribute="top" secondItem="Qsv-ta-8wK" secondAttribute="top" constant="40" id="nVC-DA-Yjc"/>
+                <constraint firstItem="cTi-Ya-H90" firstAttribute="leading" secondItem="4TR-xf-ghP" secondAttribute="leading" id="vh4-Ol-tbn"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-75" y="-268"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YPHYTHNoDataCell" id="KGk-i7-Jjw" customClass="YPHYTHNoDataCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="366"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="365.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HYTH_nodata" translatesAutoresizingMaskIntoConstraints="NO" id="XvS-p7-0XK">
+                        <rect key="frame" x="75" y="24" width="170" height="140"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRy-D4-8HU">
+                        <rect key="frame" x="36" y="168" width="248" height="100.5"/>
+                        <string key="text">您是新人，邀请您举办婚宴的酒店入驻，得1888元起新婚礼品
+您是酒店，入驻平台帮您销售婚宴，实现业绩翻倍
+您是行业伙伴，邀请酒店入驻，为您提供新人资源进行置换，获得佣金分红</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.7803921568627451" green="0.7803921568627451" blue="0.7803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12t-qr-7En">
+                        <rect key="frame" x="36" y="292.5" width="248" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="4Ey-Zc-TSf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="抢占先机">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sRy-D4-8HU" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="4xs-do-5Qp"/>
+                    <constraint firstItem="sRy-D4-8HU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="36" id="5w9-lY-qOu"/>
+                    <constraint firstItem="12t-qr-7En" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="36" id="66y-Fc-PqC"/>
+                    <constraint firstAttribute="trailing" secondItem="sRy-D4-8HU" secondAttribute="trailing" constant="36" id="DPN-Yc-POD"/>
+                    <constraint firstAttribute="trailing" secondItem="12t-qr-7En" secondAttribute="trailing" constant="36" id="DqM-5v-BCl"/>
+                    <constraint firstItem="XvS-p7-0XK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="M2b-bx-5qV"/>
+                    <constraint firstItem="sRy-D4-8HU" firstAttribute="top" secondItem="XvS-p7-0XK" secondAttribute="bottom" constant="4" id="Nb5-Uq-G3W"/>
+                    <constraint firstItem="12t-qr-7En" firstAttribute="top" secondItem="sRy-D4-8HU" secondAttribute="bottom" constant="24" id="pNJ-wb-W7J"/>
+                    <constraint firstItem="XvS-p7-0XK" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="zTG-sj-kac"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="doneBtn" destination="12t-qr-7En" id="MmS-Oe-nnd"/>
+            </connections>
+            <point key="canvasLocation" x="-80" y="5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="HYTH_nodata" width="170" height="140"/>
+    </resources>
+</document>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YPBHProjectTwoBtnCell" id="KGk-i7-Jjw" customClass="YPBHProjectTwoBtnCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="170"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="169.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FuU-NB-Tbv">
+                        <rect key="frame" x="39" y="20" width="82" height="110"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="82" id="Jy4-E0-o47"/>
+                            <constraint firstAttribute="height" constant="110" id="NYN-9C-Y1F"/>
+                        </constraints>
+                        <state key="normal" title="我是新郎" image="man_01">
+                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <state key="selected" title="我是新郎" image="man_02">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFE-iP-zyd">
+                        <rect key="frame" x="198.5" y="20" width="82" height="110"/>
+                        <state key="normal" title="我是新娘" image="women_01">
+                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <state key="selected" title="我是新娘" image="women_02">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="FFE-iP-zyd" firstAttribute="height" secondItem="FuU-NB-Tbv" secondAttribute="height" id="F4C-uw-ZqT"/>
+                    <constraint firstItem="FuU-NB-Tbv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="OQU-I6-Z1Q"/>
+                    <constraint firstItem="FFE-iP-zyd" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="80" id="QFn-fa-ALt"/>
+                    <constraint firstItem="FFE-iP-zyd" firstAttribute="top" secondItem="FuU-NB-Tbv" secondAttribute="top" id="aKv-In-sof"/>
+                    <constraint firstItem="FFE-iP-zyd" firstAttribute="width" secondItem="FuU-NB-Tbv" secondAttribute="width" id="mGy-oS-ri2"/>
+                    <constraint firstItem="FuU-NB-Tbv" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-80" id="nT1-dg-b6N"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="manBtn" destination="FuU-NB-Tbv" id="SSq-Cj-LSr"/>
+                <outlet property="womanBtn" destination="FFE-iP-zyd" id="0vl-ep-qbP"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="man_01" width="80" height="80"/>
+        <image name="man_02" width="80" height="80"/>
+        <image name="women_01" width="80" height="80"/>
+        <image name="women_02" width="80" height="80"/>
+    </resources>
+</document>

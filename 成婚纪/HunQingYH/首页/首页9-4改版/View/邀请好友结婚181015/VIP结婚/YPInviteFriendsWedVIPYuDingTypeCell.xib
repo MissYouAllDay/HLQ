@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YPInviteFriendsWedVIPYuDingTypeCell" id="KGk-i7-Jjw" customClass="YPInviteFriendsWedVIPYuDingTypeCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="预定" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdy-XF-654">
+                        <rect key="frame" x="50" y="15" width="33" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qr7-ng-fOZ">
+                        <rect key="frame" x="101" y="14" width="59" height="22"/>
+                        <state key="normal" title="婚宴" image="inviteFriendsWed_unselect">
+                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </state>
+                        <state key="selected" image="inviteFriendsWed_select"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0X-Qt-UUI">
+                        <rect key="frame" x="172" y="14" width="59" height="22"/>
+                        <state key="normal" title="婚礼" image="inviteFriendsWed_unselect">
+                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </state>
+                        <state key="selected" image="inviteFriendsWed_select"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNZ-wl-awn">
+                        <rect key="frame" x="243" y="14" width="59" height="22"/>
+                        <state key="normal" title="其他" image="inviteFriendsWed_unselect">
+                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </state>
+                        <state key="selected" image="inviteFriendsWed_select"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Qr7-ng-fOZ" firstAttribute="centerY" secondItem="xdy-XF-654" secondAttribute="centerY" id="5TF-kp-BZh"/>
+                    <constraint firstAttribute="bottom" secondItem="xdy-XF-654" secondAttribute="bottom" constant="14.5" id="GyH-1a-4DU"/>
+                    <constraint firstItem="t0X-Qt-UUI" firstAttribute="leading" secondItem="Qr7-ng-fOZ" secondAttribute="trailing" constant="12" id="Qh5-ZS-tmx"/>
+                    <constraint firstItem="XNZ-wl-awn" firstAttribute="height" secondItem="Qr7-ng-fOZ" secondAttribute="height" id="TmO-wq-a9K"/>
+                    <constraint firstItem="t0X-Qt-UUI" firstAttribute="height" secondItem="Qr7-ng-fOZ" secondAttribute="height" id="XIZ-9S-dmK"/>
+                    <constraint firstAttribute="trailing" secondItem="XNZ-wl-awn" secondAttribute="trailing" constant="18" id="bA2-7t-GoS"/>
+                    <constraint firstItem="XNZ-wl-awn" firstAttribute="centerY" secondItem="xdy-XF-654" secondAttribute="centerY" id="d4i-G2-w4O"/>
+                    <constraint firstItem="XNZ-wl-awn" firstAttribute="width" secondItem="Qr7-ng-fOZ" secondAttribute="width" id="dvc-cX-gil"/>
+                    <constraint firstItem="xdy-XF-654" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="50" id="hoJ-eA-CLy"/>
+                    <constraint firstItem="xdy-XF-654" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="kWL-SG-QQz"/>
+                    <constraint firstItem="t0X-Qt-UUI" firstAttribute="centerY" secondItem="xdy-XF-654" secondAttribute="centerY" id="kqh-Y2-w8m"/>
+                    <constraint firstItem="Qr7-ng-fOZ" firstAttribute="leading" secondItem="xdy-XF-654" secondAttribute="trailing" constant="18" id="kva-ZJ-Mhd"/>
+                    <constraint firstItem="XNZ-wl-awn" firstAttribute="leading" secondItem="t0X-Qt-UUI" secondAttribute="trailing" constant="12" id="vZ4-dh-kwD"/>
+                    <constraint firstItem="t0X-Qt-UUI" firstAttribute="width" secondItem="Qr7-ng-fOZ" secondAttribute="width" id="zzA-3S-ARl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btn1" destination="Qr7-ng-fOZ" id="gEr-7p-phS"/>
+                <outlet property="btn2" destination="t0X-Qt-UUI" id="F4f-wb-mqh"/>
+                <outlet property="btn3" destination="XNZ-wl-awn" id="e9e-DW-V97"/>
+            </connections>
+            <point key="canvasLocation" x="-296" y="22"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="inviteFriendsWed_select" width="21" height="21"/>
+        <image name="inviteFriendsWed_unselect" width="21" height="21"/>
+    </resources>
+</document>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YPFreeWeddingTitleCell" id="KGk-i7-Jjw" customClass="YPFreeWeddingTitleCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="129.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="填写您的信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCy-Y0-gLg">
+                        <rect key="frame" x="25" y="40" width="194" height="38.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="填写常用的手机号, 让我们更亲密" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSK-lm-AET">
+                        <rect key="frame" x="25" y="93.5" width="252" height="20.5"/>
+                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="lSK-lm-AET" secondAttribute="bottom" constant="15.5" id="2eD-Hn-4CK"/>
+                    <constraint firstItem="lSK-lm-AET" firstAttribute="top" secondItem="CCy-Y0-gLg" secondAttribute="bottom" constant="15" id="5Fr-EH-utM"/>
+                    <constraint firstItem="lSK-lm-AET" firstAttribute="leading" secondItem="CCy-Y0-gLg" secondAttribute="leading" id="NwK-S7-hwZ"/>
+                    <constraint firstItem="CCy-Y0-gLg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="40" id="gRp-dt-Ssp"/>
+                    <constraint firstItem="CCy-Y0-gLg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="pEl-Dy-7xf"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="CCy-Y0-gLg" secondAttribute="bottom" constant="20" id="r9p-O8-GbT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descLabel" destination="lSK-lm-AET" id="SU4-Bo-DtP"/>
+                <outlet property="titleLabel" destination="CCy-Y0-gLg" id="op1-pu-TLv"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

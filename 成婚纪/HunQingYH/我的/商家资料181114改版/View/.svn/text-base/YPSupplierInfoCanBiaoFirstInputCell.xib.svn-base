@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YPSupplierInfoCanBiaoFirstInputCell" id="KGk-i7-Jjw" customClass="YPSupplierInfoCanBiaoFirstInputCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="54.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最低餐标" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fby-rb-vxs">
+                        <rect key="frame" x="18" y="18" width="62" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.0 ¥" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uOR-QK-OI7">
+                        <rect key="frame" x="104" y="18" width="168" height="18"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l3V-FP-AMN">
+                        <rect key="frame" x="282" y="17" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="WER-ap-47E"/>
+                            <constraint firstAttribute="width" constant="20" id="kVQ-ZR-ljX"/>
+                        </constraints>
+                        <state key="normal" image="canbiao_delete">
+                            <color key="titleColor" red="0.98039215686274506" green="0.31372549019607843" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Fby-rb-vxs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="BxE-v7-Gcd"/>
+                    <constraint firstAttribute="bottom" secondItem="Fby-rb-vxs" secondAttribute="bottom" constant="18.5" id="LCr-jB-Z9S"/>
+                    <constraint firstItem="Fby-rb-vxs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="MVG-52-RJ1"/>
+                    <constraint firstItem="uOR-QK-OI7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="104" id="PC6-Wj-Jh0"/>
+                    <constraint firstItem="uOR-QK-OI7" firstAttribute="centerY" secondItem="Fby-rb-vxs" secondAttribute="centerY" id="TVg-eI-XTD"/>
+                    <constraint firstAttribute="trailing" secondItem="l3V-FP-AMN" secondAttribute="trailing" constant="18" id="m23-0g-Sjd"/>
+                    <constraint firstItem="l3V-FP-AMN" firstAttribute="leading" secondItem="uOR-QK-OI7" secondAttribute="trailing" constant="10" id="ti1-QX-6Rh"/>
+                    <constraint firstItem="uOR-QK-OI7" firstAttribute="leading" secondItem="Fby-rb-vxs" secondAttribute="trailing" constant="24" id="w0C-gF-USc"/>
+                    <constraint firstItem="l3V-FP-AMN" firstAttribute="centerY" secondItem="Fby-rb-vxs" secondAttribute="centerY" id="yaG-2p-VIo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="deleteBtn" destination="l3V-FP-AMN" id="h8d-Mt-sel"/>
+                <outlet property="inputTF" destination="uOR-QK-OI7" id="7jO-3v-Tli"/>
+                <outlet property="nameLabel" destination="Fby-rb-vxs" id="QSp-9q-vqa"/>
+            </connections>
+            <point key="canvasLocation" x="40" y="46.326836581709152"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="canbiao_delete" width="16" height="16"/>
+    </resources>
+</document>

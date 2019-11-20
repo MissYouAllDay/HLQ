@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="YPBeiHunColViewCell" reuseIdentifier="YPBeiHunColViewCell" id="gTV-IL-0wX" customClass="YPBeiHunColViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="125" height="113"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="125" height="113"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AEO-aa-3zO">
+                        <rect key="frame" x="0.0" y="0.0" width="125" height="113"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="re_免费出方案" translatesAutoresizingMaskIntoConstraints="NO" id="niA-et-mKX">
+                                <rect key="frame" x="37" y="19" width="50" height="50"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我要出方案" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OqO-Pd-cWn">
+                                <rect key="frame" x="29.5" y="79" width="66.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.28235294117647058" green="0.28235294117647058" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="niA-et-mKX" firstAttribute="top" secondItem="AEO-aa-3zO" secondAttribute="top" constant="19" id="7Um-i1-6Ui"/>
+                            <constraint firstItem="OqO-Pd-cWn" firstAttribute="top" secondItem="niA-et-mKX" secondAttribute="bottom" constant="10" id="JSH-Sv-HoJ"/>
+                            <constraint firstItem="OqO-Pd-cWn" firstAttribute="centerX" secondItem="AEO-aa-3zO" secondAttribute="centerX" id="qdm-4W-b3b"/>
+                            <constraint firstItem="niA-et-mKX" firstAttribute="centerX" secondItem="AEO-aa-3zO" secondAttribute="centerX" id="zye-2M-G5h"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="AEO-aa-3zO" secondAttribute="bottom" id="Khq-BE-jeq"/>
+                <constraint firstAttribute="trailing" secondItem="AEO-aa-3zO" secondAttribute="trailing" id="L89-hm-iv1"/>
+                <constraint firstItem="AEO-aa-3zO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Zua-Va-D7G"/>
+                <constraint firstItem="AEO-aa-3zO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="eUp-2M-dOb"/>
+            </constraints>
+            <size key="customSize" width="125" height="139"/>
+            <connections>
+                <outlet property="iconImgV" destination="niA-et-mKX" id="xdN-cm-61h"/>
+                <outlet property="titleLabel" destination="OqO-Pd-cWn" id="uC2-S5-CYU"/>
+            </connections>
+            <point key="canvasLocation" x="-230.5" y="-101.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="re_免费出方案" width="50" height="50"/>
+    </resources>
+</document>

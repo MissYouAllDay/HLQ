@@ -1,0 +1,137 @@
+//
+//  GoodSepcificationItem.m
+//  loveSearch
+//
+//  Created by mac on 2019/2/28.
+//  Copyright © 2019 mac. All rights reserved.
+//
+
+#import "GoodSpecificationItem.h"
+
+@interface GoodSpecificationItem ()
+
+@property (nonatomic, assign) CGFloat itemHeight;
+
+@end
+
+@implementation GoodSpecificationItem
+- (instancetype)initWithFrame:(CGRect)frame {
+    
+    self = [super initWithFrame:frame];
+    if (self) {
+        _itemHeight = 26;
+        
+        self.textLabel = [[UILabel alloc] init];
+        self.textLabel.textAlignment =NSTextAlignmentCenter;
+        self.textLabel.backgroundColor = RGBS(242);
+        self.textLabel.font = kFont(14);
+        self.textLabel.layer.cornerRadius = _itemHeight/2;
+        self.textLabel.layer.masksToBounds = YES;
+        [self.contentView addSubview:self.textLabel];
+        [self.contentView addSubview:self.deleteBtn];
+        
+        [self.textLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            
+            make.top.equalTo(self.contentView).with.offset(0);
+            make.left.equalTo(self.contentView).with.offset(0);
+            make.bottom.equalTo(self.contentView).with.offset(0);
+            make.right.equalTo(self.contentView).with.offset(0);
+        }];
+        [self.deleteBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            
+            make.top.equalTo(self.contentView).with.offset(0);
+            make.right.equalTo(self.contentView).with.offset(0);
+            make.height.mas_equalTo(@20);
+            make.width.mas_equalTo(@20);
+        }];
+    }
+    return self;
+}
+
+//默认 item
+- (void)nomalItem:(NSString *)name {
+    self.textLabel.text = name;
+    self.textLabel.backgroundColor = RGBS(242);
+    self.textLabel.textColor = RGBS(51);
+    self.deleteBtn.hidden = YES;
+}
+
+// 添加 item
+- (void)addItem:(NSString *)name {
+    self.textLabel.text = name;
+    self.textLabel.backgroundColor = RGBS(242);
+    self.textLabel.textColor = RGB(255,102,51);
+    self.deleteBtn.hidden = YES;
+}
+
+//选中 item
+- (void)goodSelectItem:(NSString *)name {
+    
+    self.textLabel.text = name;
+    self.textLabel.backgroundColor =RGB(255,102,51);
+    self.textLabel.textColor = [UIColor whiteColor];
+    self.deleteBtn.hidden = YES;
+}
+
+//删除 item
+- (void)goodDeleteItem:(NSString *)name {
+
+    [self nomalItem:name];
+    self.deleteBtn.hidden = NO;
+    if ([name isEqualToString:@"添加"]) {
+        
+        self.deleteBtn.hidden = YES;
+    }
+}
+
+- (UIButton *)deleteBtn {
+    
+    if (!_deleteBtn) {
+        _deleteBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_deleteBtn setImage:[UIImage imageNamed:@"spe_close"] forState:UIControlStateNormal];
+        _deleteBtn.hidden = YES;
+    }
+    return _deleteBtn;
+}
+
+
+#pragma mark - - - - - - - - - - - - -   服务商 - - - - - - - - - - - - - - -
+- (void)FWSItem:(NSString *)name {
+    
+    self.backgroundColor = [UIColor clearColor];
+    self.textLabel.layer.cornerRadius = 5;
+    self.textLabel.clipsToBounds = YES;
+    self.textLabel.backgroundColor = RGBS(242);
+    self.textLabel.layer.borderColor = [UIColor clearColor].CGColor;
+    self.textLabel.textColor = RGB(253,160,29);
+    self.textLabel.font = kFont(12);
+    self.textLabel.text = name;
+    self.backgroundColor = [UIColor clearColor];
+}
+
+#pragma mark - - - - - - - - - - - - -   c店铺详情 画选择规格 - - - - - - - - - - - - - - -
+- (void)goodSpeDefa:(NSString *)name {
+    
+    self.textLabel.layer.cornerRadius = 4;
+    self.textLabel.layer.masksToBounds = YES;
+    self.textLabel.layer.borderWidth = 0.5;
+    self.textLabel.layer.borderColor = LineColor.CGColor;
+    
+    self.textLabel.text = name;
+    self.textLabel.backgroundColor = [UIColor whiteColor];
+    self.textLabel.font = kFont(12);
+}
+
+- (void)goodSpeSelect:(NSString *)name {
+    
+    self.textLabel.layer.cornerRadius = 4;
+    self.textLabel.layer.masksToBounds = YES;
+    self.textLabel.layer.borderWidth = 0.5;
+    self.textLabel.layer.borderColor = RGB(236,98,45).CGColor;
+    
+    self.textLabel.text = name;
+    self.textLabel.backgroundColor = RGB(249,208,192);
+    self.textLabel.font = kFont(12);
+}
+
+@end

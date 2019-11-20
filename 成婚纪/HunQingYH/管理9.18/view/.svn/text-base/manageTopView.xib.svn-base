@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="manageTopView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3sa-fl-Il1">
+                    <rect key="frame" x="195" y="57" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="bsM-hU-4In"/>
+                        <constraint firstAttribute="height" constant="24" id="gSu-Bn-rKB"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="danjian"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5VE-vj-eiu">
+                    <rect key="frame" x="345" y="57" width="24" height="24"/>
+                    <state key="normal" image="jiudian" backgroundImage="danjian"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dd3-vg-eCo">
+                    <rect key="frame" x="45" y="57" width="24" height="24"/>
+                    <state key="normal" image="yanhuiting" backgroundImage="danjian"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="单间预订" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DbY-Vk-VqC">
+                    <rect key="frame" x="182.5" y="91" width="49.5" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="宴会厅预定" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oav-eM-2qL">
+                    <rect key="frame" x="26" y="91" width="62" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="酒店管理" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="THJ-zR-AKG">
+                    <rect key="frame" x="332" y="91" width="50" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3sa-fl-Il1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="7H7-AZ-GQS"/>
+                <constraint firstItem="5VE-vj-eiu" firstAttribute="centerY" secondItem="3sa-fl-Il1" secondAttribute="centerY" id="8IY-Ug-e85"/>
+                <constraint firstItem="THJ-zR-AKG" firstAttribute="centerX" secondItem="5VE-vj-eiu" secondAttribute="centerX" id="A4V-vO-15s"/>
+                <constraint firstItem="5VE-vj-eiu" firstAttribute="width" secondItem="3sa-fl-Il1" secondAttribute="width" id="C95-Hq-l4p"/>
+                <constraint firstItem="THJ-zR-AKG" firstAttribute="centerY" secondItem="DbY-Vk-VqC" secondAttribute="centerY" id="FdY-CR-oyo"/>
+                <constraint firstItem="dd3-vg-eCo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="45" id="NOy-wE-0HW"/>
+                <constraint firstItem="dd3-vg-eCo" firstAttribute="width" secondItem="3sa-fl-Il1" secondAttribute="width" id="OaZ-h3-fVu"/>
+                <constraint firstItem="Oav-eM-2qL" firstAttribute="centerY" secondItem="DbY-Vk-VqC" secondAttribute="centerY" id="PUW-V8-Dln"/>
+                <constraint firstItem="DbY-Vk-VqC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="SDU-E6-CFV"/>
+                <constraint firstItem="3sa-fl-Il1" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="WbZ-qZ-bAR"/>
+                <constraint firstItem="5VE-vj-eiu" firstAttribute="height" secondItem="3sa-fl-Il1" secondAttribute="height" id="Wcf-vC-AxQ"/>
+                <constraint firstItem="DbY-Vk-VqC" firstAttribute="top" secondItem="3sa-fl-Il1" secondAttribute="bottom" constant="10" id="k9o-zA-e8R"/>
+                <constraint firstItem="Oav-eM-2qL" firstAttribute="centerX" secondItem="dd3-vg-eCo" secondAttribute="centerX" id="lcP-zp-aHe"/>
+                <constraint firstAttribute="trailing" secondItem="5VE-vj-eiu" secondAttribute="trailing" constant="45" id="qG9-SN-5Iz"/>
+                <constraint firstItem="dd3-vg-eCo" firstAttribute="height" secondItem="3sa-fl-Il1" secondAttribute="height" id="qa9-Ox-8o3"/>
+                <constraint firstItem="dd3-vg-eCo" firstAttribute="centerY" secondItem="3sa-fl-Il1" secondAttribute="centerY" id="uCX-Li-DvT"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="danjianbtn" destination="3sa-fl-Il1" id="rNj-dU-plQ"/>
+                <outlet property="jiudianBtn" destination="5VE-vj-eiu" id="er2-36-tqj"/>
+                <outlet property="yanhuitingbtn" destination="dd3-vg-eCo" id="fYT-1O-vdG"/>
+            </connections>
+            <point key="canvasLocation" x="89.855072463768124" y="-218.30357142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="danjian" width="24" height="24"/>
+        <image name="jiudian" width="24" height="24"/>
+        <image name="yanhuiting" width="24" height="24"/>
+    </resources>
+</document>

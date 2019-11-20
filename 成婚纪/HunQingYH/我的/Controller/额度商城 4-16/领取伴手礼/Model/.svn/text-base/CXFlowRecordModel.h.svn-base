@@ -1,0 +1,67 @@
+//
+//  CXFlowRecordModel.h
+//  HunQingYH
+//
+//  Created by apple on 2019/9/23.
+//  Copyright © 2019 YanpengLee. All rights reserved.
+//
+// - - - - - - - - - - - - - - - - - - 商户提交伴手礼资料 - - - - - - - - - - - - - - - - - -
+
+#import <Foundation/Foundation.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface CXFlowRecordModel : NSObject
+
+/** 服务商Id */
+@property (nonatomic, copy) NSString *FacilitatorId;
+/** 支付类型    0线上,1线下 */
+@property (nonatomic, copy) NSString *PaymentType;
+/** 支付金额 */
+@property (nonatomic, copy) NSString *Money;
+/** 用户手机号 */
+@property (nonatomic, copy) NSString *Phone;
+/** 用户姓名 */
+@property (nonatomic, copy) NSString *UserName;
+/** 婚礼日期 */
+@property (nonatomic, copy) NSString *WeddingDate;
+/** 备注   固定 首款 再款 尾款 全款  *//** 备注。  （用户提交伴手礼申请时此处意义为：意向酒店） */
+@property (nonatomic, copy) NSString *Meno;
+/** 接单人id */
+@property (nonatomic, copy) NSString *SinglePersonUserId;
+/** 餐标 */
+@property (nonatomic, copy) NSString *MealMark;
+/** 桌数 */
+@property (nonatomic, copy) NSString *TablesNumber;
+
+
+/**
+ 检查输入信息的准确性
+
+ @param model 数据
+ @return 是否输入符合后台参数传值
+ */
++ (BOOL)checkoutData:(CXFlowRecordModel *)model;
+
+/** 用户提交伴手礼申请时使用。 用户的useid */
+@property (nonatomic, copy) NSString *IdentityId;
+/**
+ 检查输入信息的准确性
+ 
+ @param model 数据
+ @return 是否输入符合后台参数传值
+ */
++ (BOOL)checkouUserSubData:(CXFlowRecordModel *)model;
+
+/**
+ 将输入数据转换为后台所需数据
+
+ @param model 数据
+ @return 后台所需参数。
+ */
++ (NSDictionary *)changeInputInfoToSubData:(CXFlowRecordModel *)model ;
+
+
+@end
+
+NS_ASSUME_NONNULL_END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/DKSoft/!svn/ver/5642/IOS/HunQingYH/HunQingYH/ThirdPart/manager-third/CWLateralSlide
+END
+CWDrawerTransition.h
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/DKSoft/!svn/ver/5642/IOS/HunQingYH/HunQingYH/ThirdPart/manager-third/CWLateralSlide/CWDrawerTransition.h
+END
+CWLateralSlideAnimator.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/DKSoft/!svn/ver/5642/IOS/HunQingYH/HunQingYH/ThirdPart/manager-third/CWLateralSlide/CWLateralSlideAnimator.h
+END
+CWLateralSlideConfiguration.m
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/DKSoft/!svn/ver/5642/IOS/HunQingYH/HunQingYH/ThirdPart/manager-third/CWLateralSlide/CWLateralSlideConfiguration.m
+END
+UIViewController+CWLateralSlide.m
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/DKSoft/!svn/ver/5642/IOS/HunQingYH/HunQingYH/ThirdPart/manager-third/CWLateralSlide/UIViewController+CWLateralSlide.m
+END
+CWDrawerTransition.m
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/DKSoft/!svn/ver/5642/IOS/HunQingYH/HunQingYH/ThirdPart/manager-third/CWLateralSlide/CWDrawerTransition.m
+END
+CWLateralSlideAnimator.m
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/DKSoft/!svn/ver/5642/IOS/HunQingYH/HunQingYH/ThirdPart/manager-third/CWLateralSlide/CWLateralSlideAnimator.m
+END
+CWInteractiveTransition.h
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/DKSoft/!svn/ver/5642/IOS/HunQingYH/HunQingYH/ThirdPart/manager-third/CWLateralSlide/CWInteractiveTransition.h
+END
+CWInteractiveTransition.m
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/DKSoft/!svn/ver/5642/IOS/HunQingYH/HunQingYH/ThirdPart/manager-third/CWLateralSlide/CWInteractiveTransition.m
+END
+CWLateralSlideConfiguration.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/DKSoft/!svn/ver/5642/IOS/HunQingYH/HunQingYH/ThirdPart/manager-third/CWLateralSlide/CWLateralSlideConfiguration.h
+END
+UIViewController+CWLateralSlide.h
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/DKSoft/!svn/ver/5642/IOS/HunQingYH/HunQingYH/ThirdPart/manager-third/CWLateralSlide/UIViewController+CWLateralSlide.h
+END

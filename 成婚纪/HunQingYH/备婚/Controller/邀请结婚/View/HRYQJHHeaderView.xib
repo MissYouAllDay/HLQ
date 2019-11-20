@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="HRYQJHHeaderView" id="iN0-l3-epB" customClass="HRYQJHHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="306"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="邀请新人办婚礼，豪礼赚不停！" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Na5-Th-lZA">
+                    <rect key="frame" x="15" y="20" width="345" height="62.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="你赚：每邀请1位好友赚100元现金, 可提现，邀多赚多！" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHl-8W-9aM">
+                    <rect key="frame" x="16" y="92.5" width="220" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="220" id="LdM-pV-Qk8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TA赚：新人婚礼花多少返多少，连续5年均再赚2888元豪礼！" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pna-4s-P19">
+                    <rect key="frame" x="15" y="153.5" width="231" height="61"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="231" id="Jid-Tf-l7H"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djm-JI-72n">
+                    <rect key="frame" x="10" y="239.5" width="120" height="50"/>
+                    <color key="backgroundColor" red="0.98084133863449097" green="0.18443003296852112" blue="0.44195270538330078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="Lc3-TF-M6g"/>
+                        <constraint firstAttribute="height" constant="50" id="oO8-nY-RtA"/>
+                    </constraints>
+                    <state key="normal" title="立即邀请"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9T-UA-ZqB">
+                    <rect key="frame" x="180" y="239.5" width="120" height="50"/>
+                    <state key="normal" title="分享给好友">
+                        <color key="titleColor" red="0.97919028997421265" green="0.18349924683570862" blue="0.44483157992362976" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uHl-8W-9aM" firstAttribute="top" secondItem="Na5-Th-lZA" secondAttribute="bottom" constant="10" id="8HI-F4-P2R"/>
+                <constraint firstItem="uHl-8W-9aM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="F3P-aU-JOa"/>
+                <constraint firstItem="G9T-UA-ZqB" firstAttribute="height" secondItem="djm-JI-72n" secondAttribute="height" id="GCP-AF-aao"/>
+                <constraint firstAttribute="bottom" secondItem="djm-JI-72n" secondAttribute="bottom" constant="16.5" id="IJX-Sg-94z"/>
+                <constraint firstItem="djm-JI-72n" firstAttribute="top" secondItem="pna-4s-P19" secondAttribute="bottom" constant="25" id="LMG-BY-m06"/>
+                <constraint firstItem="G9T-UA-ZqB" firstAttribute="leading" secondItem="djm-JI-72n" secondAttribute="trailing" constant="50" id="UnY-Us-N72"/>
+                <constraint firstItem="pna-4s-P19" firstAttribute="top" secondItem="uHl-8W-9aM" secondAttribute="bottom" constant="20" id="Vul-Dd-QBx"/>
+                <constraint firstItem="djm-JI-72n" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="alN-Ix-4yk"/>
+                <constraint firstAttribute="trailing" secondItem="Na5-Th-lZA" secondAttribute="trailing" constant="15" id="eLt-8b-aXx"/>
+                <constraint firstItem="pna-4s-P19" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="gDl-gX-qM5"/>
+                <constraint firstItem="Na5-Th-lZA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="mnh-LD-hsI"/>
+                <constraint firstItem="Na5-Th-lZA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="r0W-ix-os1"/>
+                <constraint firstItem="G9T-UA-ZqB" firstAttribute="centerY" secondItem="djm-JI-72n" secondAttribute="centerY" id="wG5-8q-Dj2"/>
+                <constraint firstItem="G9T-UA-ZqB" firstAttribute="width" secondItem="djm-JI-72n" secondAttribute="width" id="xhu-0X-QNo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="fenxiangBtn" destination="G9T-UA-ZqB" id="Hwg-GP-yoe"/>
+                <outlet property="titleLabel" destination="Na5-Th-lZA" id="lLo-IR-zay"/>
+                <outlet property="yaoqingBtn" destination="djm-JI-72n" id="Rn8-Fl-NFT"/>
+            </connections>
+            <point key="canvasLocation" x="170" y="-302"/>
+        </view>
+    </objects>
+</document>

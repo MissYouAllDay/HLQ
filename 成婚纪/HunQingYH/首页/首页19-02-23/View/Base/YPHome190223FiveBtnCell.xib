@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YPHome190223FiveBtnCell" rowHeight="94" id="KGk-i7-Jjw" customClass="YPHome190223FiveBtnCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="93.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home190223_hunlicehua" translatesAutoresizingMaskIntoConstraints="NO" id="bQL-eV-Zzt">
+                        <rect key="frame" x="18" y="10" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="bQL-eV-Zzt" secondAttribute="height" multiplier="1:1" id="dw8-aH-m6H"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="婚礼策划" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g17-Pa-wZM">
+                        <rect key="frame" x="18" y="62" width="45" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home190223_dinghunyan" translatesAutoresizingMaskIntoConstraints="NO" id="kBK-Ky-Ds0">
+                        <rect key="frame" x="78" y="10" width="44.5" height="45"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订婚宴" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qmt-pN-77S">
+                        <rect key="frame" x="78" y="62" width="44.5" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home190223_hunlixiu" translatesAutoresizingMaskIntoConstraints="NO" id="j1y-N5-cyB">
+                        <rect key="frame" x="137.5" y="10" width="45" height="45"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="婚礼秀" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMx-8f-h2J">
+                        <rect key="frame" x="137.5" y="62" width="45" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home190223_beihun" translatesAutoresizingMaskIntoConstraints="NO" id="68c-6V-WLs">
+                        <rect key="frame" x="197.5" y="10" width="44.5" height="45"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="备婚指南" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRC-Sb-zC2">
+                        <rect key="frame" x="197.5" y="62" width="44.5" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home190223_zhaoshangjia" translatesAutoresizingMaskIntoConstraints="NO" id="w1x-1M-2iq">
+                        <rect key="frame" x="257" y="10" width="45" height="45"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="找商家" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fj7-5h-wvO">
+                        <rect key="frame" x="257" y="62" width="45" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mf-0d-7HA">
+                        <rect key="frame" x="78" y="10" width="44.5" height="67"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mMG-Z4-c54">
+                        <rect key="frame" x="137.5" y="10" width="45" height="67"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzL-Al-bcE">
+                        <rect key="frame" x="197.5" y="10" width="44.5" height="67"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZp-Yq-FVk">
+                        <rect key="frame" x="257" y="10" width="45" height="67"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="j1y-N5-cyB" firstAttribute="top" secondItem="bQL-eV-Zzt" secondAttribute="top" id="1wE-ho-D98"/>
+                    <constraint firstItem="w1x-1M-2iq" firstAttribute="height" secondItem="bQL-eV-Zzt" secondAttribute="height" id="3eo-lO-Zff"/>
+                    <constraint firstItem="Qmt-pN-77S" firstAttribute="leading" secondItem="kBK-Ky-Ds0" secondAttribute="leading" id="3w0-9P-kmO"/>
+                    <constraint firstItem="j1y-N5-cyB" firstAttribute="leading" secondItem="kBK-Ky-Ds0" secondAttribute="trailing" constant="15" id="5Lb-hv-gge"/>
+                    <constraint firstItem="NRC-Sb-zC2" firstAttribute="centerX" secondItem="68c-6V-WLs" secondAttribute="centerX" id="5MC-ia-99C"/>
+                    <constraint firstItem="kBK-Ky-Ds0" firstAttribute="top" secondItem="bQL-eV-Zzt" secondAttribute="top" id="807-0e-Rj4"/>
+                    <constraint firstItem="kBK-Ky-Ds0" firstAttribute="leading" secondItem="1mf-0d-7HA" secondAttribute="leading" id="8eS-mG-mcJ"/>
+                    <constraint firstItem="NRC-Sb-zC2" firstAttribute="bottom" secondItem="jzL-Al-bcE" secondAttribute="bottom" id="8id-6M-bzz"/>
+                    <constraint firstItem="g17-Pa-wZM" firstAttribute="top" secondItem="bQL-eV-Zzt" secondAttribute="bottom" constant="7" id="AKK-TJ-Ic9"/>
+                    <constraint firstItem="Fj7-5h-wvO" firstAttribute="top" secondItem="w1x-1M-2iq" secondAttribute="bottom" constant="7" id="BDj-p8-y0d"/>
+                    <constraint firstItem="w1x-1M-2iq" firstAttribute="top" secondItem="bQL-eV-Zzt" secondAttribute="top" id="Bnv-A6-gOD"/>
+                    <constraint firstItem="AMx-8f-h2J" firstAttribute="leading" secondItem="j1y-N5-cyB" secondAttribute="leading" id="DTn-xL-zMA"/>
+                    <constraint firstItem="NRC-Sb-zC2" firstAttribute="trailing" secondItem="68c-6V-WLs" secondAttribute="trailing" id="DmZ-fc-xE8"/>
+                    <constraint firstItem="w1x-1M-2iq" firstAttribute="leading" secondItem="68c-6V-WLs" secondAttribute="trailing" constant="15" id="Fei-Zm-IvH"/>
+                    <constraint firstItem="68c-6V-WLs" firstAttribute="leading" secondItem="j1y-N5-cyB" secondAttribute="trailing" constant="15" id="GCA-q1-OWv"/>
+                    <constraint firstItem="Qmt-pN-77S" firstAttribute="trailing" secondItem="kBK-Ky-Ds0" secondAttribute="trailing" id="Gl1-w3-RDO"/>
+                    <constraint firstItem="AMx-8f-h2J" firstAttribute="centerX" secondItem="j1y-N5-cyB" secondAttribute="centerX" id="IF1-U4-CF8"/>
+                    <constraint firstItem="w1x-1M-2iq" firstAttribute="width" secondItem="bQL-eV-Zzt" secondAttribute="width" id="JK2-wF-LYn"/>
+                    <constraint firstItem="kBK-Ky-Ds0" firstAttribute="leading" secondItem="bQL-eV-Zzt" secondAttribute="trailing" constant="15" id="JZo-mR-4OY"/>
+                    <constraint firstItem="68c-6V-WLs" firstAttribute="trailing" secondItem="jzL-Al-bcE" secondAttribute="trailing" id="LOz-w2-epZ"/>
+                    <constraint firstItem="w1x-1M-2iq" firstAttribute="trailing" secondItem="uZp-Yq-FVk" secondAttribute="trailing" id="M5M-fw-OkV"/>
+                    <constraint firstItem="j1y-N5-cyB" firstAttribute="height" secondItem="bQL-eV-Zzt" secondAttribute="height" id="MZg-SK-IWf"/>
+                    <constraint firstItem="g17-Pa-wZM" firstAttribute="leading" secondItem="bQL-eV-Zzt" secondAttribute="leading" id="MjS-M8-wUF"/>
+                    <constraint firstItem="mMG-Z4-c54" firstAttribute="trailing" secondItem="j1y-N5-cyB" secondAttribute="trailing" id="NeP-0D-gM1"/>
+                    <constraint firstItem="Qmt-pN-77S" firstAttribute="bottom" secondItem="1mf-0d-7HA" secondAttribute="bottom" id="ONM-Ko-fPj"/>
+                    <constraint firstItem="Fj7-5h-wvO" firstAttribute="leading" secondItem="w1x-1M-2iq" secondAttribute="leading" id="Odg-nt-Gko"/>
+                    <constraint firstItem="bQL-eV-Zzt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="TV7-41-Se2"/>
+                    <constraint firstItem="mMG-Z4-c54" firstAttribute="leading" secondItem="j1y-N5-cyB" secondAttribute="leading" id="Trd-eM-6BI"/>
+                    <constraint firstAttribute="trailing" secondItem="w1x-1M-2iq" secondAttribute="trailing" constant="18" id="UG1-UN-W15"/>
+                    <constraint firstItem="Qmt-pN-77S" firstAttribute="centerX" secondItem="kBK-Ky-Ds0" secondAttribute="centerX" id="UGI-jw-J4E"/>
+                    <constraint firstItem="68c-6V-WLs" firstAttribute="height" secondItem="bQL-eV-Zzt" secondAttribute="height" id="Uai-CP-3zf"/>
+                    <constraint firstItem="68c-6V-WLs" firstAttribute="leading" secondItem="jzL-Al-bcE" secondAttribute="leading" id="Y0q-c7-rKt"/>
+                    <constraint firstItem="Fj7-5h-wvO" firstAttribute="centerX" secondItem="w1x-1M-2iq" secondAttribute="centerX" id="YlO-OK-Noa"/>
+                    <constraint firstItem="AMx-8f-h2J" firstAttribute="trailing" secondItem="j1y-N5-cyB" secondAttribute="trailing" id="azz-5M-5bw"/>
+                    <constraint firstItem="g17-Pa-wZM" firstAttribute="trailing" secondItem="bQL-eV-Zzt" secondAttribute="trailing" id="cFG-W6-Yi6"/>
+                    <constraint firstItem="w1x-1M-2iq" firstAttribute="leading" secondItem="uZp-Yq-FVk" secondAttribute="leading" id="d0y-4r-j3J"/>
+                    <constraint firstItem="g17-Pa-wZM" firstAttribute="centerX" secondItem="bQL-eV-Zzt" secondAttribute="centerX" id="dFP-rL-2db"/>
+                    <constraint firstItem="68c-6V-WLs" firstAttribute="top" secondItem="jzL-Al-bcE" secondAttribute="top" id="e7j-JV-ARG"/>
+                    <constraint firstItem="kBK-Ky-Ds0" firstAttribute="height" secondItem="bQL-eV-Zzt" secondAttribute="height" id="eaq-I3-JyB"/>
+                    <constraint firstItem="mMG-Z4-c54" firstAttribute="top" secondItem="j1y-N5-cyB" secondAttribute="top" id="gVd-Xl-Rsr"/>
+                    <constraint firstItem="Qmt-pN-77S" firstAttribute="top" secondItem="kBK-Ky-Ds0" secondAttribute="bottom" constant="7" id="gx6-k8-ym8"/>
+                    <constraint firstItem="w1x-1M-2iq" firstAttribute="top" secondItem="uZp-Yq-FVk" secondAttribute="top" id="h9v-um-k5e"/>
+                    <constraint firstItem="NRC-Sb-zC2" firstAttribute="top" secondItem="68c-6V-WLs" secondAttribute="bottom" constant="7" id="hGa-TB-a6n"/>
+                    <constraint firstItem="kBK-Ky-Ds0" firstAttribute="top" secondItem="1mf-0d-7HA" secondAttribute="top" id="kVc-AT-QsO"/>
+                    <constraint firstItem="NRC-Sb-zC2" firstAttribute="leading" secondItem="68c-6V-WLs" secondAttribute="leading" id="m1Y-Xp-pKF"/>
+                    <constraint firstItem="AMx-8f-h2J" firstAttribute="bottom" secondItem="mMG-Z4-c54" secondAttribute="bottom" id="muz-jX-1mm"/>
+                    <constraint firstItem="kBK-Ky-Ds0" firstAttribute="trailing" secondItem="1mf-0d-7HA" secondAttribute="trailing" id="nty-wv-QJK"/>
+                    <constraint firstItem="68c-6V-WLs" firstAttribute="width" secondItem="bQL-eV-Zzt" secondAttribute="width" id="nwF-GM-w93"/>
+                    <constraint firstItem="68c-6V-WLs" firstAttribute="top" secondItem="bQL-eV-Zzt" secondAttribute="top" id="pNw-bd-5Sg"/>
+                    <constraint firstItem="j1y-N5-cyB" firstAttribute="width" secondItem="bQL-eV-Zzt" secondAttribute="width" id="pbD-wS-69c"/>
+                    <constraint firstAttribute="bottom" secondItem="g17-Pa-wZM" secondAttribute="bottom" constant="16.5" id="txE-9F-YGi"/>
+                    <constraint firstItem="kBK-Ky-Ds0" firstAttribute="width" secondItem="bQL-eV-Zzt" secondAttribute="width" id="u1f-d4-yCS"/>
+                    <constraint firstItem="bQL-eV-Zzt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="xfH-Ly-lg1"/>
+                    <constraint firstItem="Fj7-5h-wvO" firstAttribute="bottom" secondItem="uZp-Yq-FVk" secondAttribute="bottom" id="yDt-EK-XrT"/>
+                    <constraint firstItem="AMx-8f-h2J" firstAttribute="top" secondItem="j1y-N5-cyB" secondAttribute="bottom" constant="7" id="zJP-8c-nQT"/>
+                    <constraint firstItem="Fj7-5h-wvO" firstAttribute="trailing" secondItem="w1x-1M-2iq" secondAttribute="trailing" id="zfB-aR-HBl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="beihun" destination="NRC-Sb-zC2" id="QBz-Xc-q7w"/>
+                <outlet property="beihunImgV" destination="68c-6V-WLs" id="5LZ-UE-IAZ"/>
+                <outlet property="cehua" destination="g17-Pa-wZM" id="sqX-pm-YIV"/>
+                <outlet property="cehuaImgV" destination="bQL-eV-Zzt" id="iLM-VU-4eH"/>
+                <outlet property="dinghunyan" destination="Qmt-pN-77S" id="ZPN-yj-AsE"/>
+                <outlet property="dinghunyanBtn" destination="1mf-0d-7HA" id="lfD-Fm-sev"/>
+                <outlet property="dinghunyanImgV" destination="kBK-Ky-Ds0" id="HOU-HC-DcC"/>
+                <outlet property="hunlixiu" destination="AMx-8f-h2J" id="lSD-ZS-l17"/>
+                <outlet property="hunlixiuImgV" destination="j1y-N5-cyB" id="RVE-wM-aDw"/>
+                <outlet property="zhaoshangjia" destination="Fj7-5h-wvO" id="sZQ-Ej-prT"/>
+                <outlet property="zhaoshangjiaImgV" destination="w1x-1M-2iq" id="PLr-1T-iHj"/>
+            </connections>
+            <point key="canvasLocation" x="-10" y="-32"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YPHome190223FiveBtnCell" rowHeight="94" id="riV-QX-yFD" customClass="YPHome190223FiveBtnCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="riV-QX-yFD" id="ZNY-hu-I9q">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="93.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eFW-jr-srF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="93.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="eFW-jr-srF" secondAttribute="bottom" id="2YT-7R-hNs"/>
+                    <constraint firstItem="eFW-jr-srF" firstAttribute="top" secondItem="ZNY-hu-I9q" secondAttribute="top" id="Olo-JU-JlG"/>
+                    <constraint firstItem="eFW-jr-srF" firstAttribute="leading" secondItem="ZNY-hu-I9q" secondAttribute="leading" id="U5g-E1-ZJB"/>
+                    <constraint firstAttribute="trailing" secondItem="eFW-jr-srF" secondAttribute="trailing" id="tTP-DY-UgA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bgView" destination="eFW-jr-srF" id="5vM-AS-r9M"/>
+            </connections>
+            <point key="canvasLocation" x="-11.199999999999999" y="91.754122938530742"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="home190223_beihun" width="46" height="46"/>
+        <image name="home190223_dinghunyan" width="46" height="46"/>
+        <image name="home190223_hunlicehua" width="46" height="46"/>
+        <image name="home190223_hunlixiu" width="46" height="46"/>
+        <image name="home190223_zhaoshangjia" width="46" height="46"/>
+    </resources>
+</document>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YPHYTHDetailSubmitOrderTingCell" id="KGk-i7-Jjw" customClass="YPHYTHDetailSubmitOrderTingCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWr-cs-sIy">
+                        <rect key="frame" x="18" y="18" width="51" height="24"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前为06月的餐标" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6X6-FZ-dfL">
+                        <rect key="frame" x="18" y="60" width="143" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FbT-LD-fYd">
+                        <rect key="frame" x="213" y="26" width="8" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.98039215690000003" green="0.31372549020000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2588" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ywi-61-D5B">
+                        <rect key="frame" x="224" y="19.5" width="46" height="21.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                        <color key="textColor" red="0.98039215690000003" green="0.31372549020000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/桌起" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5On-QB-u67">
+                        <rect key="frame" x="273" y="26" width="29" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTh-bQ-ISQ">
+                        <rect key="frame" x="232" y="56" width="70" height="29"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="餐标详情 &gt;">
+                            <color key="titleColor" red="0.85490196080000003" green="0.70980392160000005" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UTh-bQ-ISQ" firstAttribute="centerY" secondItem="6X6-FZ-dfL" secondAttribute="centerY" id="3d3-uO-TGW"/>
+                    <constraint firstItem="Ywi-61-D5B" firstAttribute="centerY" secondItem="vWr-cs-sIy" secondAttribute="centerY" id="5xn-XA-0SH"/>
+                    <constraint firstAttribute="trailing" secondItem="5On-QB-u67" secondAttribute="trailing" constant="18" id="6a9-nm-4cZ"/>
+                    <constraint firstItem="FbT-LD-fYd" firstAttribute="bottom" secondItem="Ywi-61-D5B" secondAttribute="bottom" id="8Pj-I6-74P"/>
+                    <constraint firstItem="vWr-cs-sIy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="AOl-84-9q1"/>
+                    <constraint firstItem="vWr-cs-sIy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="PIP-zK-K1B"/>
+                    <constraint firstItem="5On-QB-u67" firstAttribute="leading" secondItem="Ywi-61-D5B" secondAttribute="trailing" constant="3" id="SOL-Sp-gys"/>
+                    <constraint firstItem="6X6-FZ-dfL" firstAttribute="top" secondItem="vWr-cs-sIy" secondAttribute="bottom" constant="18" id="Uxz-r2-T0w"/>
+                    <constraint firstItem="FbT-LD-fYd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vWr-cs-sIy" secondAttribute="trailing" constant="10" id="Yam-nJ-wvo"/>
+                    <constraint firstItem="5On-QB-u67" firstAttribute="bottom" secondItem="Ywi-61-D5B" secondAttribute="bottom" id="cyl-Fu-9qi"/>
+                    <constraint firstItem="Ywi-61-D5B" firstAttribute="leading" secondItem="FbT-LD-fYd" secondAttribute="trailing" constant="3" id="kKz-ug-zfZ"/>
+                    <constraint firstAttribute="trailing" secondItem="UTh-bQ-ISQ" secondAttribute="trailing" constant="18" id="mDg-gL-hkg"/>
+                    <constraint firstItem="6X6-FZ-dfL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="nW5-qH-dwr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="detailBtn" destination="UTh-bQ-ISQ" id="84b-SB-JOJ"/>
+                <outlet property="monthLabel" destination="6X6-FZ-dfL" id="u3J-aC-pyu"/>
+                <outlet property="priceLabel" destination="Ywi-61-D5B" id="2yX-e2-RT8"/>
+                <outlet property="titleLabel" destination="vWr-cs-sIy" id="TbF-HP-qNj"/>
+            </connections>
+            <point key="canvasLocation" x="136" y="161"/>
+        </tableViewCell>
+    </objects>
+</document>

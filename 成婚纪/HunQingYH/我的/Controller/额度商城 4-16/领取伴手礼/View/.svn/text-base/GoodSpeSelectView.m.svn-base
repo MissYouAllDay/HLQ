@@ -1,0 +1,257 @@
+//
+//  GoodSpeSelectView.m
+//  loveSearch
+//
+//  Created by mac on 2019/3/4.
+//  Copyright © 2019 mac. All rights reserved.
+//
+// - - - - - - - - - - - - - - - - - - 此文件后期做优化修改 - - - - - - - - - - - - - - - - - -
+
+#import "GoodSpeSelectView.h"
+//#import "GoodSpecificationVC.h" //规格设置界面
+#import "GoodSpecificationItem.h"   // 规格item
+
+@interface GoodSpeSelectView ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
+
+@property (nonatomic, strong) UICollectionView *collection;
+@property (nonatomic, strong) GoodSpeSelectHeadView *sectionHead;  // sectionHead 头视图
+
+/** 选中的规格  */
+@property (nonatomic, strong) NSMutableArray *speSelect;
+
+/** 中间试图 */
+@property (nonatomic, strong) UIView *centerView;
+
+/** 规格数据 */
+@property (nonatomic, strong) NSMutableArray<CXSpecificationsModel *> *dataArr;
+
+/** centerView 的frame */
+@property (nonatomic, assign) CGRect centRect;
+
+/** 标题 */
+@property (nonatomic, strong) UIView *titleView;
+/** 关闭按钮 */
+@property (nonatomic, strong) UIButton *closeBtn;
+/** 标题 */
+@property (nonatomic, strong) UILabel *titleLab;
+
+@end
+
+@implementation GoodSpeSelectView
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    
+    if (self = [super initWithFrame:frame]) {
+        
+        self.isFirst = YES;
+        self.centRect = CGRectMake(ScreenWidth/8, 0, ScreenWidth/8 * 6, 0);
+       
+        UIView *bgView = [[UIView alloc] initWithFrame:self.bounds];
+        bgView.backgroundColor = [UIColor colorWithWhite:0 alpha:0.3];
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hiddenView)];
+        [bgView addGestureRecognizer:tap];
+        
+        
+        [self addSubview:bgView];
+        
+        [self addSubview:self.centerView];
+        [self.centerView addSubview:self.titleView];
+        [self.titleView addSubview:self.titleLab];
+        [self.titleView addSubview:self.closeBtn];
+        
+        [self createCollectView];
+    }
+    return self;
+}
+
+- (void)setGoodModel:(YPGetCommodityTypeTableListData *)goodModel {
+    
+    _goodModel = goodModel;
+    
+    [self.dataArr removeAllObjects];
+    [self.speSelect removeAllObjects];
+  
+    [self.collection reloadData];
+}
+
+- (UIView *)centerView {
+    
+    if (!_centerView) {
+        _centerView = [[UIView alloc] initWithFrame:self.centRect];
+        _centerView.center = self.center;
+        _centerView.backgroundColor = [UIColor whiteColor];
+        _centerView.layer.cornerRadius = 4;
+        _centerView.layer.masksToBounds = YES;
+    }
+    return _centerView;
+}
+
+#pragma mark - - - - - - - - - - - - -   CollectionView - - - - - - - - - - - - - - -
+- (void)createCollectView {
+    
+    UICollectionViewFlowLayout  *layout = [[UICollectionViewFlowLayout alloc] init];
+    layout.minimumLineSpacing = 20;
+    layout.minimumInteritemSpacing  = 15;
+    //    layout.estimatedItemSize = CGSizeMake(20, 26);
+    layout.scrollDirection =  UICollectionViewScrollDirectionVertical;
+    layout.sectionInset = UIEdgeInsetsMake(0,10,20,10);
+    
+    self.collection = [[UICollectionView alloc] initWithFrame:CGRectMake(0, self.titleView.height, self.centRect.size.width, 0) collectionViewLayout:layout];
+    self.collection.backgroundColor = [UIColor whiteColor];
+    self.collection.delegate = self;
+    self.collection.dataSource = self;
+    [self.centerView addSubview:self.collection];
+    
+    [self.collection registerClass:[GoodSpecificationItem class] forCellWithReuseIdentifier:@"GoodSpecificationItem"];
+    [self.collection registerClass:[GoodSpeSelectHeadView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"GoodSpeSelectHeadView"];
+}
+
+#pragma MARK --- UICollectionViewDelegate
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
+    return self.dataArr.count;
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    
+    CXSpecificationsModel *model = self.dataArr[section];
+    return model.dataArr.count;
+}
+
+#pragma mark - - - - - - - - - - - - -   CELL- - - - - - - - - - - - - - -
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    GoodSpecificationItem *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"GoodSpecificationItem" forIndexPath:indexPath];
+    CXSpecificationsModel *model = self.dataArr[indexPath.section];
+    
+    NSString *sub = model.dataArr[indexPath.item];
+    if ([self.speSelect containsObject:sub]) {
+        [cell goodSpeSelect:sub];
+    }else {
+        [cell goodSpeDefa:sub];
+    }
+    return cell;
+}
+
+#pragma mark - - - - - - - - - - - - -   didSelect - - - - - - - - - - - - - - -
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+  
+    CXSpecificationsModel *model = self.dataArr[indexPath.section];
+    
+    NSString *sub = model.dataArr[indexPath.item];
+    
+    self.speSelect[indexPath.section] = sub;
+    [collectionView reloadData];
+}
+
+#pragma mark - - - - - - - - - - - - -   Head - - - - - - - - - - - - - - -
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    CXSpecificationsModel *model = self.dataArr[indexPath.section];
+    
+    NSString *text =  model.dataArr[indexPath.item] ;
+    CGSize  size = [text sizeWithAttributes:@{NSFontAttributeName:kFont(12)}];
+    return CGSizeMake(size.width + 20, 30);
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {
+    
+    return CGSizeMake(ScreenWidth, 30);
+}
+
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
+    
+    if (kind == UICollectionElementKindSectionHeader) {
+        
+        GoodSpeSelectHeadView *head = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"GoodSpeSelectHeadView" forIndexPath:indexPath];
+        CXSpecificationsModel *model = self.dataArr[indexPath.section];
+        head.name = model.name;
+        
+        return head;
+    }
+    return nil;
+}
+
+#pragma mark - - - - - - - - - - - - -   懒加载 - - - - - - - - - - - - - - -
+
+- (NSMutableArray<CXSpecificationsModel *> *)dataArr {
+    
+    if (!_dataArr) {
+        _dataArr = [[NSMutableArray alloc] init];
+    }
+    return _dataArr;
+}
+
+- (UIView *)titleView {
+    
+    if (!_titleView) {
+        _titleView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.centRect.size.width, 44)];
+    }
+    return _titleView;
+}
+- (UILabel *)titleLab {
+    if (!_titleLab) {
+        _titleLab = [[UILabel alloc] initWithFrame:self.titleView.bounds];
+        _titleLab.font = kFont(14);
+        _titleLab.textAlignment = NSTextAlignmentCenter;
+        _titleLab.userInteractionEnabled = YES;
+    }
+    return _titleLab;
+}
+
+- (UIButton *)closeBtn {
+    
+    if (!_closeBtn) {
+        _closeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _closeBtn.frame = CGRectMake(self.titleView.width - self.titleView.height, 0, self.titleView.height, self.titleView.height);
+        _closeBtn.imageView.contentMode = UIViewContentModeCenter;
+        [_closeBtn setImage:[UIImage imageNamed:@"spe_close"] forState:UIControlStateNormal];
+        [_closeBtn addTarget:self action:@selector(hiddenView) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _closeBtn;
+}
+
+- (NSMutableArray *)speSelect {
+    
+    if (!_speSelect) {
+        _speSelect = [[NSMutableArray alloc] init];
+    }
+    return _speSelect;
+}
+
+
+@end
+
+
+
+
+
+
+
+
+
+
+
+@interface GoodSpeSelectHeadView ()
+
+/**  */
+@property (nonatomic, strong) UILabel *nameLab;
+
+@end
+
+@implementation GoodSpeSelectHeadView
+
+- (void)setName:(NSString *)name {
+    
+    _name = name;
+    self.nameLab.text = [NSString stringWithFormat:@"    %@",name];
+}
+
+- (UILabel *)nameLab {
+    if (!_nameLab) {
+        _nameLab = [[UILabel alloc] initWithFrame:self.bounds];
+        _nameLab.font = kFont(12);
+        [self addSubview:_nameLab];
+    }
+    return _nameLab;
+}
+@end

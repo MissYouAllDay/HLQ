@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/DKSoft/!svn/ver/4559/IOS/HunQingYH/HunQingYH/ThirdPart/LPDQuoteImagesView/Classes
+END
+UIImage+MyBundle.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/DKSoft/!svn/ver/2871/IOS/HunQingYH/HunQingYH/ThirdPart/LPDQuoteImagesView/Classes/UIImage+MyBundle.h
+END
+NSBundle+LPDImagePicker.m
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/DKSoft/!svn/ver/2871/IOS/HunQingYH/HunQingYH/ThirdPart/LPDQuoteImagesView/Classes/NSBundle+LPDImagePicker.m
+END
+LPDPhotoPickerController.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/DKSoft/!svn/ver/2871/IOS/HunQingYH/HunQingYH/ThirdPart/LPDQuoteImagesView/Classes/LPDPhotoPickerController.h
+END
+LPDVideoPlayerController.m
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/DKSoft/!svn/ver/3044/IOS/HunQingYH/HunQingYH/ThirdPart/LPDQuoteImagesView/Classes/LPDVideoPlayerController.m
+END
+LPDPhotoArrangeCVlLayout.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/DKSoft/!svn/ver/2871/IOS/HunQingYH/HunQingYH/ThirdPart/LPDQuoteImagesView/Classes/LPDPhotoArrangeCVlLayout.h
+END
+LPDProgressView.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/DKSoft/!svn/ver/2871/IOS/HunQingYH/HunQingYH/ThirdPart/LPDQuoteImagesView/Classes/LPDProgressView.h
+END
+UIImage+MyBundle.m
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/DKSoft/!svn/ver/2871/IOS/HunQingYH/HunQingYH/ThirdPart/LPDQuoteImagesView/Classes/UIImage+MyBundle.m
+END
+LPDPhotoPickerController.m
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/DKSoft/!svn/ver/4559/IOS/HunQingYH/HunQingYH/ThirdPart/LPDQuoteImagesView/Classes/LPDPhotoPickerController.m
+END
+LPDPhotoArrangeCVlLayout.m
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/DKSoft/!svn/ver/2871/IOS/HunQingYH/HunQingYH/ThirdPart/LPDQuoteImagesView/Classes/LPDPhotoArrangeCVlLayout.m
+END
+LPDProgressView.m
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/DKSoft/!svn/ver/2871/IOS/HunQingYH/HunQingYH/ThirdPart/LPDQuoteImagesView/Classes/LPDProgressView.m
+END
+LPDImageManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/DKSoft/!svn/ver/2871/IOS/HunQingYH/HunQingYH/ThirdPart/LPDQuoteImagesView/Classes/LPDImageManager.h
+END
+LPDQuoteImagesView.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/DKSoft/!svn/ver/2871/IOS/HunQingYH/HunQingYH/ThirdPart/LPDQuoteImagesView/Classes/LPDQuoteImagesView.h
+END
+LPDAssetCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/DKSoft/!svn/ver/2871/IOS/HunQingYH/HunQingYH/ThirdPart/LPDQuoteImagesView/Classes/LPDAssetCell.h
+END
+LPDImageManager.m
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/DKSoft/!svn/ver/2871/IOS/HunQingYH/HunQingYH/ThirdPart/LPDQuoteImagesView/Classes/LPDImageManager.m
+END
+LPDQuoteImagesView.m
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/DKSoft/!svn/ver/2871/IOS/HunQingYH/HunQingYH/ThirdPart/LPDQuoteImagesView/Classes/LPDQuoteImagesView.m
+END
+LPDAssetCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/DKSoft/!svn/ver/2871/IOS/HunQingYH/HunQingYH/ThirdPart/LPDQuoteImagesView/Classes/LPDAssetCell.m
+END
+LPDImagePickerController.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/DKSoft/!svn/ver/2871/IOS/HunQingYH/HunQingYH/ThirdPart/LPDQuoteImagesView/Classes/LPDImagePickerController.h
+END
+LPDImagePickerController.m
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/DKSoft/!svn/ver/4559/IOS/HunQingYH/HunQingYH/ThirdPart/LPDQuoteImagesView/Classes/LPDImagePickerController.m
+END
+LPDPhotoArrangeCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/DKSoft/!svn/ver/2871/IOS/HunQingYH/HunQingYH/ThirdPart/LPDQuoteImagesView/Classes/LPDPhotoArrangeCell.h
+END
+LPDPhotoPreviewCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/DKSoft/!svn/ver/2871/IOS/HunQingYH/HunQingYH/ThirdPart/LPDQuoteImagesView/Classes/LPDPhotoPreviewCell.h
+END
+LPDPhotoArrangeCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/DKSoft/!svn/ver/2871/IOS/HunQingYH/HunQingYH/ThirdPart/LPDQuoteImagesView/Classes/LPDPhotoArrangeCell.m
+END
+LPDPhotoPreviewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/DKSoft/!svn/ver/2871/IOS/HunQingYH/HunQingYH/ThirdPart/LPDQuoteImagesView/Classes/LPDPhotoPreviewController.h
+END
+LPDPhotoPreviewCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/DKSoft/!svn/ver/2871/IOS/HunQingYH/HunQingYH/ThirdPart/LPDQuoteImagesView/Classes/LPDPhotoPreviewCell.m
+END
+LPDAssetModel.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/DKSoft/!svn/ver/2871/IOS/HunQingYH/HunQingYH/ThirdPart/LPDQuoteImagesView/Classes/LPDAssetModel.h
+END
+UIView+HandyValue.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/DKSoft/!svn/ver/2871/IOS/HunQingYH/HunQingYH/ThirdPart/LPDQuoteImagesView/Classes/UIView+HandyValue.h
+END
+LPDPhotoPreviewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/DKSoft/!svn/ver/3044/IOS/HunQingYH/HunQingYH/ThirdPart/LPDQuoteImagesView/Classes/LPDPhotoPreviewController.m
+END
+LPDAssetModel.m
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/DKSoft/!svn/ver/2871/IOS/HunQingYH/HunQingYH/ThirdPart/LPDQuoteImagesView/Classes/LPDAssetModel.m
+END
+UIView+HandyValue.m
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/DKSoft/!svn/ver/2871/IOS/HunQingYH/HunQingYH/ThirdPart/LPDQuoteImagesView/Classes/UIView+HandyValue.m
+END
+.gitkeep
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/DKSoft/!svn/ver/2871/IOS/HunQingYH/HunQingYH/ThirdPart/LPDQuoteImagesView/Classes/.gitkeep
+END
+NSBundle+LPDImagePicker.h
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/DKSoft/!svn/ver/2871/IOS/HunQingYH/HunQingYH/ThirdPart/LPDQuoteImagesView/Classes/NSBundle+LPDImagePicker.h
+END
+LPDVideoPlayerController.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/DKSoft/!svn/ver/2871/IOS/HunQingYH/HunQingYH/ThirdPart/LPDQuoteImagesView/Classes/LPDVideoPlayerController.h
+END

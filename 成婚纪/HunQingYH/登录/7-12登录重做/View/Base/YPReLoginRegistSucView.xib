@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="y6h-iA-DTS" customClass="YPReLoginRegistSucView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="588"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="配图" translatesAutoresizingMaskIntoConstraints="NO" id="r83-tq-Fcl">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="r83-tq-Fcl" secondAttribute="height" multiplier="16:23" id="Tzr-1G-5fB"/>
+                        <constraint firstAttribute="height" constant="460" id="cGy-Id-zim"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWC-Ef-QwJ">
+                    <rect key="frame" x="18" y="500" width="133" height="50"/>
+                    <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="DhA-J4-MZd"/>
+                    </constraints>
+                    <state key="normal" title="跳过">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="poG-Ui-bzg">
+                    <rect key="frame" x="169" y="500" width="133" height="50"/>
+                    <color key="backgroundColor" red="0.96862745100000003" green="0.23921568630000001" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="lPc-nz-5WG"/>
+                    </constraints>
+                    <state key="normal" title="前往完善">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="poG-Ui-bzg" firstAttribute="width" secondItem="GWC-Ef-QwJ" secondAttribute="width" id="0ZM-Re-yKK"/>
+                <constraint firstItem="poG-Ui-bzg" firstAttribute="centerY" secondItem="GWC-Ef-QwJ" secondAttribute="centerY" id="3Xc-1a-t5w"/>
+                <constraint firstItem="r83-tq-Fcl" firstAttribute="leading" secondItem="y6h-iA-DTS" secondAttribute="leading" id="82t-cI-Da7"/>
+                <constraint firstItem="poG-Ui-bzg" firstAttribute="height" secondItem="GWC-Ef-QwJ" secondAttribute="height" id="EOB-ON-I9c"/>
+                <constraint firstItem="GWC-Ef-QwJ" firstAttribute="top" secondItem="r83-tq-Fcl" secondAttribute="bottom" constant="40" id="MEK-2c-zLS"/>
+                <constraint firstItem="GWC-Ef-QwJ" firstAttribute="leading" secondItem="y6h-iA-DTS" secondAttribute="leading" constant="18" id="Qff-gr-DD0"/>
+                <constraint firstAttribute="trailing" secondItem="poG-Ui-bzg" secondAttribute="trailing" constant="18" id="S2X-NY-pkz"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="GWC-Ef-QwJ" secondAttribute="bottom" constant="38" id="fKz-JU-4dK"/>
+                <constraint firstItem="poG-Ui-bzg" firstAttribute="leading" secondItem="GWC-Ef-QwJ" secondAttribute="trailing" constant="18" id="lbO-du-bSN"/>
+                <constraint firstAttribute="trailing" secondItem="r83-tq-Fcl" secondAttribute="trailing" id="m7o-gR-Ncg"/>
+                <constraint firstItem="r83-tq-Fcl" firstAttribute="top" secondItem="y6h-iA-DTS" secondAttribute="top" id="mPr-UA-6Z4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="iconImgV" destination="r83-tq-Fcl" id="1HF-xA-KMt"/>
+                <outlet property="passBtn" destination="GWC-Ef-QwJ" id="ltL-8r-KKO"/>
+                <outlet property="personInfoBtn" destination="poG-Ui-bzg" id="JSB-tj-nD5"/>
+            </connections>
+            <point key="canvasLocation" x="142" y="-431"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="配图" width="1125" height="1607"/>
+    </resources>
+</document>

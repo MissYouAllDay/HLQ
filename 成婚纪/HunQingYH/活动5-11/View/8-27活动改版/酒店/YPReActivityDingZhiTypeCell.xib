@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YPReActivityDingZhiTypeCell" id="KGk-i7-Jjw" customClass="YPReActivityDingZhiTypeCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="定制类别" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yjm-8E-13N">
+                        <rect key="frame" x="15" y="19" width="70" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgg-DY-hms">
+                        <rect key="frame" x="225" y="14" width="80" height="30"/>
+                        <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="BrU-hz-4c2"/>
+                            <constraint firstAttribute="width" constant="80" id="nN9-Vf-Tr2"/>
+                        </constraints>
+                        <state key="normal" title="推荐新人">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fC3-BJ-L54">
+                        <rect key="frame" x="135" y="15" width="80" height="30"/>
+                        <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="BFx-yD-DyN"/>
+                            <constraint firstAttribute="width" constant="80" id="kZE-ZW-LD3"/>
+                        </constraints>
+                        <state key="normal" title="本人定制">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="tgg-DY-hms" secondAttribute="trailing" constant="15" id="1UK-6D-vuQ"/>
+                    <constraint firstAttribute="bottom" secondItem="Yjm-8E-13N" secondAttribute="bottom" constant="19.5" id="ArV-qe-kuy"/>
+                    <constraint firstItem="tgg-DY-hms" firstAttribute="centerY" secondItem="Yjm-8E-13N" secondAttribute="centerY" id="H3t-7G-Yvw"/>
+                    <constraint firstItem="tgg-DY-hms" firstAttribute="leading" secondItem="fC3-BJ-L54" secondAttribute="trailing" constant="10" id="LKg-3g-qmi"/>
+                    <constraint firstItem="Yjm-8E-13N" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="TyE-8p-KJm"/>
+                    <constraint firstItem="Yjm-8E-13N" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="eZY-OR-DI8"/>
+                    <constraint firstItem="fC3-BJ-L54" firstAttribute="centerY" secondItem="Yjm-8E-13N" secondAttribute="centerY" id="iUg-uS-Txx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="benrenBtn" destination="fC3-BJ-L54" id="b2P-we-cXO"/>
+                <outlet property="titleLabel" destination="Yjm-8E-13N" id="Sq4-ge-XFo"/>
+                <outlet property="xinrenBtn" destination="tgg-DY-hms" id="TyA-oy-dbu"/>
+            </connections>
+            <point key="canvasLocation" x="-105" y="95"/>
+        </tableViewCell>
+    </objects>
+</document>

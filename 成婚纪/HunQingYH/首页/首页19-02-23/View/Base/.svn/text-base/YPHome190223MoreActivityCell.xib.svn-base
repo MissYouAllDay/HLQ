@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YPHome190223MoreActivityCell" id="KGk-i7-Jjw" customClass="YPHome190223MoreActivityCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="170"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="169.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZ0-EH-g2t">
+                        <rect key="frame" x="18" y="18" width="48" height="65"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="iZ0-EH-g2t" secondAttribute="height" multiplier="144:195" id="14f-Cf-b2a"/>
+                        </constraints>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8a-QT-71E">
+                        <rect key="frame" x="71" y="53" width="63.5" height="30"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zvE-uZ-snG">
+                        <rect key="frame" x="18" y="98" width="284" height="1"/>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="P7k-Sh-Q7s"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cdh-QW-yRL">
+                        <rect key="frame" x="71" y="18" width="63.5" height="30"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zvE-uZ-snG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="90M-6X-HfJ"/>
+                    <constraint firstItem="iZ0-EH-g2t" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="GSx-iB-Jlb"/>
+                    <constraint firstItem="B8a-QT-71E" firstAttribute="leading" secondItem="Cdh-QW-yRL" secondAttribute="leading" id="LKx-Ro-XBF"/>
+                    <constraint firstItem="Cdh-QW-yRL" firstAttribute="width" secondItem="iZ0-EH-g2t" secondAttribute="width" multiplier="1.32" id="MLq-el-fqD"/>
+                    <constraint firstAttribute="bottom" secondItem="iZ0-EH-g2t" secondAttribute="bottom" constant="16" id="RkY-Fy-5Nw"/>
+                    <constraint firstItem="B8a-QT-71E" firstAttribute="top" secondItem="Cdh-QW-yRL" secondAttribute="bottom" constant="5" id="Toz-cO-F4m"/>
+                    <constraint firstItem="Cdh-QW-yRL" firstAttribute="top" secondItem="iZ0-EH-g2t" secondAttribute="top" id="Uop-m1-lR3"/>
+                    <constraint firstItem="iZ0-EH-g2t" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="ab8-u9-wfp"/>
+                    <constraint firstAttribute="trailing" secondItem="zvE-uZ-snG" secondAttribute="trailing" constant="18" id="fvM-0u-plh"/>
+                    <constraint firstAttribute="bottom" secondItem="zvE-uZ-snG" secondAttribute="bottom" id="g75-vG-Ogz"/>
+                    <constraint firstItem="B8a-QT-71E" firstAttribute="trailing" secondItem="Cdh-QW-yRL" secondAttribute="trailing" id="h9y-ns-zYV"/>
+                    <constraint firstItem="Cdh-QW-yRL" firstAttribute="leading" secondItem="iZ0-EH-g2t" secondAttribute="trailing" constant="5" id="kES-gB-rjt"/>
+                    <constraint firstItem="B8a-QT-71E" firstAttribute="height" secondItem="Cdh-QW-yRL" secondAttribute="height" id="n3d-IH-1fE"/>
+                    <constraint firstAttribute="trailing" secondItem="Cdh-QW-yRL" secondAttribute="trailing" constant="18" id="x7h-ly-5yB"/>
+                    <constraint firstItem="B8a-QT-71E" firstAttribute="bottom" secondItem="iZ0-EH-g2t" secondAttribute="bottom" id="yzA-33-y0w"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bigBtn" destination="iZ0-EH-g2t" id="aOc-vl-7EZ"/>
+                <outlet property="btn1" destination="Cdh-QW-yRL" id="HXK-1e-gnV"/>
+                <outlet property="btn2" destination="B8a-QT-71E" id="Zl1-gO-2ch"/>
+            </connections>
+            <point key="canvasLocation" x="-30.399999999999999" y="80.059970014992516"/>
+        </tableViewCell>
+    </objects>
+</document>

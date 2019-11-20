@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YPMyEDuOrderHeaderCell" id="KGk-i7-Jjw" customClass="YPMyEDuOrderHeaderCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="占位" translatesAutoresizingMaskIntoConstraints="NO" id="ogU-c7-Uca">
+                        <rect key="frame" x="25" y="11" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="aZU-Nx-Mte"/>
+                            <constraint firstAttribute="height" constant="20" id="mru-J4-ZK0"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="运输中..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIQ-fi-vnC">
+                        <rect key="frame" x="60" y="10.5" width="68" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kIQ-fi-vnC" firstAttribute="leading" secondItem="ogU-c7-Uca" secondAttribute="trailing" constant="15" id="475-qe-hmf"/>
+                    <constraint firstItem="kIQ-fi-vnC" firstAttribute="centerY" secondItem="ogU-c7-Uca" secondAttribute="centerY" id="4LF-p5-kd6"/>
+                    <constraint firstAttribute="bottom" secondItem="ogU-c7-Uca" secondAttribute="bottom" constant="12.5" id="9aX-eA-1Gg"/>
+                    <constraint firstItem="ogU-c7-Uca" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="VQe-fz-Zdy"/>
+                    <constraint firstItem="ogU-c7-Uca" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="iXI-yb-rQQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImgV" destination="ogU-c7-Uca" id="Q8Q-NZ-jR7"/>
+                <outlet property="stateLabel" destination="kIQ-fi-vnC" id="AoJ-lm-ASE"/>
+            </connections>
+            <point key="canvasLocation" x="-262" y="24"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="占位" width="400" height="400"/>
+    </resources>
+</document>

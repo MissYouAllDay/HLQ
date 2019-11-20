@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YPSupplierHomePageTagCell" id="KGk-i7-Jjw" customClass="YPSupplierHomePageTagCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="34.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="婚礼担保" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHA-q2-8ht">
+                        <rect key="frame" x="18" y="0.0" width="68" height="22"/>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.93725490199999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="68" id="GEX-9M-j7y"/>
+                            <constraint firstAttribute="height" constant="22" id="iWh-rv-69L"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.60392156860000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="消费有礼" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOm-hj-lPf">
+                        <rect key="frame" x="92" y="0.0" width="68" height="22"/>
+                        <color key="backgroundColor" red="1" green="0.94509803920000002" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="eTz-Ir-gly"/>
+                            <constraint firstAttribute="width" constant="68" id="fOt-kT-wdz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.99215686270000003" green="0.61176470589999998" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yHA-q2-8ht" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="5mn-Xn-jmV"/>
+                    <constraint firstItem="bOm-hj-lPf" firstAttribute="width" secondItem="yHA-q2-8ht" secondAttribute="width" id="IMB-zo-Flk"/>
+                    <constraint firstItem="bOm-hj-lPf" firstAttribute="height" secondItem="yHA-q2-8ht" secondAttribute="height" id="IeM-Dv-Icg"/>
+                    <constraint firstItem="bOm-hj-lPf" firstAttribute="centerY" secondItem="yHA-q2-8ht" secondAttribute="centerY" id="KUO-Sa-SzH"/>
+                    <constraint firstItem="bOm-hj-lPf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="hbE-dQ-GXv"/>
+                    <constraint firstItem="bOm-hj-lPf" firstAttribute="leading" secondItem="yHA-q2-8ht" secondAttribute="trailing" constant="6" id="kPY-Gr-G7E"/>
+                    <constraint firstItem="yHA-q2-8ht" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="x4v-X4-pHQ"/>
+                    <constraint firstAttribute="bottom" secondItem="yHA-q2-8ht" secondAttribute="bottom" constant="12.5" id="yRM-HX-l9n"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="danbao" destination="yHA-q2-8ht" id="X9N-bV-Vaa"/>
+                <outlet property="youli" destination="bOm-hj-lPf" id="m4X-bR-GFJ"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

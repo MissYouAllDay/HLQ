@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="HRZiXunCell" selectionStyle="default" indentationWidth="10" rowHeight="113" id="KGk-i7-Jjw" customClass="HRZiXunCell">
+            <rect key="frame" x="0.0" y="0.0" width="451" height="113"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="451" height="112.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一月份拍婚纱照城市哪里好国内篇" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJr-aK-P7i">
+                        <rect key="frame" x="15" y="17" width="291" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="图片" translatesAutoresizingMaskIntoConstraints="NO" id="7Mh-cp-a9E">
+                        <rect key="frame" x="321" y="16.5" width="120" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="m9w-UN-OWv"/>
+                            <constraint firstAttribute="width" constant="120" id="pXe-Qz-kJK"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="婚礼指南" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Mi-hZ-2RD">
+                        <rect key="frame" x="15" y="78" width="61.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7Mh-cp-a9E" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="SHn-21-WRw"/>
+                    <constraint firstItem="7Mi-hZ-2RD" firstAttribute="bottom" secondItem="7Mh-cp-a9E" secondAttribute="bottom" id="Tis-dL-rhW"/>
+                    <constraint firstItem="tJr-aK-P7i" firstAttribute="top" secondItem="7Mh-cp-a9E" secondAttribute="top" id="gBW-Uz-QCV"/>
+                    <constraint firstItem="7Mi-hZ-2RD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="jbf-Ns-Bg3"/>
+                    <constraint firstAttribute="trailing" secondItem="7Mh-cp-a9E" secondAttribute="trailing" constant="10" id="kid-li-y8a"/>
+                    <constraint firstItem="7Mh-cp-a9E" firstAttribute="leading" secondItem="tJr-aK-P7i" secondAttribute="trailing" constant="15" id="o0R-aw-c43"/>
+                    <constraint firstItem="tJr-aK-P7i" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="ztt-Aj-tsF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImgV" destination="7Mh-cp-a9E" id="vir-ec-Ipr"/>
+                <outlet property="tagLabel" destination="7Mi-hZ-2RD" id="thV-Od-Pcy"/>
+                <outlet property="titleLabel" destination="tJr-aK-P7i" id="QIs-v0-FeP"/>
+            </connections>
+            <point key="canvasLocation" x="99.5" y="88.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="图片" width="32" height="25"/>
+    </resources>
+</document>

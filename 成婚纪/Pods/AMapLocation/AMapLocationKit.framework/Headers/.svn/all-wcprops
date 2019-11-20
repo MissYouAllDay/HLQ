@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/DKSoft/!svn/ver/5532/IOS/HunQingYH/Pods/AMapLocation/AMapLocationKit.framework/Headers
+END
+AMapGeoFenceRegionObj.h
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/DKSoft/!svn/ver/5003/IOS/HunQingYH/Pods/AMapLocation/AMapLocationKit.framework/Headers/AMapGeoFenceRegionObj.h
+END
+AMapLocationCommonObj.h
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/DKSoft/!svn/ver/5003/IOS/HunQingYH/Pods/AMapLocation/AMapLocationKit.framework/Headers/AMapLocationCommonObj.h
+END
+AMapLocationVersion.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/DKSoft/!svn/ver/5532/IOS/HunQingYH/Pods/AMapLocation/AMapLocationKit.framework/Headers/AMapLocationVersion.h
+END
+AMapLocationKit.h
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/DKSoft/!svn/ver/5003/IOS/HunQingYH/Pods/AMapLocation/AMapLocationKit.framework/Headers/AMapLocationKit.h
+END
+AMapLocationManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/DKSoft/!svn/ver/5532/IOS/HunQingYH/Pods/AMapLocation/AMapLocationKit.framework/Headers/AMapLocationManager.h
+END
+AMapGeoFenceError.h
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/DKSoft/!svn/ver/5003/IOS/HunQingYH/Pods/AMapLocation/AMapLocationKit.framework/Headers/AMapGeoFenceError.h
+END
+AMapGeoFenceManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/DKSoft/!svn/ver/5003/IOS/HunQingYH/Pods/AMapLocation/AMapLocationKit.framework/Headers/AMapGeoFenceManager.h
+END
+AMapLocationRegionObj.h
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/DKSoft/!svn/ver/5003/IOS/HunQingYH/Pods/AMapLocation/AMapLocationKit.framework/Headers/AMapLocationRegionObj.h
+END

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="vid-6E-8dK" customClass="YPInviteFriendsWedNormalShareView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IFW_wechat" translatesAutoresizingMaskIntoConstraints="NO" id="z8V-Wc-Vtf">
+                    <rect key="frame" x="130" y="18" width="60" height="60"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分享给微信好友" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V5I-sQ-doy">
+                    <rect key="frame" x="117" y="92" width="86" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bki-TO-XNF">
+                    <rect key="frame" x="117" y="30" width="86" height="76.5"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pyo-yh-8TW">
+                    <rect key="frame" x="0.0" y="152" width="320" height="48"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="bFh-QD-d9D"/>
+                    </constraints>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rho-Bp-Uz3">
+                    <rect key="frame" x="0.0" y="151" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="WqN-bx-8e3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="V5I-sQ-doy" firstAttribute="trailing" secondItem="bki-TO-XNF" secondAttribute="trailing" id="46y-3C-5BB"/>
+                <constraint firstAttribute="trailing" secondItem="Pyo-yh-8TW" secondAttribute="trailing" id="4QV-C2-Gtw"/>
+                <constraint firstItem="Pyo-yh-8TW" firstAttribute="top" relation="greaterThanOrEqual" secondItem="V5I-sQ-doy" secondAttribute="bottom" constant="18" id="5qw-rJ-AYa"/>
+                <constraint firstItem="V5I-sQ-doy" firstAttribute="top" secondItem="z8V-Wc-Vtf" secondAttribute="bottom" constant="14" id="Cb9-ag-NFx"/>
+                <constraint firstAttribute="trailing" secondItem="Rho-Bp-Uz3" secondAttribute="trailing" id="KLf-nH-mNV"/>
+                <constraint firstItem="V5I-sQ-doy" firstAttribute="leading" secondItem="bki-TO-XNF" secondAttribute="leading" id="Kvo-4f-6vW"/>
+                <constraint firstItem="z8V-Wc-Vtf" firstAttribute="centerX" secondItem="vid-6E-8dK" secondAttribute="centerX" id="LNg-ht-vEg"/>
+                <constraint firstItem="V5I-sQ-doy" firstAttribute="centerX" secondItem="vid-6E-8dK" secondAttribute="centerX" id="aam-az-AU3"/>
+                <constraint firstItem="V5I-sQ-doy" firstAttribute="bottom" secondItem="bki-TO-XNF" secondAttribute="bottom" id="iOV-ND-ve7"/>
+                <constraint firstItem="z8V-Wc-Vtf" firstAttribute="top" secondItem="vid-6E-8dK" secondAttribute="top" constant="18" id="kKy-1N-D2V"/>
+                <constraint firstItem="Rho-Bp-Uz3" firstAttribute="leading" secondItem="vid-6E-8dK" secondAttribute="leading" id="q5U-P3-2dL"/>
+                <constraint firstAttribute="bottom" secondItem="Pyo-yh-8TW" secondAttribute="bottom" id="rKY-2t-f2h"/>
+                <constraint firstItem="Pyo-yh-8TW" firstAttribute="leading" secondItem="vid-6E-8dK" secondAttribute="leading" id="shz-kK-pjL"/>
+                <constraint firstItem="bki-TO-XNF" firstAttribute="top" secondItem="vid-6E-8dK" secondAttribute="top" constant="30" id="v6B-08-kV3"/>
+                <constraint firstItem="Pyo-yh-8TW" firstAttribute="top" secondItem="Rho-Bp-Uz3" secondAttribute="bottom" id="z6M-9b-oue"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnImgV" destination="z8V-Wc-Vtf" id="tNf-Rz-pj6"/>
+                <outlet property="btnLabel" destination="V5I-sQ-doy" id="gmw-P1-iwK"/>
+                <outlet property="cancleBtn" destination="Pyo-yh-8TW" id="OQ9-uL-TtP"/>
+                <outlet property="wechatBtn" destination="bki-TO-XNF" id="41x-Wd-BuT"/>
+            </connections>
+            <point key="canvasLocation" x="-80" y="35.982008995502248"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="IFW_wechat" width="60" height="60"/>
+    </resources>
+</document>

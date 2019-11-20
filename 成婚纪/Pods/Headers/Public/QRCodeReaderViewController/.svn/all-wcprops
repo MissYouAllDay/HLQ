@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/DKSoft/!svn/ver/4163/IOS/HunQingYH/Pods/Headers/Public/QRCodeReaderViewController
+END
+QRCameraSwitchButton.h
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/DKSoft/!svn/ver/4163/IOS/HunQingYH/Pods/Headers/Public/QRCodeReaderViewController/QRCameraSwitchButton.h
+END
+QRCodeReaderDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/DKSoft/!svn/ver/4163/IOS/HunQingYH/Pods/Headers/Public/QRCodeReaderViewController/QRCodeReaderDelegate.h
+END
+QRCodeReaderView.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/DKSoft/!svn/ver/4163/IOS/HunQingYH/Pods/Headers/Public/QRCodeReaderViewController/QRCodeReaderView.h
+END
+QRCodeReaderViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/DKSoft/!svn/ver/4163/IOS/HunQingYH/Pods/Headers/Public/QRCodeReaderViewController/QRCodeReaderViewController.h
+END
+QRCodeReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/DKSoft/!svn/ver/4163/IOS/HunQingYH/Pods/Headers/Public/QRCodeReaderViewController/QRCodeReader.h
+END
+QRToggleTorchButton.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/DKSoft/!svn/ver/4163/IOS/HunQingYH/Pods/Headers/Public/QRCodeReaderViewController/QRToggleTorchButton.h
+END

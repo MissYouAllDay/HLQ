@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="hotelAddCheckBoxCell" selectionStyle="default" indentationWidth="10" rowHeight="189" id="KGk-i7-Jjw" customClass="hotelAddCheckBoxCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="189"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="188.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qVv-ps-p9C">
+                        <rect key="frame" x="0.0" y="187.5" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="jJC-1y-rR4"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wnA-HM-RW9">
+                        <rect key="frame" x="15" y="15" width="76" height="158.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="  未支付" image="xuanze">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYE-vP-tLZ">
+                        <rect key="frame" x="121" y="15" width="76" height="158.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="  已支付" image="weixuan">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hYE-vP-tLZ" firstAttribute="leading" secondItem="wnA-HM-RW9" secondAttribute="trailing" constant="30" id="26o-do-g25"/>
+                    <constraint firstItem="hYE-vP-tLZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="4hS-56-K1G"/>
+                    <constraint firstItem="wnA-HM-RW9" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="BU0-fg-9Df"/>
+                    <constraint firstAttribute="trailing" secondItem="qVv-ps-p9C" secondAttribute="trailing" id="CEm-zS-bdO"/>
+                    <constraint firstAttribute="bottom" secondItem="wnA-HM-RW9" secondAttribute="bottom" constant="15" id="Dja-kQ-69w"/>
+                    <constraint firstItem="hYE-vP-tLZ" firstAttribute="centerY" secondItem="wnA-HM-RW9" secondAttribute="centerY" id="PGF-Bf-aEm"/>
+                    <constraint firstAttribute="bottom" secondItem="hYE-vP-tLZ" secondAttribute="bottom" constant="15" id="dsc-gy-8gG"/>
+                    <constraint firstItem="wnA-HM-RW9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="dvG-HW-NEN"/>
+                    <constraint firstItem="wnA-HM-RW9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="h7o-8H-P7P"/>
+                    <constraint firstItem="qVv-ps-p9C" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="kxo-l5-lgL"/>
+                    <constraint firstAttribute="bottom" secondItem="qVv-ps-p9C" secondAttribute="bottom" id="umS-NN-OFB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="weixuanBtn" destination="wnA-HM-RW9" id="Igd-do-JeA"/>
+                <outlet property="yixuanBtn" destination="hYE-vP-tLZ" id="K0P-TU-IUR"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="144.30803571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="weixuan" width="22" height="22"/>
+        <image name="xuanze" width="22" height="22"/>
+    </resources>
+</document>

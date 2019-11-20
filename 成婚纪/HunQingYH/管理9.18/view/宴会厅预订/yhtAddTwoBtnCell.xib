@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="yhtAddTwoBtnCell" selectionStyle="default" indentationWidth="10" rowHeight="148" id="KGk-i7-Jjw" customClass="yhtAddTwoBtnCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="148"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="147.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAK-zx-wIy">
+                        <rect key="frame" x="15" y="15" width="35" height="117.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQR-aG-Wj6">
+                        <rect key="frame" x="65" y="59" width="112" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="开始时间">
+                            <color key="titleColor" red="0.57248467209999998" green="0.57258617879999996" blue="0.57247823480000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OT8-jX-ahz">
+                        <rect key="frame" x="182" y="63.5" width="6" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ybu-hP-GPR">
+                        <rect key="frame" x="0.0" y="146.5" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="cOJ-Q1-YTQ"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXR-Zl-APL">
+                        <rect key="frame" x="193" y="59" width="112" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="结束时间">
+                            <color key="titleColor" red="0.57248467209999998" green="0.57258617879999996" blue="0.57247823480000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="WAK-zx-wIy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="1pS-h7-HzM"/>
+                    <constraint firstItem="xQR-aG-Wj6" firstAttribute="leading" secondItem="WAK-zx-wIy" secondAttribute="trailing" constant="15" id="5Tb-Cc-EDv"/>
+                    <constraint firstItem="EXR-Zl-APL" firstAttribute="leading" secondItem="OT8-jX-ahz" secondAttribute="trailing" constant="5" id="64r-38-RVp"/>
+                    <constraint firstAttribute="bottom" secondItem="ybu-hP-GPR" secondAttribute="bottom" id="6PU-bQ-y7f"/>
+                    <constraint firstItem="WAK-zx-wIy" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="B8N-6k-VTh"/>
+                    <constraint firstAttribute="bottom" secondItem="WAK-zx-wIy" secondAttribute="bottom" constant="15" id="Cow-bd-nmX"/>
+                    <constraint firstItem="OT8-jX-ahz" firstAttribute="centerY" secondItem="WAK-zx-wIy" secondAttribute="centerY" id="NCh-JR-1A2"/>
+                    <constraint firstItem="EXR-Zl-APL" firstAttribute="width" secondItem="xQR-aG-Wj6" secondAttribute="width" id="Oin-ke-DbA"/>
+                    <constraint firstAttribute="trailing" secondItem="ybu-hP-GPR" secondAttribute="trailing" id="Vxh-Yu-wge"/>
+                    <constraint firstItem="EXR-Zl-APL" firstAttribute="height" secondItem="xQR-aG-Wj6" secondAttribute="height" id="Xp5-hb-CN5"/>
+                    <constraint firstItem="EXR-Zl-APL" firstAttribute="centerY" secondItem="WAK-zx-wIy" secondAttribute="centerY" id="ZDD-9m-gEJ"/>
+                    <constraint firstItem="xQR-aG-Wj6" firstAttribute="centerY" secondItem="WAK-zx-wIy" secondAttribute="centerY" id="bJh-mH-vRG"/>
+                    <constraint firstItem="ybu-hP-GPR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="hFe-wk-MUt"/>
+                    <constraint firstItem="WAK-zx-wIy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="kXa-Rj-N8P"/>
+                    <constraint firstItem="OT8-jX-ahz" firstAttribute="leading" secondItem="xQR-aG-Wj6" secondAttribute="trailing" constant="5" id="nag-q6-rWE"/>
+                    <constraint firstAttribute="trailing" secondItem="EXR-Zl-APL" secondAttribute="trailing" constant="15" id="pS4-i8-9CY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="endTimeBtn" destination="EXR-Zl-APL" id="yV3-z7-dxb"/>
+                <outlet property="startTimeBtn" destination="xQR-aG-Wj6" id="Kct-7p-nVB"/>
+                <outlet property="titleLab" destination="WAK-zx-wIy" id="krw-7e-UyP"/>
+            </connections>
+            <point key="canvasLocation" x="178.2608695652174" y="178.79464285714286"/>
+        </tableViewCell>
+    </objects>
+</document>

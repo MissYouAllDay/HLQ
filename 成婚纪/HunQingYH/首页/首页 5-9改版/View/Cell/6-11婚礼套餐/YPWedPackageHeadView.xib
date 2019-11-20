@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Kfw-45-Rfa" customClass="YPWedPackageHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="256"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="占位" translatesAutoresizingMaskIntoConstraints="NO" id="q1R-Lz-oJb">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="256"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="q1R-Lz-oJb" secondAttribute="height" multiplier="5:4" id="nNx-lY-xcX"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xof-CS-PuY">
+                    <rect key="frame" x="256" y="77" width="40" height="40"/>
+                    <state key="normal" image="wedP_video"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AYb-y6-W30">
+                    <rect key="frame" x="256" y="141" width="40" height="40"/>
+                    <state key="normal" image="wedP_photo"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAp-KW-x5S">
+                    <rect key="frame" x="220" y="205" width="88" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="22 图片 · 2 视频">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="NAp-KW-x5S" firstAttribute="top" secondItem="AYb-y6-W30" secondAttribute="bottom" constant="24" id="97d-I7-lmd"/>
+                <constraint firstItem="q1R-Lz-oJb" firstAttribute="leading" secondItem="Kfw-45-Rfa" secondAttribute="leading" id="Kud-fl-YUm"/>
+                <constraint firstAttribute="bottom" secondItem="q1R-Lz-oJb" secondAttribute="bottom" id="S2m-Uh-Ejs"/>
+                <constraint firstAttribute="bottom" secondItem="NAp-KW-x5S" secondAttribute="bottom" constant="24" id="XdJ-3u-WLa"/>
+                <constraint firstAttribute="trailing" secondItem="NAp-KW-x5S" secondAttribute="trailing" constant="12" id="ZO5-Sa-GlC"/>
+                <constraint firstItem="q1R-Lz-oJb" firstAttribute="top" secondItem="Kfw-45-Rfa" secondAttribute="top" id="flq-Ve-9z2"/>
+                <constraint firstAttribute="trailing" secondItem="q1R-Lz-oJb" secondAttribute="trailing" id="mbp-Et-Tiy"/>
+                <constraint firstItem="AYb-y6-W30" firstAttribute="trailing" secondItem="xof-CS-PuY" secondAttribute="trailing" id="sBy-ZV-U2h"/>
+                <constraint firstItem="AYb-y6-W30" firstAttribute="top" secondItem="xof-CS-PuY" secondAttribute="bottom" constant="24" id="sFv-yg-Ca3"/>
+                <constraint firstAttribute="trailing" secondItem="AYb-y6-W30" secondAttribute="trailing" constant="24" id="xkV-QO-1KF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="countBtn" destination="NAp-KW-x5S" id="5Du-r3-el2"/>
+                <outlet property="iconImgV" destination="q1R-Lz-oJb" id="Lma-oJ-FsZ"/>
+                <outlet property="photoBtn" destination="AYb-y6-W30" id="iib-DR-Uct"/>
+                <outlet property="videoBtn" destination="xof-CS-PuY" id="b26-ow-mST"/>
+            </connections>
+            <point key="canvasLocation" x="109" y="-68"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="wedP_photo" width="40" height="40"/>
+        <image name="wedP_video" width="40" height="40"/>
+        <image name="占位" width="400" height="400"/>
+    </resources>
+</document>

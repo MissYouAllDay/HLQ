@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YPGuaranteeSelectCell" id="KGk-i7-Jjw" customClass="YPGuaranteeSelectCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全额支付" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ra2-2o-7gx">
+                        <rect key="frame" x="15" y="19" width="70" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvr-Us-pZB">
+                        <rect key="frame" x="198" y="19" width="11" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.31372549020000001" blue="0.0039215686269999999" alpha="1" colorSpace="deviceRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTG-D1-MLK">
+                        <rect key="frame" x="214" y="19" width="52" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.31372549019607843" blue="0.0039215686274509803" alpha="1" colorSpace="deviceRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycd-eE-e4U">
+                        <rect key="frame" x="286" y="17" width="24" height="24"/>
+                        <state key="normal" image="un_select"/>
+                        <state key="selected" image="select"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ycd-eE-e4U" firstAttribute="centerY" secondItem="Ra2-2o-7gx" secondAttribute="centerY" id="1xs-le-Bud"/>
+                    <constraint firstAttribute="trailing" secondItem="ycd-eE-e4U" secondAttribute="trailing" constant="10" id="B2H-x1-DyY"/>
+                    <constraint firstItem="Ra2-2o-7gx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Dm2-Ou-FSM"/>
+                    <constraint firstItem="DTG-D1-MLK" firstAttribute="centerY" secondItem="Ra2-2o-7gx" secondAttribute="centerY" id="JT2-6h-RDW"/>
+                    <constraint firstItem="DTG-D1-MLK" firstAttribute="leading" secondItem="rvr-Us-pZB" secondAttribute="trailing" constant="5" id="TUE-RT-glx"/>
+                    <constraint firstItem="Ra2-2o-7gx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="VS6-N8-WfH"/>
+                    <constraint firstItem="ycd-eE-e4U" firstAttribute="leading" secondItem="DTG-D1-MLK" secondAttribute="trailing" constant="20" id="ZkV-FH-j0p"/>
+                    <constraint firstAttribute="bottom" secondItem="Ra2-2o-7gx" secondAttribute="bottom" constant="19.5" id="mF0-rJ-Ryn"/>
+                    <constraint firstItem="rvr-Us-pZB" firstAttribute="centerY" secondItem="Ra2-2o-7gx" secondAttribute="centerY" id="nUS-jH-ZPZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="priceLabel" destination="DTG-D1-MLK" id="I9b-mJ-b83"/>
+                <outlet property="selectBtn" destination="ycd-eE-e4U" id="BkK-2d-w3Z"/>
+                <outlet property="titleLabel" destination="Ra2-2o-7gx" id="g3i-9Q-OIh"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="select" width="24" height="24"/>
+        <image name="un_select" width="24" height="24"/>
+    </resources>
+</document>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YPPassagerDistribute2Cell" id="KGk-i7-Jjw" customClass="YPPassagerDistribute2Cell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="104.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="keyuan_WedDate" translatesAutoresizingMaskIntoConstraints="NO" id="03j-6k-rag">
+                        <rect key="frame" x="18" y="18" width="13" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="13" id="kua-tb-jaf"/>
+                            <constraint firstAttribute="height" constant="13" id="nTI-aH-eJc"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="婚期" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcI-cP-Lt6">
+                        <rect key="frame" x="37" y="16.5" width="27" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2019年06月21日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOC-6f-YB0">
+                        <rect key="frame" x="70" y="16.5" width="100" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="keyuan_Phone" translatesAutoresizingMaskIntoConstraints="NO" id="R3e-N5-fVu">
+                        <rect key="frame" x="18" y="47" width="13" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="13" id="Niw-Qw-j3R"/>
+                            <constraint firstAttribute="height" constant="13" id="tg1-t7-wFj"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手机" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIu-dJ-EZe">
+                        <rect key="frame" x="37" y="45.5" width="27" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2019年06月21日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zs5-g8-5FR">
+                        <rect key="frame" x="70" y="45.5" width="100" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="keyuan_Uptime" translatesAutoresizingMaskIntoConstraints="NO" id="hrb-5B-egN">
+                        <rect key="frame" x="18" y="76" width="13" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="13" id="0GB-7w-v2h"/>
+                            <constraint firstAttribute="height" constant="13" id="gl2-8N-6w9"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上传" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTR-xx-oie">
+                        <rect key="frame" x="37" y="74.5" width="27" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2019年06月21日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKW-6l-dAu">
+                        <rect key="frame" x="70" y="74.5" width="100" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zs5-g8-5FR" firstAttribute="centerY" secondItem="R3e-N5-fVu" secondAttribute="centerY" id="A7d-II-hX9"/>
+                    <constraint firstItem="LIu-dJ-EZe" firstAttribute="leading" secondItem="R3e-N5-fVu" secondAttribute="trailing" constant="6" id="BDV-xI-IBM"/>
+                    <constraint firstItem="hrb-5B-egN" firstAttribute="top" secondItem="R3e-N5-fVu" secondAttribute="bottom" constant="16" id="EsG-dR-FwI"/>
+                    <constraint firstItem="03j-6k-rag" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="H3U-wF-lGS"/>
+                    <constraint firstItem="AOC-6f-YB0" firstAttribute="centerY" secondItem="03j-6k-rag" secondAttribute="centerY" id="Hcu-QP-GCj"/>
+                    <constraint firstAttribute="bottom" secondItem="hrb-5B-egN" secondAttribute="bottom" constant="15.5" id="Krs-a4-Gtp"/>
+                    <constraint firstItem="hrb-5B-egN" firstAttribute="leading" secondItem="03j-6k-rag" secondAttribute="leading" id="Pap-Rh-aot"/>
+                    <constraint firstItem="03j-6k-rag" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="QHx-mU-eHE"/>
+                    <constraint firstItem="UKW-6l-dAu" firstAttribute="leading" secondItem="nTR-xx-oie" secondAttribute="trailing" constant="6" id="RKE-aL-GDj"/>
+                    <constraint firstItem="LIu-dJ-EZe" firstAttribute="centerY" secondItem="R3e-N5-fVu" secondAttribute="centerY" id="Sny-rh-gWj"/>
+                    <constraint firstItem="R3e-N5-fVu" firstAttribute="top" secondItem="03j-6k-rag" secondAttribute="bottom" constant="16" id="U8W-gi-o0v"/>
+                    <constraint firstItem="R3e-N5-fVu" firstAttribute="leading" secondItem="03j-6k-rag" secondAttribute="leading" id="WOd-dd-8Oa"/>
+                    <constraint firstItem="AOC-6f-YB0" firstAttribute="leading" secondItem="gcI-cP-Lt6" secondAttribute="trailing" constant="6" id="Zg8-Z5-zNb"/>
+                    <constraint firstItem="UKW-6l-dAu" firstAttribute="centerY" secondItem="hrb-5B-egN" secondAttribute="centerY" id="cOq-an-P27"/>
+                    <constraint firstItem="zs5-g8-5FR" firstAttribute="leading" secondItem="LIu-dJ-EZe" secondAttribute="trailing" constant="6" id="cRz-cF-PbN"/>
+                    <constraint firstItem="gcI-cP-Lt6" firstAttribute="leading" secondItem="03j-6k-rag" secondAttribute="trailing" constant="6" id="gYb-oh-QrL"/>
+                    <constraint firstItem="gcI-cP-Lt6" firstAttribute="centerY" secondItem="03j-6k-rag" secondAttribute="centerY" id="lB5-F1-emZ"/>
+                    <constraint firstItem="nTR-xx-oie" firstAttribute="leading" secondItem="hrb-5B-egN" secondAttribute="trailing" constant="6" id="pTf-8p-ROL"/>
+                    <constraint firstItem="nTR-xx-oie" firstAttribute="centerY" secondItem="hrb-5B-egN" secondAttribute="centerY" id="yuS-3B-SCa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="phoneLabel" destination="zs5-g8-5FR" id="xLX-hC-wcE"/>
+                <outlet property="upTime" destination="UKW-6l-dAu" id="qbf-La-bdM"/>
+                <outlet property="wedDate" destination="AOC-6f-YB0" id="jrj-yW-I9x"/>
+            </connections>
+            <point key="canvasLocation" x="-203.19999999999999" y="3.1484257871064472"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="keyuan_Phone" width="13" height="13"/>
+        <image name="keyuan_Uptime" width="13" height="13"/>
+        <image name="keyuan_WedDate" width="13" height="13"/>
+    </resources>
+</document>

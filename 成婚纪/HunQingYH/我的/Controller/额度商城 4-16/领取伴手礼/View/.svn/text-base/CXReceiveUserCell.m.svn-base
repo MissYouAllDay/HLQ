@@ -1,0 +1,32 @@
+//
+//  CXReceiveUserCell.m
+//  HunQingYH
+//
+//  Created by apple on 2019/9/20.
+//  Copyright © 2019 YanpengLee. All rights reserved.
+//
+
+#import "CXReceiveUserCell.h"
+
+@implementation CXReceiveUserCell
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    
+    self.relogBtn.layer.cornerRadius = self.reBtn.layer.cornerRadius = 4;
+    self.relogBtn.layer.masksToBounds = self.reBtn.layer.masksToBounds = YES;
+    self.relogBtn.backgroundColor = self.reBtn.backgroundColor = [UIColor colorWithHexString:@"#F9352B"];
+
+    self.relogBtn.titleLabel.font = self.reBtn.titleLabel.font = kFont(10);
+    
+    [self.payMoneyLab sizeToFit];
+    self.bgView.backgroundColor = [UIColor colorWithHexString:@"#F5F5F5"];
+}
+
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+    [super setSelected:selected animated:animated];
+
+    // Configure the view for the selected state
+}
+
+@end

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YPInviteFriendsWedPhoneInputCell" id="KGk-i7-Jjw" customClass="YPInviteFriendsWedPhoneInputCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="53.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新人姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzd-gS-495">
+                        <rect key="frame" x="18" y="17" width="66" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入新人姓名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hqN-BZ-vAM">
+                        <rect key="frame" x="102" y="17" width="140" height="20"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWG-HV-dzs">
+                        <rect key="frame" x="252" y="14" width="60" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="SCV-HQ-BsZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="手机通讯录"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TOk-7b-0x6">
+                        <rect key="frame" x="18" y="52.5" width="284" height="1"/>
+                        <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="D8d-0p-3qj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gWG-HV-dzs" firstAttribute="leading" secondItem="hqN-BZ-vAM" secondAttribute="trailing" constant="10" id="0pt-eq-W0y"/>
+                    <constraint firstItem="hqN-BZ-vAM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="102" id="1lJ-i8-KYV"/>
+                    <constraint firstItem="jzd-gS-495" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="919-cG-P4g"/>
+                    <constraint firstAttribute="trailing" secondItem="gWG-HV-dzs" secondAttribute="trailing" constant="8" id="ChH-bn-6ya"/>
+                    <constraint firstItem="jzd-gS-495" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="Sal-r9-alm"/>
+                    <constraint firstItem="gWG-HV-dzs" firstAttribute="centerY" secondItem="hqN-BZ-vAM" secondAttribute="centerY" id="eAz-OA-i9n"/>
+                    <constraint firstAttribute="bottom" secondItem="jzd-gS-495" secondAttribute="bottom" constant="16.5" id="jQb-7e-lIP"/>
+                    <constraint firstAttribute="trailing" secondItem="TOk-7b-0x6" secondAttribute="trailing" constant="18" id="p7t-Rv-D4K"/>
+                    <constraint firstItem="TOk-7b-0x6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="peb-zC-wh0"/>
+                    <constraint firstItem="hqN-BZ-vAM" firstAttribute="leading" secondItem="jzd-gS-495" secondAttribute="trailing" constant="18" id="tiE-y2-fez"/>
+                    <constraint firstItem="hqN-BZ-vAM" firstAttribute="centerY" secondItem="jzd-gS-495" secondAttribute="centerY" id="uxJ-XL-hP8"/>
+                    <constraint firstAttribute="bottom" secondItem="TOk-7b-0x6" secondAttribute="bottom" id="zc6-fm-Ijr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressBook" destination="gWG-HV-dzs" id="MJ5-2B-jsn"/>
+                <outlet property="inputTF" destination="hqN-BZ-vAM" id="XYL-xo-d33"/>
+                <outlet property="titleLabel" destination="jzd-gS-495" id="HlX-x4-IDw"/>
+            </connections>
+            <point key="canvasLocation" x="-51" y="51"/>
+        </tableViewCell>
+    </objects>
+</document>

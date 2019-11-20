@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YPReHomeGiftListCell" id="KGk-i7-Jjw" customClass="YPReHomeGiftListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="179.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSZ-E6-cgl">
+                        <rect key="frame" x="10" y="10" width="154.5" height="154.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="oSZ-E6-cgl" secondAttribute="height" multiplier="1:1" id="xJk-Pm-YVJ"/>
+                        </constraints>
+                        <state key="normal" image="占位图"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJA-xo-cLj">
+                        <rect key="frame" x="174.5" y="10" width="65.5" height="75"/>
+                        <color key="backgroundColor" red="0.99215686270000003" green="0.80784313730000001" blue="0.21176470589999999" alpha="1" colorSpace="deviceRGB"/>
+                        <state key="normal" image="占位图"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TkJ-0S-eeg">
+                        <rect key="frame" x="245" y="10" width="65" height="75"/>
+                        <color key="backgroundColor" red="0.99215686270000003" green="0.80784313730000001" blue="0.21176470589999999" alpha="1" colorSpace="deviceRGB"/>
+                        <state key="normal" image="占位图"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0gh-lD-kQ7">
+                        <rect key="frame" x="174.5" y="90" width="65.5" height="74.5"/>
+                        <color key="backgroundColor" red="0.99215686270000003" green="0.80784313730000001" blue="0.21176470589999999" alpha="1" colorSpace="deviceRGB"/>
+                        <state key="normal" image="占位图"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xfm-O7-tfF">
+                        <rect key="frame" x="245" y="89.5" width="65.5" height="75"/>
+                        <color key="backgroundColor" red="0.99215686270000003" green="0.80784313730000001" blue="0.21176470589999999" alpha="1" colorSpace="deviceRGB"/>
+                        <state key="normal" image="占位图"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Xfm-O7-tfF" firstAttribute="bottom" secondItem="oSZ-E6-cgl" secondAttribute="bottom" id="31c-tW-T9u"/>
+                    <constraint firstItem="0gh-lD-kQ7" firstAttribute="top" secondItem="oJA-xo-cLj" secondAttribute="bottom" constant="5" id="8Nv-GM-Ds4"/>
+                    <constraint firstAttribute="bottom" secondItem="oSZ-E6-cgl" secondAttribute="bottom" constant="15" id="9q9-9c-UyR"/>
+                    <constraint firstItem="TkJ-0S-eeg" firstAttribute="width" secondItem="oJA-xo-cLj" secondAttribute="width" id="BuO-hk-9Ka"/>
+                    <constraint firstItem="0gh-lD-kQ7" firstAttribute="leading" secondItem="oJA-xo-cLj" secondAttribute="leading" id="EeZ-a9-rbt"/>
+                    <constraint firstItem="TkJ-0S-eeg" firstAttribute="leading" secondItem="oJA-xo-cLj" secondAttribute="trailing" constant="5" id="HgZ-yc-hv9"/>
+                    <constraint firstItem="0gh-lD-kQ7" firstAttribute="width" secondItem="oJA-xo-cLj" secondAttribute="width" id="N1Y-Ya-gR0"/>
+                    <constraint firstItem="Xfm-O7-tfF" firstAttribute="width" secondItem="oJA-xo-cLj" secondAttribute="width" id="TNb-ww-Mle"/>
+                    <constraint firstItem="oSZ-E6-cgl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Xah-k3-nd5"/>
+                    <constraint firstItem="TkJ-0S-eeg" firstAttribute="height" secondItem="oJA-xo-cLj" secondAttribute="height" id="alH-yD-z5L"/>
+                    <constraint firstItem="oSZ-E6-cgl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="brc-A3-fUn"/>
+                    <constraint firstItem="oJA-xo-cLj" firstAttribute="leading" secondItem="oSZ-E6-cgl" secondAttribute="trailing" constant="10" id="d2y-th-hRc"/>
+                    <constraint firstItem="Xfm-O7-tfF" firstAttribute="trailing" secondItem="TkJ-0S-eeg" secondAttribute="trailing" id="flz-0L-FPD"/>
+                    <constraint firstAttribute="trailing" secondItem="TkJ-0S-eeg" secondAttribute="trailing" constant="10" id="iBI-QW-QmZ"/>
+                    <constraint firstItem="Xfm-O7-tfF" firstAttribute="height" secondItem="oJA-xo-cLj" secondAttribute="height" id="jzg-2L-i9e"/>
+                    <constraint firstItem="TkJ-0S-eeg" firstAttribute="top" secondItem="oSZ-E6-cgl" secondAttribute="top" id="nFd-fk-Lh8"/>
+                    <constraint firstItem="0gh-lD-kQ7" firstAttribute="height" secondItem="oJA-xo-cLj" secondAttribute="height" id="o5p-Pc-TtB"/>
+                    <constraint firstItem="0gh-lD-kQ7" firstAttribute="bottom" secondItem="oSZ-E6-cgl" secondAttribute="bottom" id="oI8-H4-6yR"/>
+                    <constraint firstItem="oJA-xo-cLj" firstAttribute="top" secondItem="oSZ-E6-cgl" secondAttribute="top" id="p0M-9h-mR1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bigBtn" destination="oSZ-E6-cgl" id="aG8-EO-FgE"/>
+                <outlet property="small1Btn" destination="oJA-xo-cLj" id="MfK-Pq-fDx"/>
+                <outlet property="small2Btn" destination="TkJ-0S-eeg" id="dwu-GO-Kvs"/>
+                <outlet property="small3Btn" destination="0gh-lD-kQ7" id="HBE-Kx-kln"/>
+                <outlet property="small4Btn" destination="Xfm-O7-tfF" id="Fas-Uc-E5O"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="占位图" width="16" height="16"/>
+    </resources>
+</document>

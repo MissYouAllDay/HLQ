@@ -1,0 +1,178 @@
+//
+//  YPReFindController.m
+//  HunQingYH
+//
+//  Created by Else丶 on 2018/5/28.
+//  Copyright © 2018年 YanpengLee. All rights reserved.
+//
+
+#import "YPReFindController.h"
+#import "HRDongTaiViewController.h"//5-28 修改 全部
+#import "YPReFindGunaZhuController.h"//关注
+#import "BHBPopView.h"
+#import "HRaddDongTaiController.h"
+#import "HRAddDTVideoViewController.h"
+
+@interface YPReFindController ()
+
+@property (nonatomic, strong) NSArray *menuList;
+@property (nonatomic, assign) BOOL autoSwitch;
+
+@end
+
+@implementation YPReFindController
+
+#pragma mark - 隐藏导航条
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
+    
+}
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    
+    [self.navigationController setNavigationBarHidden:NO animated:NO];
+}
+
+#pragma mark - UI
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    self.view.backgroundColor = WhiteColor;
+    
+    [self setupUI];
+}
+
+- (void)setupUI{
+    
+    self.magicView.itemScale = 1.2;
+    self.magicView.headerHeight = 0;
+    self.magicView.navigationHeight = NAVIGATION_BAR_HEIGHT;
+    self.magicView.againstStatusBar = YES;
+    self.magicView.sliderExtension = 5.0;
+    self.magicView.navigationInset = UIEdgeInsetsMake(0, 20, 0, 0);
+    self.magicView.sliderOffset = -10;
+    self.magicView.sliderWidth = 60;
+    self.magicView.navigationColor = [UIColor whiteColor];
+    self.magicView.layoutStyle = VTLayoutStyleCenter;
+    self.view.backgroundColor = CHJ_bgColor;
+    self.edgesForExtendedLayout = UIRectEdgeAll;
+
+    self.menuList = @[@"全部",@"关注"];
+    
+    UIButton *rightButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+    [rightButton addTarget:self action:@selector(rightButtonClick) forControlEvents:UIControlEventTouchUpInside];
+    [rightButton setImage:[UIImage imageNamed:@"HLX_add"] forState:UIControlStateNormal];
+    rightButton.center = self.view.center;
+    self.magicView.rightNavigatoinItem = rightButton;
+    UIButton *backBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 50, 50)];
+    [backBtn setImage:[UIImage imageNamed:@"back_bold"] forState:UIControlStateNormal];
+    [backBtn addTarget:self action:@selector(backBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    self.magicView.leftNavigatoinItem = backBtn;
+    
+    [self.magicView reloadData];
+}
+
+- (void)backBtnClick{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+#pragma mark - VTMagicViewDataSource
+- (NSArray<NSString *> *)menuTitlesForMagicView:(VTMagicView *)magicView {
+    return self.menuList;
+}
+
+- (UIButton *)magicView:(VTMagicView *)magicView menuItemAtIndex:(NSUInteger)itemIndex {
+    static NSString *itemIdentifier = @"itemIdentifier";
+    UIButton *menuItem = [magicView dequeueReusableItemWithIdentifier:itemIdentifier];
+    if (!menuItem) {
+        menuItem = [UIButton buttonWithType:UIButtonTypeCustom];
+        [menuItem setTitleColor:GrayColor forState:UIControlStateNormal];
+        [menuItem setTitleColor:BlackColor forState:UIControlStateSelected];
+        menuItem.titleLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:15.f];
+    }
+    return menuItem;
+}
+
+- (UIViewController *)magicView:(VTMagicView *)magicView viewControllerAtPage:(NSUInteger)pageIndex {
+    if (0 == pageIndex) {
+        static NSString *recomId = @"HRDongTaiViewController";
+        HRDongTaiViewController *dongtai = [magicView dequeueReusablePageWithIdentifier:recomId];
+        if (!dongtai) {
+            dongtai = [[HRDongTaiViewController alloc] init];
+        }
+        return dongtai;
+    }else{
+        static NSString *recomId = @"HRGuanZhuViewController";
+        YPReFindGunaZhuController *guanzhu = [magicView dequeueReusablePageWithIdentifier:recomId];
+        if (!guanzhu) {
+            guanzhu = [[YPReFindGunaZhuController alloc] init];
+        }
+        return guanzhu;
+    }
+}
+
+#pragma mark - VTMagicViewDelegate
+- (void)magicView:(VTMagicView *)magicView viewDidAppear:(__kindof UIViewController *)viewController atPage:(NSUInteger)pageIndex {
+    //    NSLog(@"index:%ld viewDidAppear:%@", (long)pageIndex, viewController.view);
+}
+
+- (void)magicView:(VTMagicView *)magicView viewDidDisappear:(__kindof UIViewController *)viewController atPage:(NSUInteger)pageIndex {
+    //    NSLog(@"index:%ld viewDidDisappear:%@", (long)pageIndex, viewController.view);
+}
+
+- (void)magicView:(VTMagicView *)magicView didSelectItemAtIndex:(NSUInteger)itemIndex {
+    //    NSLog(@"didSelectItemAtIndex:%ld", (long)itemIndex);
+}
+
+#pragma mark - target
+- (void)rightButtonClick{
+    //6-26 调换位置
+    BHBItem * item0 = [[BHBItem alloc]initWithTitle:@"视频" Icon:@"images.bundle/Find_video"];
+    BHBItem * item1 = [[BHBItem alloc]initWithTitle:@"照片" Icon:@"images.bundle/Find_piture"];
+    
+    //添加popview
+    [BHBPopView showToView:self.view.window withItems:@[item0,item1]andSelectBlock:^(BHBItem *item) {
+        NSLog(@"选中%@项",item.title);
+        
+        
+        if ([item.title isEqualToString:@"照片"]) {
+            HRaddDongTaiController *addVC = [HRaddDongTaiController new];
+            [self.navigationController pushViewController:addVC animated:YES];
+        }else{
+            //            SJRecordViewController *videoVC = [SJRecordViewController new];
+            //            SJRecordNavigationController *nav = [[SJRecordNavigationController alloc] initWithRootViewController:videoVC];
+            //            [self presentViewController:nav animated:YES completion:nil];
+            HRAddDTVideoViewController *videoVC = [HRAddDTVideoViewController new];
+            [self.navigationController pushViewController:videoVC animated:YES];
+        }
+    }];
+}
+
+#pragma mark - getter
+- (NSArray *)menuList{
+    if (!_menuList) {
+        _menuList = [[NSArray alloc]init];
+    }
+    return _menuList;
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+@end

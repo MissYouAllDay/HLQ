@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="YPEDuGoodColCell" id="gTV-IL-0wX" customClass="YPEDuGoodColCell">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="170"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="170"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CFL-O6-chJ">
+                        <rect key="frame" x="2" y="2" width="116" height="166"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="占位" translatesAutoresizingMaskIntoConstraints="NO" id="o4S-eC-N6j">
+                                <rect key="frame" x="0.0" y="0.0" width="116" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="o4S-eC-N6j" secondAttribute="height" multiplier="116:95" id="R58-ri-hgM"/>
+                                    <constraint firstAttribute="height" constant="95" id="t0A-GO-lCb"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="维可莎·美体内衣" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHO-av-um0">
+                                <rect key="frame" x="0.0" y="95" width="116" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="¥ 8000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iP1-wa-O3s">
+                                <rect key="frame" x="5" y="145" width="106" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="iP1-wa-O3s" secondAttribute="trailing" constant="5" id="4zq-ur-e1o"/>
+                            <constraint firstAttribute="trailing" secondItem="xHO-av-um0" secondAttribute="trailing" id="CV0-K2-ud6"/>
+                            <constraint firstAttribute="bottom" secondItem="iP1-wa-O3s" secondAttribute="bottom" id="JSt-T8-lHv"/>
+                            <constraint firstItem="xHO-av-um0" firstAttribute="top" secondItem="o4S-eC-N6j" secondAttribute="bottom" id="Lso-gP-VEi"/>
+                            <constraint firstAttribute="trailing" secondItem="o4S-eC-N6j" secondAttribute="trailing" id="Qj7-mz-r1J"/>
+                            <constraint firstItem="o4S-eC-N6j" firstAttribute="leading" secondItem="CFL-O6-chJ" secondAttribute="leading" id="V8s-Mh-LN4"/>
+                            <constraint firstItem="xHO-av-um0" firstAttribute="leading" secondItem="CFL-O6-chJ" secondAttribute="leading" id="X7h-UW-Emk"/>
+                            <constraint firstItem="iP1-wa-O3s" firstAttribute="top" secondItem="xHO-av-um0" secondAttribute="bottom" id="fk7-G0-EPg"/>
+                            <constraint firstItem="o4S-eC-N6j" firstAttribute="top" secondItem="CFL-O6-chJ" secondAttribute="top" id="he7-fe-Vkf"/>
+                            <constraint firstItem="iP1-wa-O3s" firstAttribute="leading" secondItem="CFL-O6-chJ" secondAttribute="leading" constant="5" id="u4F-bI-XKb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="CFL-O6-chJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="77e-fv-JcX"/>
+                <constraint firstItem="CFL-O6-chJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="9bl-Sk-Th1"/>
+                <constraint firstAttribute="trailing" secondItem="CFL-O6-chJ" secondAttribute="trailing" constant="2" id="lKf-c6-xZg"/>
+                <constraint firstAttribute="bottom" secondItem="CFL-O6-chJ" secondAttribute="bottom" constant="2" id="rs1-Qh-deK"/>
+            </constraints>
+            <connections>
+                <outlet property="backView" destination="CFL-O6-chJ" id="bBy-To-KGc"/>
+                <outlet property="iconImgV" destination="o4S-eC-N6j" id="pel-RX-1QN"/>
+                <outlet property="priceLabel" destination="iP1-wa-O3s" id="a69-ma-gEu"/>
+                <outlet property="titleLabel" destination="xHO-av-um0" id="n1G-dp-teI"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="占位" width="400" height="400"/>
+    </resources>
+</document>

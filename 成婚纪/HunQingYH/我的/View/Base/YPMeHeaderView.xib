@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2cr-B9-57m" customClass="YPMeHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="梵高的右耳" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IzS-9W-U9G">
+                    <rect key="frame" x="116.5" y="135" width="87" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="婚车" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHB-Ds-SlV">
+                    <rect key="frame" x="140" y="166" width="40" height="18"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="jHN-FS-Iok"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.94117647059999998" green="0.25098039220000001" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="占位图" translatesAutoresizingMaskIntoConstraints="NO" id="SMc-fO-V9l">
+                    <rect key="frame" x="125" y="50" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="J31-L8-VQY"/>
+                        <constraint firstAttribute="height" constant="70" id="UJC-kH-T4G"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6G-pH-OqW">
+                    <rect key="frame" x="280" y="50" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="HLp-RF-uHH"/>
+                        <constraint firstAttribute="height" constant="25" id="K2W-xg-ksQ"/>
+                    </constraints>
+                    <state key="normal" image="设置-white"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.94117647058823528" green="0.25098039215686274" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="wHB-Ds-SlV" firstAttribute="centerX" secondItem="2cr-B9-57m" secondAttribute="centerX" id="0dI-er-roj"/>
+                <constraint firstAttribute="bottom" secondItem="wHB-Ds-SlV" secondAttribute="bottom" constant="16" id="4hd-Lq-KG7"/>
+                <constraint firstItem="wHB-Ds-SlV" firstAttribute="top" secondItem="IzS-9W-U9G" secondAttribute="bottom" constant="10" id="9bg-nm-Xor"/>
+                <constraint firstItem="o6G-pH-OqW" firstAttribute="top" secondItem="SMc-fO-V9l" secondAttribute="top" id="Akl-ky-6uJ"/>
+                <constraint firstItem="SMc-fO-V9l" firstAttribute="top" secondItem="2cr-B9-57m" secondAttribute="top" constant="50" id="VNb-cZ-i8O"/>
+                <constraint firstItem="SMc-fO-V9l" firstAttribute="centerX" secondItem="2cr-B9-57m" secondAttribute="centerX" id="Yjl-WM-wwZ"/>
+                <constraint firstAttribute="trailing" secondItem="o6G-pH-OqW" secondAttribute="trailing" constant="15" id="ZNc-bl-9eq"/>
+                <constraint firstItem="IzS-9W-U9G" firstAttribute="top" secondItem="SMc-fO-V9l" secondAttribute="bottom" constant="15" id="gGT-Ls-5tJ"/>
+                <constraint firstItem="IzS-9W-U9G" firstAttribute="centerX" secondItem="2cr-B9-57m" secondAttribute="centerX" id="uXd-Da-waG"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="iconImgV" destination="SMc-fO-V9l" id="7yw-hi-ONj"/>
+                <outlet property="nameLabel" destination="IzS-9W-U9G" id="SBy-u2-2uh"/>
+                <outlet property="professionLabel" destination="wHB-Ds-SlV" id="Wp8-8s-1ri"/>
+                <outlet property="setBtn" destination="o6G-pH-OqW" id="Fe4-FH-5AM"/>
+            </connections>
+            <point key="canvasLocation" x="106" y="191"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="占位图" width="16" height="16"/>
+        <image name="设置-white" width="24" height="24"/>
+    </resources>
+</document>
