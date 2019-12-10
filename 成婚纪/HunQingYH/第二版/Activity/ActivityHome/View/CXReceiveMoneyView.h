@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CXReceiveMoneyView : UIView
-@property (weak, nonatomic) IBOutlet UIButton *reviceMoneyBtn;
+@property (weak, nonatomic) IBOutlet UIButton *reviceMoneyBtn;//我要报名
 @property (weak, nonatomic) IBOutlet UIImageView *reviceMoney;
 @property (weak, nonatomic) IBOutlet UIImageView *testImg;
 @property (weak, nonatomic) IBOutlet UIImageView *shareImg;

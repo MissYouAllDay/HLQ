@@ -72,8 +72,8 @@
     self.categoryView.titleSelectedColor =BlackColor;
     self.categoryView.backgroundColor =WhiteColor;
     JXCategoryIndicatorLineView *lineView = [[JXCategoryIndicatorLineView alloc] init];
-    lineView.indicatorLineViewColor = MainColor;
-    lineView.indicatorLineWidth = JXCategoryViewAutomaticDimension;
+    lineView.indicatorColor = MainColor;
+//    lineView.indicatorLineWidth = JXCategoryViewAutomaticDimension;
     self.categoryView.indicators = @[lineView];
     //tableview
     thisTableView =[[UITableView alloc]initWithFrame:CGRectMake(0, NAVIGATION_BAR_HEIGHT+50, ScreenWidth, ScreenHeight-NAVIGATION_BAR_HEIGHT-50-50)];

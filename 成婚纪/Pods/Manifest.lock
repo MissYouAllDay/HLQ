@@ -41,7 +41,7 @@ PODS:
     - SDWebImage (~> 4.0)
   - IQKeyboardManager (6.2.0)
   - JVFloatLabeledTextField (1.2.1)
-  - JXCategoryView (1.2.6)
+  - JXCategoryView (1.5.2)
   - LLSegmentBar (0.0.1)
   - Masonry (1.1.0)
   - MJExtension (3.0.15.1)
@@ -133,7 +133,7 @@ DEPENDENCIES:
   - XHLaunchAd
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - AFNetworking
     - Alert
     - AMapFoundation
@@ -202,7 +202,7 @@ SPEC CHECKSUMS:
   HXWeiboPhotoPicker: b389ed6a2f854270aa391c55591d0616a519c881
   IQKeyboardManager: 6194101620b73af5e67900b8f89707a99de0b804
   JVFloatLabeledTextField: cfc44e3c4d493b2ed92ede8035e8e89c2912ba64
-  JXCategoryView: e88c22b5f3d037e2b093c2e2d48a3cc81ba64ead
+  JXCategoryView: b284d35a7a8772eada05dd78642233e1eb763ea8
   LLSegmentBar: 7ef235c5ed4fe8f14ff4c9b2a6069f839ffe30dc
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
@@ -223,6 +223,6 @@ SPEC CHECKSUMS:
   XHLaunchAd: 45048592af01aa501c9d2d0c45e95ca74c4d0596
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: 019480ba0d09b4ab22fa01675cfd5d1046722d5d
+PODFILE CHECKSUM: 8cd45c108a354caa2d6456caebcf2b6fae716149
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.7.0.rc.2

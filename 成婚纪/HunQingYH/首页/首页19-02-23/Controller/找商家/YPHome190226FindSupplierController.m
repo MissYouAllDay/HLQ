@@ -91,7 +91,7 @@
     [self.view addSubview:line];
     [self.view addSubview:self.myCategoryView];
     
-    self.listContainerView = [[JXCategoryListContainerView alloc] initWithDelegate:self];
+    self.listContainerView = [[JXCategoryListContainerView alloc] initWithType:JXCategoryListContainerType_ScrollView delegate:self];
     self.listContainerView.frame = CGRectMake(0, NAVIGATION_BAR_HEIGHT+60, ScreenWidth, ScreenHeight-NAVIGATION_BAR_HEIGHT-60-HOME_INDICATOR_HEIGHT);
     self.listContainerView.defaultSelectedIndex = 0;
     [self.view addSubview:self.listContainerView];

@@ -384,8 +384,8 @@
         line.backgroundColor = [UIColor colorWithHexString:@"#F5F5F5"];
        
         JXCategoryIndicatorLineView *lineView = [[JXCategoryIndicatorLineView alloc] init];
-        lineView.indicatorLineViewColor = [UIColor redColor];
-        lineView.indicatorLineWidth = 30;
+//        lineView.indicatorLineViewColor = [UIColor redColor];
+//        lineView.indicatorLineWidth = 30;
         self.segmentView.indicators = @[lineView];
         
         [_sectionHeadView addSubview:self.segmentView];

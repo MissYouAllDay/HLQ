@@ -167,6 +167,7 @@ UIAlertView *aview=[[UIAlertView alloc]initWithTitle:title message:msg delegate:
 #define SortMenuFontColor  RGBS(114)
 #define ScreenWidth  (int)[[UIScreen mainScreen] bounds].size.width
 #define ScreenHeight (int )[[UIScreen mainScreen] bounds].size.height
+#define ScreenContentHeight (int)(ScreenHeight - NAVIGATION_BAR_HEIGHT - HOME_INDICATOR_HEIGHT)// 出去导航栏 - 底部安全距离
 #define Line375(a)  ([UIScreen mainScreen].bounds.size.width  *  a) / 375.f     //基于宽度 375 的屏幕计算 长度
 #define Line667(a)  ([UIScreen mainScreen].bounds.size.height *  a) / 667.f     //基于高度 667 的屏幕计算 高度
 #define ScreenScale [UIScreen mainScreen].bounds.size.width / 375.f     // 缩放比例
@@ -218,10 +219,11 @@ UIAlertView *aview=[[UIAlertView alloc]initWithTitle:title message:msg delegate:
 //#define RealHeight(value) ((value) / 667.0f * [UIScreen mainScreen].bounds.size.height)
 //#define RealWidth(value)  ((value) / 375.0f * [UIScreen mainScreen].bounds.size.wi
 
-
+#define STAUSBARHEI  ([UIApplication sharedApplication].statusBarFrame.size.height)
+#define iPhoneX (STAUSBARHEI != 20.f)
 // 判断是否是iPhone X
 //#define iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
-#define iPhoneX ([[[UIApplication sharedApplication] delegate] window].safeAreaInsets.bottom > 0)
+//#define iPhoneX ([[[UIApplication sharedApplication] delegate] window].safeAreaInsets.bottom > 0)
 // 状态栏高度
 #define STATUS_BAR_HEIGHT (iPhoneX ? 44.f : 20.f)
 // 导航栏高度

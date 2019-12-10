@@ -17,11 +17,15 @@
 #import "YPEDuBaseController.h"
 #import "CXWeddingBackVC.h"
 //#import "YPMoreBtnControl.h"
+#import "WJAdsView.h"
 
 #define UnselectedColor RGBS(248)
 #define SelectedColor RGB(250, 80, 120)
 
-@interface CXActivityHomeVC ()<JXCategoryViewDelegate,JXCategoryListContainerViewDelegate>
+@interface CXActivityHomeVC ()<JXCategoryViewDelegate,JXCategoryListContainerViewDelegate,WJAdsViewDelegate>
+{
+    FMDatabase *dataBase;
+}
 
 @property (nonatomic, strong) JXCategoryTitleView *myCategoryView;
 @property (nonatomic, strong) JXCategoryListContainerView *listContainerView;
@@ -35,6 +39,20 @@
 //顶部选择器
 @property (nonatomic, strong) NSArray *topTitleArr;
 
+@property (nonatomic, strong) UIButton  *searchBtn;    // 搜索按钮
+@property (nonatomic, strong) FSCustomButton  *monthBtn;    // 地区按钮
+/***********************************地址选择*****************************************/
+/**经纬度坐标*/
+@property (strong, nonatomic) NSString *coordinates;
+/**缓存城市*/
+@property (strong, nonatomic) NSString *cityInfo;
+/**缓存城市parentid*/
+@property (assign, nonatomic) NSInteger parentID;
+/**地区ID*/
+@property (strong, nonatomic) NSString *areaid;
+/***********************************地址选择*****************************************/
+
+@property (nonatomic, assign) BOOL Popup;    // 是否第一次弹窗
 @end
 
 @implementation CXActivityHomeVC {
@@ -67,7 +85,6 @@
     
     [self setupNav];
     [self setupUI];
-    
 }
 
 #pragma mark - UI
@@ -91,7 +108,7 @@
     [self.view addSubview:line];
     [self.view addSubview:self.myCategoryView];
     
-    self.listContainerView = [[JXCategoryListContainerView alloc] initWithDelegate:self];
+    self.listContainerView = [[JXCategoryListContainerView alloc] initWithType:JXCategoryListContainerType_ScrollView delegate:self];
     self.listContainerView.frame = CGRectMake(0, NAVIGATION_BAR_HEIGHT+60, ScreenWidth, ScreenHeight-NAVIGATION_BAR_HEIGHT-60-HOME_INDICATOR_HEIGHT);
     self.listContainerView.defaultSelectedIndex = 0;
     [self.view addSubview:self.listContainerView];
@@ -99,75 +116,7 @@
     self.myCategoryView.contentScrollView = self.listContainerView.scrollView;
 }
 
-- (void)setupNav{
-    
-    _navView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, NAVIGATION_BAR_HEIGHT)];
-    _navView.backgroundColor = ClearColor;
-    [self.view addSubview:_navView];
-    
-    //设置导航栏左边通知
-    UIButton *backBtn  = [UIButton buttonWithType:UIButtonTypeCustom];
-    [backBtn setImage:[UIImage imageNamed:@"back_bold"] forState:UIControlStateNormal];
-    [backBtn addTarget:self action:@selector(backVC) forControlEvents:UIControlEventTouchUpInside];
-    [_navView addSubview:backBtn];
-    [backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(40, 20));
-        make.left.mas_equalTo(_navView.mas_left);
-        make.bottom.mas_equalTo(_navView.mas_bottom).offset(-10);
-    }];
-    
-    UILabel *titleLab = [[UILabel alloc]init];
-    titleLab.text = @"找商家";
-    titleLab.textColor = BlackColor;
-    titleLab.font = [UIFont systemFontOfSize:18];
-    [_navView addSubview:titleLab];
-    [titleLab mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerY.mas_equalTo(backBtn);
-        make.left.mas_equalTo(backBtn.mas_right).mas_offset(3);
-    }];
-    
-    UIView *searchView = [[UIView alloc]init];
-    searchView.backgroundColor =RGBS(248);
-    searchView.clipsToBounds =YES;
-    searchView.layer.cornerRadius =4;
-    [_navView addSubview:searchView];
-    [searchView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerY.mas_equalTo(backBtn);
-        make.width.mas_equalTo(160);
-        make.height.mas_equalTo(36);
-        make.centerX.mas_equalTo(_navView);
-    }];
-    //导航栏右边搜索按钮
-    UIButton *searchBtn  = [UIButton buttonWithType:UIButtonTypeCustom];
-    [searchBtn setImage:[UIImage imageNamed:@"home190223_search"] forState:UIControlStateNormal];
-    [searchBtn addTarget:self action:@selector(searchBtnClick) forControlEvents:UIControlEventTouchUpInside];
-    [searchView addSubview:searchBtn];
-    [searchBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(14, 14));
-        make.left.mas_equalTo(14);
-        make.centerY.mas_equalTo(searchView);
-    }];
-    UILabel *label = [[UILabel alloc]init];
-    label.text = @"输入商家名称";
-    label.textColor = RGBS(190);
-    label.font = kFont(13);
-    [searchView addSubview:label];
-    [label mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerY.mas_equalTo(searchBtn);
-        make.left.mas_equalTo(searchBtn.mas_right).mas_offset(10);
-        make.right.mas_greaterThanOrEqualTo(-10);
-    }];
-    UIButton *clearBtn  = [UIButton buttonWithType:UIButtonTypeCustom];
-    clearBtn.backgroundColor =[UIColor clearColor];
-    [clearBtn setTitle:@"" forState:UIControlStateNormal];
-    [clearBtn addTarget:self action:@selector(searchBtnClick) forControlEvents:UIControlEventTouchUpInside];
-    [searchView addSubview:clearBtn];
-    [clearBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.mas_equalTo(searchView.mas_right);
-        make.left.mas_equalTo(searchBtn.mas_right);
-        make.centerY.mas_equalTo(searchView);
-    }];
-}
+#pragma mark - UI
 
 #pragma mark - JXCategoryListContainerViewDelegate
 //返回列表的数量
@@ -190,6 +139,7 @@
 
 - (id)receiveMoney {
     CXReceiveMoneyVC *vc = [[CXReceiveMoneyVC alloc] init];
+    vc.mainNav = self.navigationController;
     return vc;
 }
 
@@ -229,5 +179,194 @@
 //    searchVC.zhiYeArr = self.zhiYeArr;
 //    [self.navigationController pushViewController:searchVC animated:YES];
 }
+
+// MARK: -导航栏
+#pragma mark - UI
+- (void)setupNav{
+    
+    NSDate *date = [NSDate date];
+    
+    _navView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, NAVIGATION_BAR_HEIGHT)];
+    _navView.backgroundColor = WhiteColor;
+    [self.view addSubview:_navView];
+    
+    
+    if (!_searchBtn) {
+        _searchBtn  = [UIButton buttonWithType:UIButtonTypeCustom];
+    }
+    [_searchBtn setTitle:@"  输入酒店/宴会厅名称" forState:UIControlStateNormal];
+    [_searchBtn setTitleColor:RGBS(199) forState:UIControlStateNormal];
+    _searchBtn.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size: 13];
+    [_searchBtn setImage:[UIImage imageNamed:@"search_gray"] forState:UIControlStateNormal];
+    _searchBtn.backgroundColor = RGBS(248);
+    _searchBtn.layer.cornerRadius = 4;
+    _searchBtn.clipsToBounds = YES;
+    [_searchBtn addTarget:self action:@selector(searchBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    [_navView addSubview:_searchBtn];
+    [_searchBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(CGSizeMake(ScreenWidth*0.65-18, 32));
+        make.right.mas_equalTo(-18);
+        make.bottom.mas_equalTo(_navView.mas_bottom).offset(-10);
+    }];
+    
+    if (!_monthBtn) {
+        _monthBtn  = [[FSCustomButton alloc]init];
+    }
+    
+    _monthBtn.buttonImagePosition = FSCustomButtonImagePositionRight;
+    [_monthBtn setImage:[UIImage imageNamed:@"home_loc"] forState:UIControlStateNormal];
+    [_monthBtn setTitleColor:BlackColor forState:UIControlStateNormal];
+    if (! [self checkCityInfo]) {
+        [_monthBtn setTitle:@"青岛市" forState:UIControlStateNormal];
+        self.cityInfo = @"青岛市";
+        self.parentID = 171;
+    }else{
+        [_monthBtn setTitle:self.cityInfo forState:UIControlStateNormal];
+    }
+
+        [_monthBtn addTarget:self action:@selector(cityBtnClick) forControlEvents:UIControlEventTouchUpInside];
+        _monthBtn.layer.cornerRadius = 4;
+        _monthBtn.clipsToBounds = YES;
+        [_navView addSubview:_monthBtn];
+        [_monthBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.width.mas_equalTo(ScreenWidth*0.35-18-12);
+            make.left.mas_equalTo(18);
+            make.centerY.mas_equalTo(_searchBtn);
+            make.height.mas_equalTo(32);
+        }];
+    
+    [self selectDataBase];
+}
+
+//打开数据库
+- (void)openDataBase{
+    NSArray *filePath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentPath = [filePath objectAtIndex:0];
+    NSString *dbFilePath = [documentPath stringByAppendingPathComponent:@"region.db"];
+    
+    dataBase =[[FMDatabase alloc]initWithPath:dbFilePath];
+    BOOL ret = [dataBase open];
+    if (ret) {
+        NSLog(@"打开数据库成功");
+        
+    }else{
+        NSLog(@"打开数据库成功");
+    }
+    
+}
+//关闭数据库
+- (void)closeDataBase{
+    BOOL ret = [dataBase close];
+    if (ret) {
+        NSLog(@"关闭数据库成功");
+    }else{
+        NSLog(@"关闭数据库失败");
+    }
+}
+//查询数据库
+-(void)selectDataBase{
+    [self openDataBase];
+    NSString *huanCun = [[NSUserDefaults standardUserDefaults]objectForKey:@"city_name_new"];
+    NSLog(@"缓存城市为%@",huanCun);
+    NSLog(@"_cityInfo*$#$#$##$$%@",self.cityInfo);
+    NSString *selectSql =[NSString stringWithFormat:@"SELECT REGION_ID FROM Region WHERE REGION_NAME ='%@'",self.cityInfo];
+    FMResultSet *set =[dataBase executeQuery:selectSql];
+    while ([set next]) {
+        int ID = [set intForColumn:@"REGION_ID"];
+        NSLog(@"==*****%d",ID);
+        NSString *idStr = [NSString stringWithFormat:@"%d",ID];
+        
+        //6-5
+        //        [[NSUserDefaults standardUserDefaults]setObject:idStr forKey:@"areaid"];
+        //        NSLog(@"areaid ------- %@",[[NSUserDefaults standardUserDefaults] objectForKey:@"areaid"]);
+        self.areaid =idStr;
+    }
+    [self closeDataBase];
+}
+/**  是否有城市缓存 */
+-(BOOL)checkCityInfo{
+    if ([[[NSUserDefaults standardUserDefaults]objectForKey:@"city_name_new"] isEqualToString:@""]||![[NSUserDefaults standardUserDefaults]objectForKey:@"city_name_new"] ) {
+        //如果不存在城市缓存
+        return NO;
+    }else{
+        return YES;
+    }
+    
+}
+
+// MARK: - 弹窗
+#pragma mark - 获取广告弹窗接口
+-(void)getADAlertRequest{
+    NSString *url = @"/api/HQOAApi/GetUserPopup";
+    
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    if (!UserId_New) {
+        params[@"UserId"]   = @0;
+    }else{
+        params[@"UserId"]   = UserId_New;
+    }
+    
+    [[NetworkTool shareManager] requestWithUrlStr:url withParams:params Success:^(NSDictionary *object) {
+
+        if ([[[object valueForKey:@"Message"] valueForKey:@"Code"] integerValue] == 200) {
+            
+//            self.Popup =[[object objectForKey:@"Popup"]integerValue];
+//            self.ADImgurl =[object objectForKey:@"Imgurl"];
+//            self.ADJumpUrl =[object objectForKey:@"Detailsurl"];
+//            self.ShareUrl =[object objectForKey:@"ShareUrl"];
+//            self.ShareTitle =[object objectForKey:@"ShareTitle"];
+//            self.ShareImg =[object objectForKey:@"ShareImg"];
+            
+            if (self.Popup ==1) {
+                [self addADView:[object objectForKey:@"ShareImg"]];
+            }
+        }else{
+            
+            [EasyShowTextView showText:[[object valueForKey:@"Message"] valueForKey:@"Inform"] ];
+        }
+        
+    } Failure:^(NSError *error) {
+        
+        [EasyShowTextView showErrorText:@"网络错误，请稍后重试！"];
+        
+    }];
+}
+
+-(void)addADView:(NSString *)AdimgUrl {
+    
+    WJAdsView *adsView = [[WJAdsView alloc]initWithView:self.view];
+    
+    adsView.tag = 10;
+    adsView.delegate = self;
+    
+    NSMutableArray *array = [[NSMutableArray alloc] init];
+    
+    UIImageView *ima = [[UIImageView alloc]init];
+    CGSize size = [UIImage getImageSizeWithURL:[NSURL URLWithString:AdimgUrl]];
+    CGFloat adheight =(size.height)*(adsView.mainContainView.frame.size.width)/size.width;
+    ima.frame =CGRectMake(0,0, adsView.mainContainView.frame.size.width, adheight);
+    [ima sd_setImageWithURL:[NSURL URLWithString:AdimgUrl]];
+    [array addObject:ima];
+    
+    
+    [self.view addSubview:adsView];
+    adsView.containerSubviews = array;
+    [adsView showAnimated:YES];
+}
+
+/**
+ *  点击主内容视图
+ *
+ *  @param view 弹框视图
+ *  @param selectIndex 当前选中索引
+ */
+- (void)wjAdsViewTapMainContainView:(WJAdsView *)view currentSelectIndex:(long)selectIndex {
+    
+    
+    
+}
+
+
+
 
 @end

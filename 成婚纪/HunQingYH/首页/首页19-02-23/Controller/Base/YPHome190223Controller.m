@@ -581,8 +581,8 @@
                 gradientView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
                 [bgView addSubview:gradientView];
                 
-                bgView.backgroundViewHeight = 32;
-                bgView.backgroundViewCornerRadius = 4;
+                bgView.indicatorHeight = 32;
+                bgView.indicatorCornerRadius = 4;
                 bgView.clipsToBounds = YES;
                 self.myCategoryView.indicators = @[bgView];
             }

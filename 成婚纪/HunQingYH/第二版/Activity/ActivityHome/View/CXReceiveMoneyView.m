@@ -28,24 +28,26 @@
     [self.shareToFriendsImg addGestureRecognizer:tap5];
     [self.firstOrderimg         addGestureRecognizer:tap6];
     
-    CAGradientLayer *layer = [[CAGradientLayer alloc] init];
-    layer.frame = self.reviceMoneyBtn.bounds;
-    layer.colors = @[(__bridge id)[UIColor colorWithRed:255/255.0 green:174/255.0 blue:155/255.0 alpha:1.0].CGColor, (__bridge id)[UIColor colorWithRed:254/255.0 green:115/255.0 blue:157/255.0 alpha:1.0].CGColor];
-    [self.reviceMoneyBtn.layer addSublayer:layer];
+//    CAGradientLayer *layer = [[CAGradientLayer alloc] init];
+//    layer.frame = self.reviceMoneyBtn.bounds;
+////    layer.colors = @[(__bridge id)[UIColor colorWithRed:255/255.0 green:174/255.0 blue:155/255.0 alpha:1.0].CGColor, (__bridge id)[UIColor colorWithRed:254/255.0 green:115/255.0 blue:157/255.0 alpha:1.0].CGColor];
+//    [self.reviceMoneyBtn.layer addSublayer:layer];
 
+    self.reviceMoneyBtn.backgroundColor = [UIColor orangeColor];
     UIBezierPath *maskPath;
      maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
-                                      byRoundingCorners:(UIRectCornerAllCorners )
-                                            cornerRadii:CGSizeMake(-self.reviceMoneyBtn.height/2, -self.reviceMoneyBtn.height/2)];
+                                      byRoundingCorners:(UIRectCornerTopLeft | UIRectCornerBottomLeft | UIRectCornerBottomRight | UIRectCornerTopRight)
+                                            cornerRadii:CGSizeMake(17, 17)];
      CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
-     maskLayer.frame = self.bounds;
+     maskLayer.frame = self.reviceMoneyBtn.bounds;
      maskLayer.path = maskPath.CGPath;
      self.reviceMoneyBtn.layer.mask = maskLayer;
+    self.reviceMoneyBtn.clipsToBounds = YES;
 }
 
 - (void)pushVC {
     
-    
+    // 我要报名
 }
 
 @end

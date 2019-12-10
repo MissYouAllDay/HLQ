@@ -89,8 +89,8 @@
         gradientView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         [bgView addSubview:gradientView];
         
-        bgView.backgroundViewHeight = 32;
-        bgView.backgroundViewCornerRadius = 4;
+        bgView.indicatorHeight = 32;
+        bgView.indicatorCornerRadius = 4;
         bgView.clipsToBounds = YES;
         self.myCategoryView.indicators = @[bgView];
     }
@@ -99,7 +99,7 @@
     [self.view addSubview:line];
     [self.view addSubview:self.myCategoryView];
     
-    self.listContainerView = [[JXCategoryListContainerView alloc] initWithDelegate:self];
+    self.listContainerView = [[JXCategoryListContainerView alloc] initWithType:JXCategoryListContainerType_ScrollView delegate:self];
     self.listContainerView.frame = CGRectMake(0, top+60, ScreenWidth, ScreenHeight-top-60-HOME_INDICATOR_HEIGHT);
     self.listContainerView.defaultSelectedIndex = 0;
     [self.view addSubview:self.listContainerView];

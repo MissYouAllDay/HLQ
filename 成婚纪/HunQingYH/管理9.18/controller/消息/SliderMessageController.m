@@ -63,8 +63,8 @@
     self.categoryView.titleColorGradientEnabled = YES;
     self.categoryView.titleSelectedColor =MainColor;
     JXCategoryIndicatorLineView *lineView = [[JXCategoryIndicatorLineView alloc] init];
-    lineView.indicatorLineViewColor = MainColor;
-    lineView.indicatorLineWidth = JXCategoryViewAutomaticDimension;
+    lineView.indicatorColor = MainColor;
+//    lineView.indicatorLineWidth = JXCategoryViewAutomaticDimension;
     self.categoryView.indicators = @[lineView];
 
 }

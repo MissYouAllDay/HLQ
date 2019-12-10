@@ -227,8 +227,8 @@
     self.categoryView.titles = titleArr;
     self.categoryView.titleColorGradientEnabled = YES;
     JXCategoryIndicatorLineView *lineView = [[JXCategoryIndicatorLineView alloc] init];
-    lineView.indicatorLineViewColor = MainColor;
-    lineView.indicatorLineWidth = JXCategoryViewAutomaticDimension;
+    lineView.indicatorColor = MainColor;
+//    lineView.indicatorLineWidth = JXCategoryViewAutomaticDimension;
     self.categoryView.indicators = @[lineView];
     
     UIView *timeView =[[UIView alloc]initWithFrame:CGRectMake(0, 50, ScreenWidth, 30)];
