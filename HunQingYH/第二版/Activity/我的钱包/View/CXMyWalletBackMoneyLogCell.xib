@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CXMyWalletBackMoneyLogCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="68"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XCr-WP-kUX">
+                        <rect key="frame" x="0.0" y="10" width="375" height="58"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+ 0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8A-5v-Lgz">
+                                <rect key="frame" x="15" y="0.0" width="100" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Nk6-Z0-pQq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="SRc-vl-kOb">
+                                <rect key="frame" x="115" y="0.0" width="156" height="58"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="到期可提现" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Az4-jd-KeE">
+                                        <rect key="frame" x="0.0" y="0.0" width="156" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020年12月12日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duK-ep-v5R">
+                                        <rect key="frame" x="0.0" y="29" width="156" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKM-wC-Qt1">
+                                <rect key="frame" x="271" y="16" width="81" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="81" id="0k1-Yg-nlp"/>
+                                    <constraint firstAttribute="height" constant="26" id="vni-Ah-fnO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="推荐好友"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Z8A-5v-Lgz" firstAttribute="top" secondItem="XCr-WP-kUX" secondAttribute="top" id="1kK-Bu-gHF"/>
+                            <constraint firstItem="QKM-wC-Qt1" firstAttribute="centerY" secondItem="XCr-WP-kUX" secondAttribute="centerY" id="2MY-Kx-202"/>
+                            <constraint firstAttribute="bottom" secondItem="SRc-vl-kOb" secondAttribute="bottom" id="4C3-hs-Nob"/>
+                            <constraint firstItem="SRc-vl-kOb" firstAttribute="leading" secondItem="Z8A-5v-Lgz" secondAttribute="trailing" id="8QQ-lc-qnc"/>
+                            <constraint firstItem="SRc-vl-kOb" firstAttribute="top" secondItem="XCr-WP-kUX" secondAttribute="top" id="LBn-a5-bpU"/>
+                            <constraint firstAttribute="trailing" secondItem="QKM-wC-Qt1" secondAttribute="trailing" constant="23" id="VlQ-wQ-yDJ"/>
+                            <constraint firstItem="Z8A-5v-Lgz" firstAttribute="leading" secondItem="XCr-WP-kUX" secondAttribute="leading" constant="15" id="avu-8e-46V"/>
+                            <constraint firstItem="QKM-wC-Qt1" firstAttribute="leading" secondItem="SRc-vl-kOb" secondAttribute="trailing" id="hsv-eA-kDP"/>
+                            <constraint firstAttribute="bottom" secondItem="Z8A-5v-Lgz" secondAttribute="bottom" id="shB-7K-OK2"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="XCr-WP-kUX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="0Kh-wd-MIb"/>
+                    <constraint firstAttribute="bottom" secondItem="XCr-WP-kUX" secondAttribute="bottom" id="YYB-JI-aca"/>
+                    <constraint firstItem="XCr-WP-kUX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="f2Y-10-vb8"/>
+                    <constraint firstAttribute="trailing" secondItem="XCr-WP-kUX" secondAttribute="trailing" id="jni-D3-Fth"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bgView" destination="XCr-WP-kUX" id="Apd-QK-0CA"/>
+                <outlet property="moneyLab" destination="Z8A-5v-Lgz" id="Pc2-43-9Es"/>
+                <outlet property="shareBtn" destination="QKM-wC-Qt1" id="Q2i-qM-pk5"/>
+                <outlet property="timeLab" destination="duK-ep-v5R" id="Scc-7M-9ra"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="130"/>
+        </tableViewCell>
+    </objects>
+</document>
