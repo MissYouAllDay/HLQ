@@ -29,6 +29,8 @@ NS_ASSUME_NONNULL_BEGIN
 /** item宽度 */
 @property (nonatomic, assign) CGFloat itemW;
 
+- (void)makeShow;
+
 
 @end
 

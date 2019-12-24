@@ -8,6 +8,8 @@
 
 #import "TabBarVC.h"
 
+#import "CXAreaData.h"          // 地区
+
 #import "CXDingHunYanVC.h"      // 订婚宴。 19-09-24
 #import "YPWedSchemeViewController.h"//19-02-28 婚礼策划
 #import "CXCommunityViewController.h"   // 社区
@@ -40,6 +42,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [CXAreaData moveToDBFile];
     [self createTabBar];
 }
 

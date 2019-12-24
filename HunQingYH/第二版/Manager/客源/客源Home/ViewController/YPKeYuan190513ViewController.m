@@ -28,10 +28,7 @@
 #pragma mark - 隐藏导航条
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    
     [self.navigationController setNavigationBarHidden:YES animated:NO];
-    
-    [self setupUI];
 }
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
@@ -43,21 +40,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.view.backgroundColor = WhiteColor;
+    [self setupUI];
 }
 
 - (void)setupUI{
     
     self.magicView.itemScale = 1.2;
     self.magicView.headerHeight = 0;
-    self.magicView.navigationHeight = NAVIGATION_BAR_HEIGHT-STATUS_BAR_HEIGHT+10;
-    self.magicView.againstStatusBar = YES;
+    self.magicView.navigationHeight = 40;
+    //NAVIGATION_BAR_HEIGHT-STATUS_BAR_HEIGHT+10;
+    self.magicView.againstStatusBar = NO;
     self.magicView.sliderExtension = 5.0;
-    self.magicView.navigationInset = UIEdgeInsetsMake(0, 20, 0, 0);
+    self.magicView.navigationInset = UIEdgeInsetsMake(0, 0, 0, 0);
     //    self.magicView.sliderOffset = 0;
-    self.magicView.sliderWidth = 32;
+    self.magicView.sliderWidth = 70;
     self.magicView.navigationColor = [UIColor whiteColor];
     self.magicView.layoutStyle = VTLayoutStyleDefault;
     self.view.backgroundColor = WhiteColor;
@@ -69,7 +68,7 @@
         self.menuList = @[@"全部客源",@"官方推荐"];
     }
     if (!self.rightButton) {
-        self.rightButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 72, 28)];
+        self.rightButton = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 72, 28)];
     }
     [self.rightButton addTarget:self action:@selector(rightButtonClick) forControlEvents:UIControlEventTouchUpInside];
     [self.rightButton setTitleColor:WhiteColor forState:UIControlStateNormal];
@@ -78,7 +77,8 @@
     self.rightButton.layer.cornerRadius = 14;
     self.rightButton.clipsToBounds = YES;
     self.rightButton.center = self.view.center;
-    self.magicView.rightNavigatoinItem = self.rightButton;
+//    self.magicView.rightNavigatoinItem = self.rightButton;
+    
     if (YongHu(Profession_New)){
         [self.rightButton setTitle:@"我的发布" forState:UIControlStateNormal];
     }else{

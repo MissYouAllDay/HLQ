@@ -16,6 +16,7 @@
 #import "CXGiftViewController.h"
 #import "YPEDuBaseController.h"
 #import "CXWeddingBackVC.h"
+#import "CXAreaData.h"          // 地区
 //#import "YPMoreBtnControl.h"
 #import "WJAdsView.h"
 
@@ -78,7 +79,7 @@
 #pragma mark - UI
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.topTitleArr = @[@"领现金",@"婚礼福利",@"丽人福利",@"宝妈福利",@"婚礼返还"];
     self.view.backgroundColor = WhiteColor;

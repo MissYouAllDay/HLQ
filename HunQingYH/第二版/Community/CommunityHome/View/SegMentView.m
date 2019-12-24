@@ -35,11 +35,19 @@
     return self;
 }
 
+- (void)makeShow {
+    
+    if (self.itemW == 0) {
+        _itemW = ScreenWidth / self.dataArr.count;
+    }
+    [self loadSubView];
+}
+
 - (void)setDataArr:(NSArray *)dataArr {
     
     _dataArr = dataArr;
-    _itemW = ScreenWidth / self.dataArr.count;
-    [self loadSubView];
+    
+//    [self loadSubView];
 }
 
 - (void)setSelectIndex:(int)selectIndex {

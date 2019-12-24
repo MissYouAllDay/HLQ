@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)savaUserInfo:(NSDictionary *)object;
 
 /**
- 辨别用户身份
+ 返回用户身份
 
  @return 用户身份
  */

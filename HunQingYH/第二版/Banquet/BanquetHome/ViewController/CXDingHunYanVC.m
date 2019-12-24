@@ -40,6 +40,7 @@
 #import "CXSearchYHTView.h" // 查找宴会厅
 #import "FL_Button.h"
 #import "SDCycleScrollView.h"       // 轮播图
+#import "CXAreaData.h"      // 区域数据
 
 @interface CXDingHunYanVC ()<UITableViewDelegate,UITableViewDataSource,CJAreaPickerDelegate,JXCategoryViewDelegate,SDCycleScrollViewDelegate>
 
@@ -310,11 +311,14 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    YPBanquetListObj *list = self.listMarr[indexPath.row];
     
-    YPHYTHDetailController *detail = [[YPHYTHDetailController alloc]init];
-    detail.detailID = list.BanquetID;
-    [self.navigationController pushViewController:detail animated:YES];
+    if (self.listMarr.count > 0) {
+         YPBanquetListObj *list = self.listMarr[indexPath.row];
+           
+           YPHYTHDetailController *detail = [[YPHYTHDetailController alloc]init];
+           detail.detailID = list.BanquetID;
+           [self.navigationController pushViewController:detail animated:YES];
+    }
 }
 
 #pragma mark - 导航栏 target
@@ -543,79 +547,9 @@
 }
 
 #pragma mark --------数据库-------
--(void)moveToDBFile
-{       //1、获得数据库文件在工程中的路径——源路径。
-    NSString *sourcesPath = [[NSBundle mainBundle] pathForResource:@"region"ofType:@"db"];
-    
-    NSLog(@"sourcesPath %@",sourcesPath);
-    //2、获得沙盒中Document文件夹的路径——目的路径
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentPath = [paths objectAtIndex:0];
-    NSLog(@"documentPath %@",documentPath);
-    
-    NSString *desPath = [documentPath stringByAppendingPathComponent:@"region.db"];
-    //3、通过NSFileManager类，将工程中的数据库文件复制到沙盒中。
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    if (![fileManager fileExistsAtPath:desPath])
-    {
-        NSError *error ;
-        if ([fileManager copyItemAtPath:sourcesPath toPath:desPath error:&error]) {
-            NSLog(@"数据库移动成功");
-        }
-        else {
-            NSLog(@"数据库移动失败");
-        }
-    }
-    
-}
-//打开数据库
-- (void)openDataBase{
-    NSArray *filePath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentPath = [filePath objectAtIndex:0];
-    NSString *dbFilePath = [documentPath stringByAppendingPathComponent:@"region.db"];
-    
-    dataBase =[[FMDatabase alloc]initWithPath:dbFilePath];
-    BOOL ret = [dataBase open];
-    if (ret) {
-        NSLog(@"打开数据库成功");
-        
-    }else{
-        NSLog(@"打开数据库成功");
-    }
-    
-}
-//关闭数据库
-- (void)closeDataBase{
-    BOOL ret = [dataBase close];
-    if (ret) {
-        NSLog(@"关闭数据库成功");
-    }else{
-        NSLog(@"关闭数据库失败");
-    }
-}
-//查询数据库
+// 获取区域id
 -(void)selectDataBase{
-    [self openDataBase];
-    NSString *huanCun = [[NSUserDefaults standardUserDefaults]objectForKey:@"city_name_new"];
-    NSLog(@"缓存城市为%@",huanCun);
-    NSLog(@"_cityInfo*$#$#$##$$%@",self.cityInfo);
-    NSString *selectSql =[NSString stringWithFormat:@"SELECT REGION_ID FROM Region WHERE REGION_NAME ='%@'",self.cityInfo];
-    FMResultSet *set =[dataBase executeQuery:selectSql];
-    while ([set next]) {
-        int ID = [set intForColumn:@"REGION_ID"];
-        NSLog(@"==*****%d",ID);
-        NSString *idStr = [NSString stringWithFormat:@"%d",ID];
-        
-        //6-5
-        //        [[NSUserDefaults standardUserDefaults]setObject:idStr forKey:@"areaid"];
-        //        NSLog(@"areaid ------- %@",[[NSUserDefaults standardUserDefaults] objectForKey:@"areaid"]);
-        self.areaid =idStr;
-    }
-    [self closeDataBase];
-    
-    [self.tableView reloadData];
-    NSLog(@"~~~~~~ huanCun:%@ cityInfo:%@ areaid:%@ ",huanCun,self.cityInfo,self.areaid);
-    
+    self.areaid = [CXAreaData selectDataBaseWithCityInfo:self.cityInfo];
 }
 /**  是否有城市缓存 */
 -(BOOL)checkCityInfo{
@@ -628,24 +562,10 @@
     
 }
 
-/**
- 查询某市级所管辖的县/区
- */
+/** 查询某市级所管辖的县/区 */
 - (void)searchCityList:(NSString *)selectCity withParentId:(NSInteger )parentID {
     
-    [self openDataBase];
-    NSMutableArray *areaArray = [[NSMutableArray alloc] init];
-    
-    NSString *selectSql4 =[NSString stringWithFormat:@"SELECT REGION_NAME FROM Region WHERE  PARENT_ID = %ld",parentID];
-    FMResultSet *set4 =[dataBase executeQuery:selectSql4];
-    
-    while ([set4 next]) {
-        NSString *cityStr  = [set4 stringForColumn:@"REGION_NAME"];
-        [areaArray addObject:cityStr];
-        
-    }
-    [self closeDataBase];
-    [areaArray insertObject:@"全部区域" atIndex:0];
+    NSArray *areaArray = [CXAreaData searchCityListWithParentId:parentID];
     [self.sectionHeadView removeFromSuperview];
     self.sectionHeadView = nil;
     self.segmentView = nil;

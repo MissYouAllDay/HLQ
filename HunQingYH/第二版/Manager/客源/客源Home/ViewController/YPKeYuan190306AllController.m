@@ -44,6 +44,7 @@
 @property (nonatomic, strong) NSArray *imgArr;
 @property (nonatomic, strong) NSMutableArray<YPGetJSJTableList *> *listMarr;
 
+@property (nonatomic, assign) int didSelectIndex;    // 点击的cell 位置
 /***********************************地址选择*****************************************/
 /**经纬度坐标*/
 @property (strong, nonatomic) NSString *coordinates;
@@ -84,7 +85,7 @@
     [super viewWillAppear:animated];
     
     [self.navigationController setNavigationBarHidden:YES animated:NO];
-    [self GetJSJTableListWithIdentityID:@"" AndSortField:@"0" Sort:@"0"];
+    
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
@@ -101,6 +102,9 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.view.backgroundColor = WhiteColor;
     
+    
+    self.professionName = Profession_Name_New;
+
     _pageIndex = 1;
     
     self.profession = @"";
@@ -112,6 +116,7 @@
     [self setupUI];
     
     [self GetAllOccupationList];
+    [self GetJSJTableListWithIdentityID:@"" AndSortField:@"0" Sort:@"0"];
 }
 
 - (void)setupUI{
@@ -176,46 +181,7 @@
                 
                 YPKeYuan190320ReAllListCell *cell = [YPKeYuan190320ReAllListCell cellWithTableView:tableView];
                 cell.selectionStyle = UITableViewCellSelectionStyleNone;
-                if (listModel.Source.integerValue == 0) {//0官方,1个人
-                    cell.tagImgV.hidden = NO;
-                }else{
-                    cell.tagImgV.hidden = YES;
-                }
-                if (listModel.Name.length > 0) {
-                    cell.titleLabel.text = listModel.Name;
-                }else{
-                    cell.titleLabel.text = @"无姓名";
-                }
-                if (listModel.Phone.length > 0) {
-                    cell.phoneLabel.text = listModel.Phone;
-                }else{
-                    cell.phoneLabel.text = @"无手机号";
-                }
-                if (listModel.Identity.length > 0) {
-                    cell.supplierLabel.text = listModel.Identity;
-                }else{
-                    cell.supplierLabel.text = @"无需求商家";
-                }
-                if (listModel.WeddingTime.length > 0) {
-                    cell.hunqi.text = listModel.WeddingTime;
-                }else{
-                    cell.hunqi.text = @"无婚期";
-                }
-                cell.zhuoshu.text = [NSString stringWithFormat:@"%@桌",listModel.TablesNumber];
-                cell.canbiao.text = [NSString stringWithFormat:@"%@元/桌",listModel.MealMark];
-//                if (listModel.ApplyType.integerValue == 0) {//0未申请,1审核中,2审核通过,3审核驳回
-//                    [cell.applyBtn setTitle:@"申请" forState:UIControlStateNormal];
-//                    cell.applyBtn.enabled = YES;
-//                }else if (listModel.ApplyType.integerValue == 1) {//0未申请,1审核中,2审核通过,3审核驳回
-//                    [cell.applyBtn setTitle:@"审核中" forState:UIControlStateNormal];
-//                    cell.applyBtn.enabled = NO;
-//                }else if (listModel.ApplyType.integerValue == 2) {//0未申请,1审核中,2审核通过,3审核驳回
-//                    [cell.applyBtn setTitle:@"审核通过" forState:UIControlStateNormal];
-//                    cell.applyBtn.enabled = NO;
-//                }else if (listModel.ApplyType.integerValue == 3) {//0未申请,1审核中,2审核通过,3审核驳回
-//                    [cell.applyBtn setTitle:@"审核驳回" forState:UIControlStateNormal];
-//                    cell.applyBtn.enabled = NO;
-//                }
+                cell.listModel = listModel;
                 cell.applyBtn.tag = indexPath.section + 1000;
                 [cell.applyBtn addTarget:self action:@selector(lookBtnClick:) forControlEvents:UIControlEventTouchUpInside];
                 
@@ -672,6 +638,7 @@
 }
 
 - (void)lookBtnClick:(UIButton *)sender{
+    self.didSelectIndex = sender.tag - 1000;
     YPGetJSJTableList *list = self.listMarr[sender.tag-1000];
     [self CreateJSJApplyRecordsWithID:list.Id];
 }
@@ -796,6 +763,8 @@
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [EasyShowLodingView hidenLoding];
         });
+        [self.tableView.mj_header endRefreshing];
+        [self.tableView.mj_footer endRefreshing];
         
         if ([[[object valueForKey:@"Message"] valueForKey:@"Code"] integerValue] == 200) {
             
@@ -825,6 +794,8 @@
         }
         
     } Failure:^(NSError *error) {
+        [self.tableView.mj_header endRefreshing];
+        [self.tableView.mj_footer endRefreshing];
         // 菊花不会自动消失，需要自己移除
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [EasyShowLodingView hidenLoding];
@@ -1049,14 +1020,9 @@
     
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+// MARK: - JXCategoryListContentViewDelegate
+- (UIView *)listView {
+    return self.view;
 }
-*/
 
 @end

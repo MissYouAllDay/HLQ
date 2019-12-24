@@ -2035,6 +2035,7 @@
 		F41DE71C23AB43BE00C48D16 /* CXBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F41DE71B23AB43BE00C48D16 /* CXBaseTableView.m */; };
 		F41DE71F23AB44C500C48D16 /* ContentBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F41DE71E23AB44C500C48D16 /* ContentBaseViewController.m */; };
 		F41DE72223AB44D500C48D16 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F41DE72123AB44D500C48D16 /* ListViewController.m */; };
+		F41EA6CB23B0A18F00F84DD7 /* region.db in Resources */ = {isa = PBXBuildFile; fileRef = F41EA6CA23B0A18F00F84DD7 /* region.db */; };
 		F4410419239E8F4B002C316D /* NSString+Check.m in Sources */ = {isa = PBXBuildFile; fileRef = F4410418239E8F4B002C316D /* NSString+Check.m */; };
 		F44DA94B239DFD77006A07CB /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F44DA948239DFD72006A07CB /* NSObject+YYModel.m */; };
 		F44DA94C239DFD77006A07CB /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F44DA949239DFD74006A07CB /* YYClassInfo.m */; };
@@ -2042,6 +2043,7 @@
 		F44E73F1239CE52F001026BE /* CXApplyPartnerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F44E73F0239CE52F001026BE /* CXApplyPartnerVC.m */; };
 		F44E73FF239CE8E0001026BE /* CXActivityRuleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F44E73FD239CE8E0001026BE /* CXActivityRuleCell.m */; };
 		F44E7400239CE8E0001026BE /* CXActivityRuleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F44E73FE239CE8E0001026BE /* CXActivityRuleCell.xib */; };
+		F452AE2A23ACFCA5003E3766 /* CXAreaData.m in Sources */ = {isa = PBXBuildFile; fileRef = F452AE2923ACFCA5003E3766 /* CXAreaData.m */; };
 		F492B263239D19CB00CDF6F5 /* CXApplyPartnerMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = F492B262239D19CB00CDF6F5 /* CXApplyPartnerMainView.m */; };
 		F492B265239D19D100CDF6F5 /* CXApplyPartnerMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F492B264239D19D100CDF6F5 /* CXApplyPartnerMainView.xib */; };
 		F492B26C239D2BBC00CDF6F5 /* CXInviteHotelStayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F492B26B239D2BBC00CDF6F5 /* CXInviteHotelStayVC.m */; };
@@ -4986,7 +4988,7 @@
 		AC591A161F4532E3005F6431 /* YPArrangeNewAddDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPArrangeNewAddDetailController.m; sourceTree = "<group>"; };
 		AC5A5BB61FB53A4A004BA3E6 /* YPContractController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPContractController.h; sourceTree = "<group>"; };
 		AC5A5BB71FB53A4A004BA3E6 /* YPContractController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPContractController.m; sourceTree = "<group>"; };
-		AC6E97B21F257ED600B5BC08 /* HunQingYH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HunQingYH.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC6E97B21F257ED600B5BC08 /* 练手demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "练手demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC6E97B61F257ED600B5BC08 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AC6E97C41F257ED600B5BC08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC6E97C61F257ED600B5BC08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -5575,7 +5577,7 @@
 		F41DE71E23AB44C500C48D16 /* ContentBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentBaseViewController.m; sourceTree = "<group>"; };
 		F41DE72023AB44D400C48D16 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
 		F41DE72123AB44D500C48D16 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
-		F41DE91023ACBD4700C48D16 /* region.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = region.db; sourceTree = "<group>"; };
+		F41EA6CA23B0A18F00F84DD7 /* region.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = region.db; sourceTree = "<group>"; };
 		F4410416239E8F47002C316D /* NSString+Check.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Check.h"; sourceTree = "<group>"; };
 		F4410418239E8F4B002C316D /* NSString+Check.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Check.m"; path = "../New Group/NSString+Check.m"; sourceTree = "<group>"; };
 		F44DA947239DFD6F006A07CB /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
@@ -5589,6 +5591,8 @@
 		F44E73FC239CE8E0001026BE /* CXActivityRuleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXActivityRuleCell.h; sourceTree = "<group>"; };
 		F44E73FD239CE8E0001026BE /* CXActivityRuleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXActivityRuleCell.m; sourceTree = "<group>"; };
 		F44E73FE239CE8E0001026BE /* CXActivityRuleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CXActivityRuleCell.xib; sourceTree = "<group>"; };
+		F452AE2823ACFCA5003E3766 /* CXAreaData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXAreaData.h; sourceTree = "<group>"; };
+		F452AE2923ACFCA5003E3766 /* CXAreaData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXAreaData.m; sourceTree = "<group>"; };
 		F492B261239D19CB00CDF6F5 /* CXApplyPartnerMainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXApplyPartnerMainView.h; sourceTree = "<group>"; };
 		F492B262239D19CB00CDF6F5 /* CXApplyPartnerMainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXApplyPartnerMainView.m; sourceTree = "<group>"; };
 		F492B264239D19D100CDF6F5 /* CXApplyPartnerMainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CXApplyPartnerMainView.xib; sourceTree = "<group>"; };
@@ -5653,6 +5657,8 @@
 				18257C2823614F1D0040A332 /* CXColorList.h */,
 				F4410417239E8F4B002C316D /* Category */,
 				18257C3223618B530040A332 /* Base */,
+				F452AE2823ACFCA5003E3766 /* CXAreaData.h */,
+				F452AE2923ACFCA5003E3766 /* CXAreaData.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -5841,6 +5847,7 @@
 			isa = PBXGroup;
 			children = (
 				181121DB236925B10087EBFD /* ManagerHome */,
+				F452AE2023ACFB07003E3766 /* 客源 */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -7166,10 +7173,6 @@
 		2F79E46422364596004ADF9B /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				2F79E466223645C0004ADF9B /* YPMyKeYuan190311BaseController.h */,
-				2F79E467223645C0004ADF9B /* YPMyKeYuan190311BaseController.m */,
-				2F79E4692236461C004ADF9B /* YPMyKeYuan190311ListController.h */,
-				2F79E46A2236461C004ADF9B /* YPMyKeYuan190311ListController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -7588,8 +7591,6 @@
 		2F7D9EBB2289A22800CCBCAE /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				4536D5CB22F278FC005C61DB /* YPKeYuan190513ViewController.h */,
-				4536D5CC22F278FD005C61DB /* YPKeYuan190513ViewController.m */,
 				2F83B0F922942166002A3FDA /* YPKeYuan190521MyPublishController.h */,
 				2F83B0FA22942166002A3FDA /* YPKeYuan190521MyPublishController.m */,
 			);
@@ -8210,8 +8211,6 @@
 		2F835270222F574500713F2D /* 全部客源 */ = {
 			isa = PBXGroup;
 			children = (
-				2F835274222F578200713F2D /* YPKeYuan190306AllController.h */,
-				2F835275222F578200713F2D /* YPKeYuan190306AllController.m */,
 			);
 			path = "全部客源";
 			sourceTree = "<group>";
@@ -13307,7 +13306,7 @@
 		AC6E97B31F257ED600B5BC08 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AC6E97B21F257ED600B5BC08 /* HunQingYH.app */,
+				AC6E97B21F257ED600B5BC08 /* 练手demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -13344,7 +13343,7 @@
 		AC6E97B51F257ED600B5BC08 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F41DE91023ACBD4700C48D16 /* region.db */,
+				F41EA6CA23B0A18F00F84DD7 /* region.db */,
 				AC6E9CB81F26E37500B5BC08 /* Content.sqlite */,
 				AC6E97B61F257ED600B5BC08 /* main.m */,
 				AC6E97D41F25819900B5BC08 /* CHJYHPrefixHeader.pch */,
@@ -15212,9 +15211,9 @@
 		F41DE6B323AB3E7000C48D16 /* back */ = {
 			isa = PBXGroup;
 			children = (
+				F41DE6B623AB3E7000C48D16 /* ViewController */,
 				F41DE6B423AB3E7000C48D16 /* Model */,
 				F41DE6B523AB3E7000C48D16 /* View */,
-				F41DE6B623AB3E7000C48D16 /* ViewController */,
 			);
 			path = back;
 			sourceTree = "<group>";
@@ -15236,12 +15235,12 @@
 		F41DE6B623AB3E7000C48D16 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				F41DE6B723AB3E7000C48D16 /* CXBackMoneyListVC.h */,
+				F41DE6BC23AB3E7000C48D16 /* CXBackMoneyVC.h */,
 				F41DE6B823AB3E7000C48D16 /* CXBackMoneyVC.m */,
 				F41DE6B923AB3E7000C48D16 /* CXViewController.h */,
-				F41DE6BA23AB3E7000C48D16 /* CXBackMoneyListVC.m */,
 				F41DE6BB23AB3E7000C48D16 /* CXViewController.m */,
-				F41DE6BC23AB3E7000C48D16 /* CXBackMoneyVC.h */,
+				F41DE6B723AB3E7000C48D16 /* CXBackMoneyListVC.h */,
+				F41DE6BA23AB3E7000C48D16 /* CXBackMoneyListVC.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -15335,6 +15334,41 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		F41EA6C623B0687900F84DD7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F41EA6CF23B0BC0700F84DD7 /* 客源Home */ = {
+			isa = PBXGroup;
+			children = (
+				F452AE2123ACFB17003E3766 /* ViewController */,
+				F41EA6C623B0687900F84DD7 /* View */,
+			);
+			path = "客源Home";
+			sourceTree = "<group>";
+		};
+		F41EA6D023B0BC1400F84DD7 /* 我的客源 */ = {
+			isa = PBXGroup;
+			children = (
+				F41EA6D123B0BC3200F84DD7 /* ViewController */,
+			);
+			path = "我的客源";
+			sourceTree = "<group>";
+		};
+		F41EA6D123B0BC3200F84DD7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2F79E466223645C0004ADF9B /* YPMyKeYuan190311BaseController.h */,
+				2F79E467223645C0004ADF9B /* YPMyKeYuan190311BaseController.m */,
+				2F79E4692236461C004ADF9B /* YPMyKeYuan190311ListController.h */,
+				2F79E46A2236461C004ADF9B /* YPMyKeYuan190311ListController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		F4410417239E8F4B002C316D /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -15391,6 +15425,26 @@
 				F44E73F2239CE5A9001026BE /* ApplyPartner */,
 			);
 			path = "领现金";
+			sourceTree = "<group>";
+		};
+		F452AE2023ACFB07003E3766 /* 客源 */ = {
+			isa = PBXGroup;
+			children = (
+				F41EA6CF23B0BC0700F84DD7 /* 客源Home */,
+				F41EA6D023B0BC1400F84DD7 /* 我的客源 */,
+			);
+			path = "客源";
+			sourceTree = "<group>";
+		};
+		F452AE2123ACFB17003E3766 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4536D5CB22F278FC005C61DB /* YPKeYuan190513ViewController.h */,
+				4536D5CC22F278FD005C61DB /* YPKeYuan190513ViewController.m */,
+				2F835274222F578200713F2D /* YPKeYuan190306AllController.h */,
+				2F835275222F578200713F2D /* YPKeYuan190306AllController.m */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		F492B266239D2B5B00CDF6F5 /* InviteHotelStay  */ = {
@@ -15492,7 +15546,7 @@
 			);
 			name = HunQingYH;
 			productName = HunQingYH;
-			productReference = AC6E97B21F257ED600B5BC08 /* HunQingYH.app */;
+			productReference = AC6E97B21F257ED600B5BC08 /* 练手demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -15969,6 +16023,7 @@
 				18153214236A7871004B4738 /* CXReceiveSubView.xib in Resources */,
 				2F97B89620B24D530091796C /* YPRegisterProtocolCell.xib in Resources */,
 				AA53667B1F62833200A97FA2 /* CH_full_unLockIcon@2x.png in Resources */,
+				F41EA6CB23B0A18F00F84DD7 /* region.db in Resources */,
 				2F7BDB632238D7EA0043020F /* YPMyKeYuan190313EditRemarkCell.xib in Resources */,
 				2F7BDB3B223745E40043020F /* YPMyKeYuan190312DetailHeadCell.xib in Resources */,
 				2F8F275020A2C2F200B0F14A /* YPReReHomeHeader.xib in Resources */,
@@ -16249,6 +16304,7 @@
 				2F8F275120A2C2F200B0F14A /* YPReReHomeHeader.m in Sources */,
 				45083A072332151A00276CB4 /* manageTopView.m in Sources */,
 				2F78679221A29E6900AF4764 /* ColumnEditViewController.m in Sources */,
+				F452AE2A23ACFCA5003E3766 /* CXAreaData.m in Sources */,
 				2F7F2C6F219BB4FA00787E9E /* YPSupplierPersonInfoController.m in Sources */,
 				2F99200A20EDAE9C005361F8 /* YPGetActivityAreaList.m in Sources */,
 				2F410AD32187EC7700B5BD2A /* LeeDatePickerHeadView.m in Sources */,
@@ -17779,7 +17835,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/HunQingYH/ThirdPart/JhtDocViewerSDK",
 				);
-				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/CHJYHPrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HunQingYH/CHJYHPrefixHeader.pch";
 				INFOPLIST_FILE = HunQingYH/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -17789,7 +17845,7 @@
 				);
 				MARKETING_VERSION = 4.10.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hr.HunQingYH1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "练手demo";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -17816,7 +17872,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/HunQingYH/ThirdPart/JhtDocViewerSDK",
 				);
-				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/CHJYHPrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HunQingYH/CHJYHPrefixHeader.pch";
 				INFOPLIST_FILE = HunQingYH/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -17826,7 +17882,7 @@
 				);
 				MARKETING_VERSION = 4.10.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hr.HunQingYH1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "练手demo";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;

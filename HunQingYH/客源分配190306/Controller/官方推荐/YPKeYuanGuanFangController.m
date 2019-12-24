@@ -29,7 +29,6 @@
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:NO];
-    [self GetFacilitatorIdJSJTableListWithSortField:@"0" Sort:@"0"];
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
@@ -49,6 +48,7 @@
     _pageIndex = 1;
     
     [self setupUI];
+    [self GetFacilitatorIdJSJTableListWithSortField:@"0" Sort:@"0"];
 }
 
 - (void)setupUI{
@@ -234,6 +234,9 @@
     
     [[NetworkTool shareManager] requestWithUrlStr:url withParams:params Success:^(NSDictionary *object) {
         
+        [self.tableView.mj_header endRefreshing];
+        [self.tableView.mj_footer endRefreshing];
+        
         // 菊花不会自动消失，需要自己移除
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [EasyShowLodingView hidenLoding];
@@ -257,6 +260,10 @@
         }
         
     } Failure:^(NSError *error) {
+        
+        [self.tableView.mj_header endRefreshing];
+        [self.tableView.mj_footer endRefreshing];
+        
         // 菊花不会自动消失，需要自己移除
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [EasyShowLodingView hidenLoding];
@@ -335,6 +342,11 @@
         _listMarr = [NSMutableArray array];
     }
     return _listMarr;
+}
+
+// MARK: - JXCategoryListContentViewDelegate
+- (UIView *)listView {
+    return self.view;
 }
 
 /*

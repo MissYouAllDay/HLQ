@@ -110,6 +110,7 @@
                 [self.tagMarr addObject:info.Title];
             }
             self.segmentView.dataArr = self.tagMarr;
+            [self.segmentView makeShow];
             [self createSubViews];
         }else{
             
