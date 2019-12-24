@@ -45,6 +45,7 @@
     
     [CXAreaData moveToDBFile];
     [self createTabBar];
+    self.selectedIndex = 2;
 }
 
 - (void)createTabBar{
@@ -131,7 +132,7 @@
             
             CXActivityHomeVC *navCtrl2 = self.viewControllers[2];
             self.selectedViewController = navCtrl2;
-            self.selectedIndex = 0;
+            self.selectedIndex = 2;
             return NO;
             
         }else{

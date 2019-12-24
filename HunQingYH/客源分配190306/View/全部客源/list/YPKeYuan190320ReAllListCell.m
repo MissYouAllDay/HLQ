@@ -25,11 +25,7 @@
 - (void)setListModel:(YPGetJSJTableList *)listModel {
     
     _listModel = listModel;
-    if (listModel.Source.integerValue == 0) {//0官方,1个人
-        self.tagImgV.hidden = NO;
-    }else{
-        self.tagImgV.hidden = YES;
-    }
+    
     if (listModel.Name.length > 0) {
         self.titleLabel.text = listModel.Name;
     }else{
@@ -53,8 +49,18 @@
     self.zhuoshu.text = [NSString stringWithFormat:@"%@桌",listModel.TablesNumber];
     self.canbiao.text = [NSString stringWithFormat:@"%@元/桌",listModel.MealMark];
     
+    if (listModel.Source.integerValue == 0) {//0官方,1个人
+        self.tagImgV.hidden = NO;
+        [self applyTypeWithRecommend];
+    }else{
+        self.tagImgV.hidden = YES;
+        [self applyBtnSetting];
+    }
+}
+
+- (void)applyBtnSetting {
     ///**审核状态   0未申请,1审核中,2审核通过,3审核驳回*/
-    switch ([listModel.ApplyType intValue]) {
+    switch ([self.listModel.ApplyType intValue]) {
         case 0: [self applyTypeWithUnApply]; break;
         case 1: [self applyTypeWithUnApply]; break;
         case 2: [self applyTypeWithUnApply]; break;
@@ -62,6 +68,14 @@
         default:
             break;
     }
+    
+}
+
+// 点击查看 -- 推荐客源中显示
+- (void)applyTypeWithRecommend {
+    [self.applyBtn setBackgroundImage:[UIImage gradientImageWithBounds:_applyBtn.frame andColors:@[[UIColor colorWithRed:249/255.0 green:35/255.0 blue:123/255.0 alpha:1.0], [UIColor colorWithRed:248/255.0 green:99/255.0 blue:103/255.0 alpha:1.0]] andGradientType:1] forState:UIControlStateNormal];
+    [self.applyBtn setTitle:@"点击查看" forState:UIControlStateNormal];
+    self.applyBtn.userInteractionEnabled = YES;
 }
 
 // 未申请
@@ -69,7 +83,6 @@
     [self.applyBtn setBackgroundImage:[UIImage gradientImageWithBounds:_applyBtn.frame andColors:@[[UIColor colorWithRed:249/255.0 green:35/255.0 blue:123/255.0 alpha:1.0], [UIColor colorWithRed:248/255.0 green:99/255.0 blue:103/255.0 alpha:1.0]] andGradientType:1] forState:UIControlStateNormal];
     [self.applyBtn setTitle:@"立即申请" forState:UIControlStateNormal];
     self.applyBtn.userInteractionEnabled = YES;
-    
 }
 
 // 审核中
@@ -97,8 +110,6 @@
     [self.applyBtn setTitle:@"申请驳回" forState:UIControlStateNormal];
     self.applyBtn.userInteractionEnabled = YES;
 }
-
-
 
 - (void)setApplyBtn:(UIButton *)applyBtn{
     _applyBtn = applyBtn;

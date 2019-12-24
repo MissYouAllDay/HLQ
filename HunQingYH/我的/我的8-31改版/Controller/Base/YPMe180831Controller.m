@@ -724,60 +724,21 @@
     NSString *url = @"/api/HQOAApi/GetUserFacilitatorInfo";
     
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    
     params[@"Id"] = UserId_New;//18-08-11 用户ID-徐
-    NSLog(@"%@",params);
+    
     [[NetworkTool shareManager] requestWithUrlStr:url withParams:params Success:^(NSDictionary *object) {
-        NSLog(@"我的返回：%@",object);
+        
         if ([[[object valueForKey:@"Message"] valueForKey:@"Code"] integerValue] == 200) {
             
-            self.userInfo.UserId = [object valueForKey:@"UserId"];
-            self.userInfo.Phone = [object valueForKey:@"Phone"];
-            self.userInfo.Name = [object valueForKey:@"Name"];
-            self.userInfo.Profession = [object valueForKey:@"Profession"];
-            self.userInfo.Headportrait = [object valueForKey:@"Headportrait"];
-            self.userInfo.FacilitatorId = [object valueForKey:@"FacilitatorId"];
-            self.userInfo.ModelID = [object valueForKey:@"ModelID"];
-            self.userInfo.Address = [object valueForKey:@"Address"];
-            
-            self.userInfo.IsMotorcade = [object valueForKey:@"IsMotorcade"];
-            self.userInfo.CaptainID = [object valueForKey:@"CaptainID"];
-            self.userInfo.IsNews = [object valueForKey:@"IsNews"];
-            
-            self.userInfo.Abstract = [object valueForKey:@"Abstract"];
-            
-            //5-29
-            self.userInfo.FollowNumber = [[object valueForKey:@"FollowNumber"] integerValue];
-            self.userInfo.FansNumber = [[object valueForKey:@"FansNumber"] integerValue];
-            
-            self.userInfo.region = [object valueForKey:@"region"];
-            self.userInfo.regionname = [object valueForKey:@"regionname"];
-            self.userInfo.StatusType = [object valueForKey:@"StatusType"];
+            self.userInfo = [YPGetUserInfo mj_objectWithKeyValues:object];
             
             self.iconImgUrl = self.userInfo.Headportrait;
             self.titleName = self.userInfo.Name;
             self.professionID = self.userInfo.Profession;
-            
-            //18-08-16
-            self.userInfo.WeChatName = [object valueForKey:@"WeChatName"];
-            self.userInfo.WeChatType = [object valueForKey:@"WeChatType"];
-            
-            //18-11-02 婚期
-            self.userInfo.Wedding = [object valueForKey:@"Wedding"];
-            
-            //保存信息
-            [[NSUserDefaults standardUserDefaults] setObject:self.userInfo.UserId forKey:@"UserId_New"];
-            [[NSUserDefaults standardUserDefaults] setObject:self.userInfo.Name forKey:@"Name_New"];
-            [[NSUserDefaults standardUserDefaults] setObject:self.userInfo.Headportrait forKey:@"Headportrait_New"];
-            [[NSUserDefaults standardUserDefaults] setObject:self.userInfo.Profession forKey:@"Profession_New"];
-            [[NSUserDefaults standardUserDefaults] setObject:self.userInfo.Phone forKey:@"Phone_New"];
-            [[NSUserDefaults standardUserDefaults] setObject:self.userInfo.FacilitatorId forKey:@"FacilitatorId_New"];
-            [[NSUserDefaults standardUserDefaults] setObject:self.userInfo.WeChatName forKey:@"WeChatName_New"];
-            [[NSUserDefaults standardUserDefaults] setObject:self.userInfo.WeChatType forKey:@"WeChatType_New"];
-            [[NSUserDefaults standardUserDefaults] setObject:self.userInfo.Wedding forKey:@"Wedding_New"];
-            
-            [self.tableView reloadData];
-            
+    
+            // 保存信息
+            [CXDataManager savaUserInfo:object];
+           
             if (JiuDian(self.professionID)) {
                 //酒店切换页面
                 
@@ -792,8 +753,9 @@
                 [vcs addObject:navC];
                 
                 self.tabBarController.viewControllers =vcs;
+            }else {
+                [self.tableView reloadData];
             }
-         
             
         }else{
             [EasyShowTextView showText:[[object valueForKey:@"Message"] valueForKey:@"Inform"] ];
@@ -819,9 +781,9 @@
         if ([[[object valueForKey:@"Message"] valueForKey:@"Code"] integerValue] == 200) {
             
             self.profitModel.RefereeStatus = [object objectForKey:@"RefereeStatus"];
-            self.profitModel.TopBanner = [object objectForKey:@"TopBanner"];
-            self.profitModel.EndBanner = [object objectForKey:@"EndBanner"];
-            self.profitModel.Money = [object objectForKey:@"Money"];
+            self.profitModel.TopBanner     = [object objectForKey:@"TopBanner"];
+            self.profitModel.EndBanner     = [object objectForKey:@"EndBanner"];
+            self.profitModel.Money         = [object objectForKey:@"Money"];
             
             if (self.profitModel.RefereeStatus.integerValue == 0) {//0普通用户,1VIP
                 //普通
