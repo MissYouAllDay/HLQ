@@ -48,7 +48,7 @@
 
 #pragma mark - UI
 - (void)setupUI{
-    NSArray *titleArr = @[@"审核中",@"待处理",@"有意向",@"已合作",@"拒单/失效"];
+    NSArray *titleArr = @[@"待处理",@"有意向",@"已合作",@"拒单/失效"];
     NSMutableArray *vcMarr=[NSMutableArray array];
     for (NSString *str in titleArr) {
         YPMyKeYuan190311ListController *vc = [[YPMyKeYuan190311ListController alloc]init];

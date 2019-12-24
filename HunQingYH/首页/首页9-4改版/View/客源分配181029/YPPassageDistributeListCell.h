@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "YPGetJSJTableList.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface YPPassageDistributeListCell : UITableViewCell
+
+
+@property (nonatomic, strong) YPGetJSJTableList  *listModel;    // model
 
 @property (weak, nonatomic) IBOutlet UILabel *profession;
 @property (weak, nonatomic) IBOutlet UILabel *wedDate;

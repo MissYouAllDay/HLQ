@@ -14,7 +14,6 @@
 #import "hotelOrderVC.h"
 #import "YHTOrderVC.h"
 #import "SliderMessageController.h"
-#import "LCTabBarController.h"
 #import "YPMe180831Controller.h"
 #import "HRNavigationController.h"
 #import "YPGetUserInfo.h"

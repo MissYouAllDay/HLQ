@@ -22,6 +22,21 @@
     
 }
 
+
+- (void)setListModel:(YPGetJSJTableList *)listModel {
+    
+    _listModel = listModel;
+    
+    self.nameLabel.text = listModel.Name.length > 0 ? listModel.Name : @"无姓名";
+    self.phoneLabel.text = listModel.Phone.length > 0 ? listModel.Phone : @"无手机号";
+    self.profession.text = listModel.Identity;
+    self.wedDate.text = listModel.WeddingTime.length > 0 ? listModel.WeddingTime : @"无婚期";
+    self.shangchuan.text = listModel.Time.length > 0 ? listModel.Time : @"无上传时间";
+    self.quyu.text = listModel.Area.length > 0 ? listModel.Area : @"无区域";
+    self.zhuoshu.text = [NSString stringWithFormat:@"%zd",listModel.TablesNumber.integerValue];
+    self.canbiao.text = [NSString stringWithFormat:@"%@",listModel.MealMark];
+}
+
 - (void)setProfession:(UILabel *)profession{
     
     CAGradientLayer *gradient = [CAGradientLayer layer];
@@ -53,7 +68,7 @@
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
+    
     // Configure the view for the selected state
 }
 

@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "YPGetJSJTableList.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface YPKeYuan190320ReAllListCell : UITableViewCell
+
+@property (nonatomic, strong) YPGetJSJTableList  *listModel;    // listmodel
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *phoneLabel;

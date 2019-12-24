@@ -27,5 +27,14 @@
 #pragma mark - - - - - - - - - - - - - - - Model - - - - - - - - - - - - - - - - -
 
 
+// - - - - - - - - - - - - - - 弃用文件 时间不够。不敢删除。。- - - - - - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - 文件删除前，一定要逐一确认后再删除- - - - - - - - - - - - - - - - - - - -
+// - - - -  已弃用文件。 后期逐步删除和修改，，否则会出错，整个项目文件太过于混乱，废弃的文件未及时删除 - - - - - -
+
+// LCTabBarController
+//#import "YPPassengerDistributionController.h"  //  客源
+//#import "YPKeYuan190306BaseViewController.h"    //  客源
+
+
 
 #endif /* FileList_h */

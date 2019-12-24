@@ -60,7 +60,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     BOOL result = YES;
-    
     [self setEasyShowView];
     
     IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
