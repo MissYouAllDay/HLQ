@@ -33,7 +33,7 @@
     CXActivityRuleCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"CXActivityRuleCell" owner:nil options:nil] lastObject];
     cell.frame = CGRectMake(0, 0, ScreenWidth, Line375(390));
     
-    self.mainView.frame = CGRectMake(0, cell.bottom, ScreenWidth, 390);
+    self.mainView.frame = CGRectMake(0, cell.bottom, ScreenWidth, Line375(390));
     [self.view addSubview:self.scrollView];
     [self.scrollView addSubview:cell];
     [self.scrollView addSubview:self.mainView];
@@ -48,6 +48,7 @@
 - (void)postApplyPartnerData{
    
     NSDictionary *param = @{@"UserId":UserId_New,@"Name":self.mainView.nameTF.text,@"AreaId":@"0",@"SelfRecommendation":[NSString stringFormatWithNull:self.mainView.detailTF.text],@"Type":@"1"};
+    
     [[NetworkTool shareManager] requestWithUrlStr:URL_ACTIVITY_APPLYPARTNER withParams:param Success:^(NSDictionary *object) {
         
         if ([[[object valueForKey:@"Message"] valueForKey:@"Code"] integerValue] == 200) {
@@ -77,7 +78,13 @@
         
         if ([[[object valueForKey:@"Message"] valueForKey:@"Code"] integerValue] == 200) {
 
-            NSLog(@"%@----%@",URL_ACTIVITY_APPLYPARTNER_RESULT,object);
+            NSArray *arr = object[@"Data"];
+            if (arr.count == 0) {
+                return ;
+            }else {
+                
+                
+            }
             
             
         }else{

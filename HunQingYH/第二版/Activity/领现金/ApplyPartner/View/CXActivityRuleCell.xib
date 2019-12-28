@@ -34,7 +34,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0gM-jW-W7V">
                                         <rect key="frame" x="0.0" y="0.0" width="286" height="48"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4mf-dq-1tg">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="合伙人TitleBg" translatesAutoresizingMaskIntoConstraints="NO" id="4mf-dq-1tg">
                                                 <rect key="frame" x="0.0" y="0.0" width="286" height="48"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="活动规则" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3y3-8T-rmy">
@@ -64,11 +64,7 @@
 资格。给予开放我们的管理后台。直接管理平台的客源
 ，分配给当地酒店、婚庆、婚纱。 
 您将得到的权益:
-每成交一对新人预计将得到2000元。年薪百万不是梦！ 梦想实现热线: 15192055999（同微信）
-                            
-                            
-                            
-                            </string>
+每成交一对新人预计将得到2000元。年薪百万不是梦！ 梦想实现热线: 15192055999（同微信)</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -113,6 +109,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="合伙人TitleBg" width="120" height="12"/>
         <image name="合伙人banner" width="375" height="204.5"/>
     </resources>
 </document>

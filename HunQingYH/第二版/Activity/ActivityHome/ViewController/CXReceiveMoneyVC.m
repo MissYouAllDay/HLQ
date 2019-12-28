@@ -10,9 +10,11 @@
 #import "CXReceiveMoneyView.h"
 #import "CXWeddingBackItem.h"
 
-#import "CXApplyPartnerVC.h"  // 申请合伙人
-#import "CXInviteHotelStayVC.h" // 酒店入住
-#import "CXSySPayGiftVC.h"      // 平台下单福利
+#import "CXApplyPartnerVC.h"        // 申请合伙人
+#import "CXInviteHotelStayVC.h"     // 酒店入住
+#import "CXSySPayGiftVC.h"          // 平台下单福利
+#import "CXBackMoneyVC.h"           // 下单立返商家
+#import "CXInvitationFriendVC.h"    // 邀请好友
 
 @interface CXReceiveMoneyVC ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 @property (nonatomic, strong) UICollectionView  *collectionView;    // collectionview
@@ -27,8 +29,15 @@
     [super viewDidLoad];
     
     self.view.size = CGSizeMake(ScreenWidth, ScreenHeight - NAVIGATION_BAR_HEIGHT - Line375(50) - TAB_BAR_HEIGHT);
-    self.mainImgArr = @[@"推荐再推荐banner",@"下单福利",@"推荐再推荐banner",@"下单福利"];
+    self.mainImgArr = @[@"酒店入驻",@"合伙人",@"领福利",@"独有福利"];
     [self.view addSubview:self.collectionView];
+}
+
+- (void)defaSetting {
+    
+    // 查看西单立返商家
+    UITapGestureRecognizer *backMoneyTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pushCXBackMoneyVC)];
+    [self.mainView.backCustomerImg addGestureRecognizer:backMoneyTap];
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
@@ -64,14 +73,11 @@
     switch (indexPath.row) {
         case 0:[self pushInviteHotelStayVC]; break; //邀请酒店入住
         case 1:[self pushToApplyPartnerVC]; break; //申请合伙人
-        case 2:[self pushToApplyPartnerVC]; break; //推荐好友领福利
+        case 2:[self pushCXInvitationFriendVC]; break; //推荐好友领福利
         case 3:[self pushCXSySPayGiftVC]; break; //平台下单用户
         default:  break;
     }
 }
-
-
-
 
 
 // MARK: - 懒加载
@@ -126,6 +132,23 @@
     CXSySPayGiftVC *vc = [[CXSySPayGiftVC alloc] init];
     [self.mainNav pushViewController:vc animated:YES];
 }
+
+
+/// 查看下单立返商家
+- (void)pushCXBackMoneyVC {
+    
+    CXBackMoneyVC *vc = [[CXBackMoneyVC alloc] init];
+     [self.mainNav pushViewController:vc animated:YES];
+}
+
+/// 邀请好友
+- (void)pushCXInvitationFriendVC {
+    
+    CXInvitationFriendVC *vc = [[CXInvitationFriendVC alloc] init];
+     [self.mainNav pushViewController:vc animated:YES];
+}
+
+
 @end
 
 

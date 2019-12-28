@@ -17,6 +17,8 @@
 @property (nonatomic, strong) UIView  *stepBgView;          // 邀请流程
 @property (nonatomic, strong) UIView  *shareBgView;         // 分享记录
 
+@property (nonatomic, strong) UIView  *bottomView;          // 底部视图
+
 //@property (nonatomic, strong) UIImageView  *stepImg;        // 邀请流程
 @property (nonatomic, strong) UIView    *stepView;          // 邀请流程
 @property (nonatomic, strong) UIButton  *invitationBtn;    // 邀请按钮
@@ -36,9 +38,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"推荐好友";
     [self configerLayout];
     [self configerUI];
     [self defaSetting];
+    
+    UIBarButtonItem *item = [UIBarButtonItem itemWithimage:[UIImage imageNamed:@"fenxiang"] highImage:[UIImage imageNamed:@"fenxiang"] target:self action:@selector(pushNavigationBarRightItem)];
+    self.navigationItem.rightBarButtonItem = item;
 }
 
 - (void)configerUI {
@@ -46,6 +52,7 @@
     [self.view addSubview:self.scrollView];
     
     [self.scrollView addSubview:self.banner];
+    [self.scrollView addSubview:self.bottomView];
     [self.scrollView addSubview:self.stepBgView];
     [self.scrollView addSubview:self.shareBgView];
     
@@ -62,8 +69,9 @@
 }
 
 - (void)configerLayout {
-    
+     
     self.banner.frame = CGRectMake(0, 0, ScreenWidth, Line375(233));
+    
     self.stepBgView.frame = CGRectMake(Line375(15), self.banner.bottom, ScreenWidth - Line375(30), Line375(233));
     self.shareBgView.frame = CGRectMake(self.stepBgView.left, self.stepBgView.bottom + Line375(15), self.stepBgView.width, Line375(190));
     
@@ -76,9 +84,17 @@
     self.numberLab.frame = CGRectMake(0, Line375(37), self.shareBgView.width/2, self.detailBtn.top - self.shareTitleView.bottom);
     self.moneyLab.frame = self.numberLab.frame;
     self.moneyLab.left = self.numberLab.right;
+    
+    self.bottomView.frame = CGRectMake(0, self.banner.bottom, ScreenWidth,self.shareBgView.bottom - self.banner.bottom + 30 + NAVIGATION_HEIGHT_S);
+
+    self.scrollView.contentSize = CGSizeMake(ScreenWidth, self.bottomView.bottom);
 }
 
 - (void)defaSetting {
+    self.banner.image = [UIImage imageNamed:@"推荐再推荐图"];
+    UIColor *startColor = RGB(132, 86, 230);
+   CAGradientLayer *layer = [CXUtils gradientLayerWithFrame:self.view.bounds withColors:@[(id)startColor.CGColor,(id)[CXUtils colorWithHexString:@"#AB3FDE"].CGColor] withStartPoint:CGPointMake(0, 0) withEndPoint:CGPointMake(0, 1) withLocations:nil];
+   [self.bottomView.layer addSublayer:layer];
     
     self.stepBgView.backgroundColor =
     self.shareBgView.backgroundColor = [UIColor whiteColor];
@@ -92,13 +108,13 @@
     self.numberLab.textAlignment = NSTextAlignmentCenter;
     self.moneyLab.textAlignment = NSTextAlignmentCenter;
     
-    self.invitationBtn.backgroundColor = [UIColor redColor];
+    self.invitationBtn.backgroundColor = [CXUtils colorWithHexString:@"#F75923"];
     [self.invitationBtn setTitle:@"立即邀请好友" forState:UIControlStateNormal];
     
-    self.detailBtn.layer.borderColor = [UIColor redColor].CGColor;
+    self.detailBtn.layer.borderColor = [CXUtils colorWithHexString:@"#F75923"].CGColor;
     self.detailBtn.layer.borderWidth = 1;
     [self.detailBtn setTitle:@"查看详情" forState:UIControlStateNormal];
-    [self.detailBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [self.detailBtn setTitleColor:[CXUtils colorWithHexString:@"#F75923"] forState:UIControlStateNormal];
     
     self.stepAlert.numberOfLines = 0;
     self.stepAlert.textColor = RGB(255, 168, 11);
@@ -109,16 +125,16 @@
     NSString *numberValue = @"10";
     NSString *numberUtil = @" 人";
     NSMutableAttributedString *numberAtt = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@%@%@",numberTitle,numberValue,numberUtil] attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15]}];
-    [numberAtt addAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:30],NSForegroundColorAttributeName:[UIColor redColor]} range:NSMakeRange(numberTitle.length, numberValue.length)];
-    [numberAtt addAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:12],NSForegroundColorAttributeName:[UIColor redColor]} range:NSMakeRange(numberAtt.length - 1, 1)];
+    [numberAtt addAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:30],NSForegroundColorAttributeName:[CXUtils colorWithHexString:@"#FE4302"]} range:NSMakeRange(numberTitle.length, numberValue.length)];
+    [numberAtt addAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:12],NSForegroundColorAttributeName:[CXUtils colorWithHexString:@"#FE4302"]} range:NSMakeRange(numberAtt.length - 1, 1)];
     self.numberLab.attributedText = numberAtt;
     
     NSString *moneyTitle = @"实际到账收益\n\n";
     NSString *moneyValue = @"50";
     NSString *moneyUtil = @" 元";
     NSMutableAttributedString *moneyAtt = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@%@%@",moneyTitle,moneyValue,moneyUtil] attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15]}];
-    [moneyAtt addAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:30],NSForegroundColorAttributeName:[UIColor redColor]} range:NSMakeRange(moneyTitle.length, moneyValue.length)];
-    [moneyAtt addAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:12],NSForegroundColorAttributeName:[UIColor redColor]} range:NSMakeRange(moneyAtt.length - 1, 1)];
+    [moneyAtt addAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:30],NSForegroundColorAttributeName:[CXUtils colorWithHexString:@"#FE4302"]} range:NSMakeRange(moneyTitle.length, moneyValue.length)];
+    [moneyAtt addAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:12],NSForegroundColorAttributeName:[CXUtils colorWithHexString:@"#FE4302"]} range:NSMakeRange(moneyAtt.length - 1, 1)];
     self.moneyLab.attributedText = moneyAtt;
 }
 
@@ -136,9 +152,16 @@
     
     if (!_scrollView) {
         _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight)];
-        _scrollView.backgroundColor = [UIColor orangeColor];
     }
     return _scrollView;
+}
+
+- (UIView *)bottomView {
+    
+    if (!_bottomView) {
+        _bottomView = [[UIView alloc] init];
+    }
+    return _bottomView;
 }
 
 - (UIView *)stepBgView {
@@ -254,7 +277,7 @@
     if (!_stepView) {
         _stepView = [[UIView alloc] initWithFrame:CGRectMake(Line375(15), self.stepAlert.bottom, ScreenWidth - Line375(60), Line375(116))];
         
-        NSArray *stepImgs = @[@"haoyou",@"",@"lipin-2",@"",@"tubiao11"];
+        NSArray *stepImgs = @[@"haoyou",@"invitationContentLine",@"lipin-2",@"invitationContentLine",@"tubiao11"];
         NSArray *stepTexts = @[@"填写好友手机号",@"推荐好友领取宝马或丽人福利，并线下兑换礼品",@"获得现金奖励"];
         
         CGFloat oriX = Line375(20);
@@ -265,14 +288,15 @@
             
             UIImageView *img = [[UIImageView alloc] initWithFrame:CGRectMake(i * imgW + oriX, 0, imgW, imgH)];
             img.image = [UIImage imageNamed:stepImgs[i]];
-            img.contentMode = UIViewContentModeScaleAspectFit;
+            img.contentMode = UIViewContentModeCenter;
             
             [_stepView addSubview:img];
         }
         
         for (int i =0; i < stepTexts.count; i ++) {
             
-            UILabel *lab = [[UILabel alloc] initWithFrame:CGRectMake(i * labW + 2, imgH, labW, imgH)];
+            UILabel *lab = [[UILabel alloc] initWithFrame:CGRectMake(i * labW + 2, imgH, labW, 20)];
+            if (i == 1) { lab.height = 50; }
             lab.numberOfLines = 0;
             lab.textAlignment = NSTextAlignmentCenter;
             lab.font = [UIFont systemFontOfSize:12];
@@ -298,4 +322,8 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+- (void)pushNavigationBarRightItem {
+    
+    NSLog(@"你点击我了");
+}
 @end

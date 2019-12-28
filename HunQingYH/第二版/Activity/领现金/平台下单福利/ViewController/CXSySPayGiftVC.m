@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"平台下饭福利";
+    self.title = @"平台下单福利";
     
     UIBarButtonItem *item = [UIBarButtonItem itemWithImageName:@"kefu" highImageName:@"kefu" target:self action:@selector(showTelAlert)];
     self.navigationItem.rightBarButtonItems = @[item];
@@ -52,7 +52,7 @@
 //  客服电话
 - (void)showTelAlert {
     
-    NSString *mobile = @"";
+    NSString *mobile = kefuTel;
     NSString *mobileCpmplete = [NSString stringWithFormat:@"tel://%@",mobile];
       NSURL *url = [NSURL URLWithString:mobileCpmplete];
       [[UIApplication sharedApplication] openURL:url];
@@ -67,7 +67,7 @@
         _tableView.dataSource = self;
         _tableView.tableFooterView = [UIView new];
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-        _tableView.rowHeight = 220;
+        _tableView.rowHeight = 200;
         _tableView.estimatedRowHeight = UITableViewAutomaticDimension;
     }
     return _tableView;
@@ -80,14 +80,9 @@
         
         UIImageView *img = [[UIImageView alloc] initWithFrame:_tableHeaderView.bounds];
         img.backgroundColor = [UIColor orangeColor];
-        
-        UILabel *alert = [[UILabel alloc] initWithFrame:CGRectMake(Line375(50), 0, ScreenWidth - Line375(50) * 2, _tableHeaderView.height)];
-        alert.text = @"凡是确认为从平台下单的新人均可享受以下独有福利。";
-        alert.numberOfLines = 0;
-        alert.textColor = [UIColor whiteColor];
+        img.image = [UIImage imageNamed:@"giftAlert"];
         
         [_tableHeaderView addSubview:img];
-        [_tableHeaderView addSubview:alert];
     }
     
     return _tableHeaderView;

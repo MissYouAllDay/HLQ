@@ -26,17 +26,17 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="全额返现2" translatesAutoresizingMaskIntoConstraints="NO" id="3Se-Db-eps">
-                            <rect key="frame" x="15" y="37" width="345" height="312"/>
+                        <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="领现金banner" translatesAutoresizingMaskIntoConstraints="NO" id="3Se-Db-eps">
+                            <rect key="frame" x="15" y="37" width="345" height="171"/>
                         </imageView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B4i-4T-K1B">
-                            <rect key="frame" x="15" y="359" width="345" height="164"/>
+                            <rect key="frame" x="15" y="218" width="345" height="82.5"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="小测试" translatesAutoresizingMaskIntoConstraints="NO" id="AY9-bL-yOb">
-                                    <rect key="frame" x="0.0" y="0.0" width="160.5" height="164"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="160.5" height="82.5"/>
                                 </imageView>
                                 <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="下单立返" translatesAutoresizingMaskIntoConstraints="NO" id="5hf-hh-bP4">
-                                    <rect key="frame" x="184.5" y="0.0" width="160.5" height="164"/>
+                                    <rect key="frame" x="184.5" y="0.0" width="160.5" height="82.5"/>
                                 </imageView>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -53,7 +53,7 @@
                             </constraints>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="邀请好友" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7K-Eh-sja">
-                            <rect key="frame" x="15" y="533" width="345" height="21"/>
+                            <rect key="frame" x="15" y="310.5" width="345" height="21"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="21" id="ESF-li-5Wh"/>
                             </constraints>
@@ -61,11 +61,11 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="领现金" translatesAutoresizingMaskIntoConstraints="NO" id="3nm-zI-12Y">
-                            <rect key="frame" x="15" y="562" width="345" height="150"/>
+                        <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="领现金3" translatesAutoresizingMaskIntoConstraints="NO" id="3nm-zI-12Y">
+                            <rect key="frame" x="15" y="339.5" width="345" height="77.5"/>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="领福利" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQO-qg-xzg">
-                            <rect key="frame" x="15" y="722" width="345" height="21"/>
+                            <rect key="frame" x="15" y="427" width="345" height="21"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="21" id="gKg-fI-KXh"/>
                             </constraints>
@@ -126,9 +126,9 @@
         </view>
     </objects>
     <resources>
-        <image name="下单立返" width="161" height="82"/>
-        <image name="全额返现2" width="346" height="156"/>
-        <image name="小测试" width="161" height="82"/>
-        <image name="领现金" width="346" height="75"/>
+        <image name="下单立返" width="168" height="82.5"/>
+        <image name="小测试" width="168" height="82"/>
+        <image name="领现金3" width="349" height="77.5"/>
+        <image name="领现金banner" width="346.5" height="171"/>
     </resources>
 </document>

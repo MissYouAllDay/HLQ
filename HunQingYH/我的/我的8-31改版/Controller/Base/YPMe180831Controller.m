@@ -714,7 +714,6 @@
         YPSupplierPersonInfoController *person = [[YPSupplierPersonInfoController alloc]init];
         [self.navigationController yp_pushViewController:person animated:YES];
     }
-    
 }
 
 #pragma mark - 网络请求

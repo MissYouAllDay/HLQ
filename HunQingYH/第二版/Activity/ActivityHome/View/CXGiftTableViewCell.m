@@ -12,7 +12,8 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+    
+    self.mainImg.backgroundColor = [CXUtils colorWithHexString:@"#DCDCDC"];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

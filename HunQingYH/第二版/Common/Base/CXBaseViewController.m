@@ -20,14 +20,30 @@
     self.view.backgroundColor = [UIColor whiteColor];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)showNoDataEmptyView:(UIView *)view withClickAction:(CXClickActionBlock)block{
+    
+    [EasyShowEmptyView showEmptyViewWithTitle:@"该区域暂无商家入驻\n快来抢占先机" subTitle:@"" imageName:@"HYTH_nodata.png" inview:view callback:^(EasyShowEmptyView *view, UIButton *button, callbackType callbackType) {
+    
+        block();
+    }];
+    
 }
-*/
+-(void)showNetErrorEmptyView:(UIView *)view withClickAction:(CXClickActionBlock)block{
+    
+    [EasyShowEmptyView showEmptyViewWithTitle:@"网络错误" subTitle:@"点击重新加载数据！" imageName:@"netError.png" inview:view callback:^(EasyShowEmptyView *view, UIButton *button, callbackType callbackType) {
+    
+    }];
+    
+}
+-(void)hidenEmptyView:(UIView *)view {
+    [ EasyShowEmptyView hiddenEmptyView:view];
+}
+
+- (void)endRefresh:(UITableView *)tableView {
+    
+    [tableView.mj_header endRefreshing];
+    [tableView.mj_footer endRefreshing];
+}
+
 
 @end

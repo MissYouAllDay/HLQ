@@ -23,11 +23,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 @property (weak, nonatomic) IBOutlet UIView *mainBgView;
+@property (weak, nonatomic) IBOutlet UILabel *titleLab;
 
-
-
-
-
+- (BOOL)checkData;
 
 @end
 

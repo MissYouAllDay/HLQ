@@ -9,7 +9,6 @@
 #import "CXInvitationFriendLogVC.h"
 #import "CXInvitationFriendLogCell.h"   // cell
 
-
 @interface CXInvitationFriendLogVC ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) UILabel  *numberLab;      // 已邀请的好友
@@ -26,6 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"我的战绩";
     self.view.backgroundColor = [CXUtils colorWithHexString:@"#F5DDFF"];
     
     [self configerUI];
@@ -94,18 +94,12 @@
 - (UIView *)topView {
     
     if (!_topView) {
-        _topView = [[UIView alloc] initWithFrame:CGRectMake(0, NAVIGATION_BAR_HEIGHT, ScreenWidth, Line375(125))];
-        
-        CAGradientLayer *layer = [CXUtils gradientLayerWithFrame:CGRectMake(0, 0, ScreenWidth, Line375(125))
-                                                      withColors:@[(id)([CXUtils colorWithHexString:@"#8357F4"].CGColor),(id)([CXUtils colorWithHexString:@"#AB3FDE"].CGColor),(id)([CXUtils colorWithHexString:@"#F5DDFF"].CGColor)]
-                                                  withStartPoint:CGPointMake(0, 0)
-                                                    withEndPoint:CGPointMake(0, 1)
-                                                   withLocations:nil];
+        _topView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, Line375(125))];
         
         UIImageView *img = [[UIImageView alloc] initWithFrame:_topView.bounds];
-//        img.image = [UIImage imageNamed:@"invitationLogTop"];
-        img.contentMode = UIViewContentModeBottom;
-        [_topView.layer addSublayer:layer];
+        img.image = [UIImage imageNamed:@"invitationListBannerBg"];
+        img.contentMode = UIViewContentModeScaleAspectFill;
+        [_topView addSubview:img];
     }
     return _topView;
 }
@@ -115,6 +109,7 @@
     if (!_numberLab) {
         _numberLab = [[UILabel alloc] init];
         _numberLab.numberOfLines = 0;
+        _numberLab.backgroundColor = [UIColor clearColor];
     }
     return _numberLab;
 }
@@ -124,6 +119,7 @@
     if (!_moneyLab) {
         _moneyLab = [[UILabel alloc] init];
         _moneyLab.numberOfLines = 0;
+        _moneyLab.backgroundColor = [UIColor clearColor];
     }
     return _moneyLab;
 }
@@ -131,7 +127,7 @@
 - (UILabel *)bottomLab {
     
     if (!_bottomLab) {
-        _bottomLab = [[UILabel alloc] initWithFrame:CGRectMake(Line375(15), ScreenHeight - Line375(74) - HOME_INDICATOR_HEIGHT, ScreenWidth - Line375(30), Line375(74))];
+        _bottomLab = [[UILabel alloc] initWithFrame:CGRectMake(Line375(15), ScreenHeight - Line375(74) - HOME_INDICATOR_HEIGHT - NAVIGATION_HEIGHT_S, ScreenWidth - Line375(30), Line375(74))];
         _bottomLab.numberOfLines = 0;
         _bottomLab.font = FontW(12,UIFontWeightMedium);
         _bottomLab.textColor = [CXUtils colorWithHexString:@"#B542E5"];
@@ -148,7 +144,7 @@
         
         UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, _centerView.width, Line375(30))];
         title.text = @"查看结果";
-        title.font = Font(16);
+        title.font = FontW(16, UIFontWeightBold);
         title.textColor = [UIColor whiteColor];
         title.textAlignment = NSTextAlignmentCenter;
         _centerView.layer.borderColor = [UIColor redColor].CGColor;
@@ -163,7 +159,7 @@
 - (CXBaseTableView *)tableView {
     
     if (!_tableView) {
-        _tableView = [[CXBaseTableView alloc] initWithFrame:CGRectMake(0, Line375(30), self.centerView.width, self.centerView.height - Line375(30)) style:UITableViewStylePlain];
+        _tableView = [[CXBaseTableView alloc] initWithFrame:CGRectMake(0, 0, self.centerView.width, self.centerView.height) style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
     }

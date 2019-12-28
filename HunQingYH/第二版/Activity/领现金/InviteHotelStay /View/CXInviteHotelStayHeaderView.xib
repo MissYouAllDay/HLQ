@@ -16,7 +16,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QUG-ZN-voi">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="395"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="酒店入住banner01" translatesAutoresizingMaskIntoConstraints="NO" id="dSP-FE-Qqf">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="酒店入驻banner" translatesAutoresizingMaskIntoConstraints="NO" id="dSP-FE-Qqf">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="187"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="dSP-FE-Qqf" secondAttribute="height" multiplier="414:187" id="asU-Pw-dH7"/>
@@ -26,13 +26,13 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JI2-t2-9Jc">
                             <rect key="frame" x="15" y="202" width="384" height="160"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="酒店入住Banner" translatesAutoresizingMaskIntoConstraints="NO" id="5vR-65-1JU">
+                                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5vR-65-1JU">
                                     <rect key="frame" x="0.0" y="0.0" width="384" height="160"/>
                                 </imageView>
-                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nOM-ys-rPp">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nOM-ys-rPp">
                                     <rect key="frame" x="0.0" y="0.0" width="384" height="40"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="t1p-Ij-YN1">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inviteTitleBg" translatesAutoresizingMaskIntoConstraints="NO" id="t1p-Ij-YN1">
                                             <rect key="frame" x="0.0" y="0.0" width="384" height="40"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="活动规则" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k35-CY-teV">
@@ -55,52 +55,52 @@
                                         <constraint firstAttribute="bottom" secondItem="k35-CY-teV" secondAttribute="bottom" id="vSs-Lv-sK9"/>
                                     </constraints>
                                 </view>
-                                <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="VjS-gu-mBY">
-                                    <rect key="frame" x="10" y="40" width="364" height="43"/>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="VjS-gu-mBY">
+                                    <rect key="frame" x="25" y="45" width="334" height="43"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lre-gK-6hC">
-                                            <rect key="frame" x="0.0" y="0.0" width="52" height="43"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shenhe-4" translatesAutoresizingMaskIntoConstraints="NO" id="Lre-gK-6hC">
+                                            <rect key="frame" x="0.0" y="0.0" width="47.5" height="43"/>
                                         </imageView>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mdP-aW-ZNt">
-                                            <rect key="frame" x="52" y="0.0" width="52" height="43"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contentLine" translatesAutoresizingMaskIntoConstraints="NO" id="mdP-aW-ZNt">
+                                            <rect key="frame" x="47.5" y="0.0" width="48" height="43"/>
                                         </imageView>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vah-9W-Xfq">
-                                            <rect key="frame" x="104" y="0.0" width="52" height="43"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lianxiwomen" translatesAutoresizingMaskIntoConstraints="NO" id="vah-9W-Xfq">
+                                            <rect key="frame" x="95.5" y="0.0" width="47.5" height="43"/>
                                         </imageView>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xgf-SA-mpZ">
-                                            <rect key="frame" x="156" y="0.0" width="52" height="43"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contentLine" translatesAutoresizingMaskIntoConstraints="NO" id="Xgf-SA-mpZ">
+                                            <rect key="frame" x="143" y="0.0" width="48" height="43"/>
                                         </imageView>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Myh-zu-1Yv">
-                                            <rect key="frame" x="208" y="0.0" width="52" height="43"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hexiaojilu" translatesAutoresizingMaskIntoConstraints="NO" id="Myh-zu-1Yv">
+                                            <rect key="frame" x="191" y="0.0" width="47.5" height="43"/>
                                         </imageView>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QnQ-Fi-Uef">
-                                            <rect key="frame" x="260" y="0.0" width="52" height="43"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contentLine" translatesAutoresizingMaskIntoConstraints="NO" id="QnQ-Fi-Uef">
+                                            <rect key="frame" x="238.5" y="0.0" width="48" height="43"/>
                                         </imageView>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ium-U0-CFV">
-                                            <rect key="frame" x="312" y="0.0" width="52" height="43"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xianjinliu" translatesAutoresizingMaskIntoConstraints="NO" id="Ium-U0-CFV">
+                                            <rect key="frame" x="286.5" y="0.0" width="47.5" height="43"/>
                                         </imageView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="43" id="Sve-5a-9vN"/>
                                     </constraints>
                                 </stackView>
-                                <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="be4-GW-MdP">
-                                    <rect key="frame" x="10" y="91" width="364" height="61"/>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="be4-GW-MdP">
+                                    <rect key="frame" x="0.0" y="96" width="384" height="50"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="完善资料" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JvZ-Xs-8a5">
-                                            <rect key="frame" x="0.0" y="0.0" width="53.5" height="61"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="96" height="16"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="联系我们 15192055999" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7zc-mn-i0E">
-                                            <rect key="frame" x="78.5" y="0.0" width="91" height="61"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="联系我们15192055999(微信同手机号)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7zc-mn-i0E">
+                                            <rect key="frame" x="96" y="0.0" width="96" height="47"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhy-xO-Kps">
-                                            <rect key="frame" x="176" y="0.0" width="91" height="61"/>
+                                            <rect key="frame" x="192" y="0.0" width="96" height="31.5"/>
                                             <string key="text">商户和平台
 签订合同</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -108,33 +108,33 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="奖励现金 300元" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msN-RD-Kmm">
-                                            <rect key="frame" x="273" y="0.0" width="91" height="61"/>
+                                            <rect key="frame" x="288" y="0.0" width="96" height="31.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="61" id="oti-Sm-eZt"/>
+                                        <constraint firstAttribute="height" constant="50" id="oti-Sm-eZt"/>
                                     </constraints>
                                 </stackView>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             <constraints>
                                 <constraint firstItem="be4-GW-MdP" firstAttribute="top" secondItem="VjS-gu-mBY" secondAttribute="bottom" constant="8" id="36R-nz-Uew"/>
-                                <constraint firstItem="be4-GW-MdP" firstAttribute="leading" secondItem="JI2-t2-9Jc" secondAttribute="leading" constant="10" id="3qe-lb-2KI"/>
-                                <constraint firstItem="VjS-gu-mBY" firstAttribute="top" secondItem="nOM-ys-rPp" secondAttribute="bottom" id="8cd-Al-McM"/>
+                                <constraint firstItem="be4-GW-MdP" firstAttribute="leading" secondItem="JI2-t2-9Jc" secondAttribute="leading" id="3qe-lb-2KI"/>
+                                <constraint firstItem="VjS-gu-mBY" firstAttribute="top" secondItem="nOM-ys-rPp" secondAttribute="bottom" constant="5" id="8cd-Al-McM"/>
                                 <constraint firstAttribute="bottom" secondItem="5vR-65-1JU" secondAttribute="bottom" id="KI9-vX-isl"/>
                                 <constraint firstItem="nOM-ys-rPp" firstAttribute="top" secondItem="JI2-t2-9Jc" secondAttribute="top" id="U0I-oo-8PY"/>
-                                <constraint firstItem="VjS-gu-mBY" firstAttribute="leading" secondItem="JI2-t2-9Jc" secondAttribute="leading" constant="10" id="b2M-vw-Cwf"/>
+                                <constraint firstItem="VjS-gu-mBY" firstAttribute="leading" secondItem="JI2-t2-9Jc" secondAttribute="leading" constant="25" id="b2M-vw-Cwf"/>
                                 <constraint firstAttribute="trailing" secondItem="5vR-65-1JU" secondAttribute="trailing" id="d1A-6i-T8l"/>
                                 <constraint firstItem="nOM-ys-rPp" firstAttribute="leading" secondItem="JI2-t2-9Jc" secondAttribute="leading" id="dbN-lM-fCq"/>
-                                <constraint firstAttribute="trailing" secondItem="VjS-gu-mBY" secondAttribute="trailing" constant="10" id="exT-dz-935"/>
+                                <constraint firstAttribute="trailing" secondItem="VjS-gu-mBY" secondAttribute="trailing" constant="25" id="exT-dz-935"/>
                                 <constraint firstItem="5vR-65-1JU" firstAttribute="top" secondItem="JI2-t2-9Jc" secondAttribute="top" id="mRf-Pv-Mya"/>
                                 <constraint firstItem="5vR-65-1JU" firstAttribute="leading" secondItem="JI2-t2-9Jc" secondAttribute="leading" id="nhI-WD-afh"/>
                                 <constraint firstAttribute="height" constant="160" id="rHW-6h-Sup"/>
                                 <constraint firstAttribute="trailing" secondItem="nOM-ys-rPp" secondAttribute="trailing" id="vGr-Su-XlE"/>
-                                <constraint firstAttribute="trailing" secondItem="be4-GW-MdP" secondAttribute="trailing" constant="10" id="zA2-b8-hz2"/>
+                                <constraint firstAttribute="trailing" secondItem="be4-GW-MdP" secondAttribute="trailing" id="zA2-b8-hz2"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -164,7 +164,12 @@
         </view>
     </objects>
     <resources>
-        <image name="酒店入住Banner" width="350" height="144.5"/>
-        <image name="酒店入住banner01" width="375.5" height="187"/>
+        <image name="contentLine" width="33" height="3"/>
+        <image name="hexiaojilu" width="27" height="27"/>
+        <image name="inviteTitleBg" width="150" height="17"/>
+        <image name="lianxiwomen" width="27" height="27.5"/>
+        <image name="shenhe-4" width="26.5" height="27"/>
+        <image name="xianjinliu" width="24.5" height="27.5"/>
+        <image name="酒店入驻banner" width="375" height="186.5"/>
     </resources>
 </document>

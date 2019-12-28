@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CXWeddingBackVC : UIViewController<JXCategoryListContentViewDelegate>
 
+@property (nonatomic, copy) NSString *categoryId;    // <#这里是个注释哦～#>
+
 @end
 
 NS_ASSUME_NONNULL_END

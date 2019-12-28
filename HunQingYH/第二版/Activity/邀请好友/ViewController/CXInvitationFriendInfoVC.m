@@ -11,7 +11,7 @@
 
 @interface CXInvitationFriendInfoVC ()<UITableViewDelegate,UITableViewDataSource>
 
-@property (nonatomic, strong) CXBaseTableView  *tableView;    // tableView
+//@property (nonatomic, strong) CXBaseTableView  *tableView;    // tableView
 @property (nonatomic, strong) UIScrollView  *scrollView;    // scrollview
 
 @property (nonatomic, strong) UIView  *tableHeaderView;    // tableViewHeaderView
@@ -31,8 +31,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"邀请好友";
     [self configerUI];
     [self defaSetting];
+    UIBarButtonItem *item = [UIBarButtonItem itemWithimage:[UIImage imageNamed:@"fenxiang"] highImage:[UIImage imageNamed:@"fenxiang"] target:self action:@selector(pushNavigationBarRightItem)];
+    self.navigationItem.rightBarButtonItem = item;
 }
 
 - (void)configerUI {
@@ -54,11 +57,14 @@
     [self addTitle:self.scrollView withFrame: CGRectMake((ScreenWidth - Line375(200))/2, self.shareBgView.top - Line375(32)/2, Line375(200), Line375(32)) wtihTitle:@"我的收益"];
     self.scrollView.backgroundColor = [CXUtils colorWithHexString:@"#FFBD43"];
     
-    self.scrollView.contentSize = CGSizeMake(ScreenWidth, self.shareBgView.bottom + Line375(30));
+    self.scrollView.contentSize = CGSizeMake(ScreenWidth, self.shareBgView.bottom + Line375(30) + NAVIGATION_HEIGHT_S);
 
 }
 
 - (void)defaSetting {
+    
+    self.banner.image = [UIImage imageNamed:@"邀请好友banner"];
+    
     NSString *numberTitle = @"\n\n已邀请好友";
     NSString *numberValue = @"10";
     
@@ -73,15 +79,15 @@
     self.moneyLab.attributedText = moneyAtt;
 }
 
-- (CXBaseTableView *)tableView {
-    
-    if (!_tableView) {
-        _tableView = [[CXBaseTableView alloc] initWithFrame:CGRectMake(0, NAVIGATION_BAR_HEIGHT, self.view.width, self.view.height - Line375(30)) style:UITableViewStylePlain];
-        _tableView.delegate = self;
-        _tableView.dataSource = self;
-    }
-    return _tableView;
-}
+//- (CXBaseTableView *)tableView {
+//
+//    if (!_tableView) {
+//        _tableView = [[CXBaseTableView alloc] initWithFrame:CGRectMake(0, NAVIGATION_BAR_HEIGHT, self.view.width, self.view.height - Line375(30)) style:UITableViewStylePlain];
+//        _tableView.delegate = self;
+//        _tableView.dataSource = self;
+//    }
+//    return _tableView;
+//}
 
 - (UIScrollView *)scrollView {
     
@@ -117,13 +123,13 @@
         _stepView = [[UIView alloc] initWithFrame:CGRectMake(Line375(15), self.banner.bottom, ScreenWidth - Line375(30), Line375(108))];
         _stepView.backgroundColor = [CXUtils colorWithHexString:@"#FFE4C1"];
         
-        NSArray *stepImgs = @[@"haoyou-2",@"",@"shenhe-4",@"",@"xianjin-2"];
+        NSArray *stepImgs = @[@"haoyou-2",@"inviteContentLine",@"shenhe-4",@"inviteContentLine",@"xianjin-2"];
         NSArray *stepTexts = @[@"推荐身边要结婚的好友",@"等待审核通过",@"领50元现金"];
         
         CGFloat oriX = Line375(20);
         CGFloat imgW = (_stepView.width - Line375(40))/stepImgs.count;
         CGFloat imgH = _stepView.height/2;
-        CGFloat labW = (_stepView.width - 6) / stepTexts.count;
+        CGFloat labW = (_stepView.width - 20 - 20) / stepTexts.count;
         for (int i =0; i < stepImgs.count; i ++) {
             
             UIImageView *img = [[UIImageView alloc] initWithFrame:CGRectMake(i * imgW + oriX, 20, imgW, imgH)];
@@ -135,7 +141,7 @@
         
         for (int i =0; i < stepTexts.count; i ++) {
             
-            UILabel *lab = [[UILabel alloc] initWithFrame:CGRectMake(i * labW + 2, imgH, labW, imgH)];
+            UILabel *lab = [[UILabel alloc] initWithFrame:CGRectMake(i * (labW + 10)  + 10, imgH, labW, imgH)];
             lab.numberOfLines = 0;
             lab.textAlignment = NSTextAlignmentCenter;
             lab.font = [UIFont systemFontOfSize:12];
@@ -211,6 +217,11 @@
         _infoView.frame = CGRectMake(0, self.stepView.bottom + Line375(15), ScreenWidth, 356 + 16);
     }
     return _infoView;
+}
+
+- (void)pushNavigationBarRightItem {
+    
+    NSLog(@"你点击了分享");
 }
 
 @end

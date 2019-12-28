@@ -5,6 +5,7 @@
 //  Created by canxue on 2019/12/8.
 //  Copyright © 2019 YanpengLee. All rights reserved.
 //
+// - - - - - - - - - - - - - - 邀请酒店入驻 banner + 活动规则 - - - - - - - - - - - - -
 
 #import <UIKit/UIKit.h>
 

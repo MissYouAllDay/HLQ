@@ -21,9 +21,9 @@ typedef enum {
  *    @ 最终选择城市节点
  */
 typedef enum {
-    CJPlaceEndState = 2,  /**只能选择省份 */
+    CJPlaceEndState = 2,   /**只能选择省份 */
     CJPlaceEndCity = 1,    /** 只能选择 省份 -> 市  */
-    CJPlaceEndArea = 0   /**< 只能选择 省份 -> 市 -> 县/区 */
+    CJPlaceEndArea = 0     /**< 只能选择 省份 -> 市 -> 县/区 */
 }CJPaceSelectType;
 
 @class CJAreaPicker;
@@ -33,7 +33,7 @@ typedef enum {
  */
 @protocol CJAreaPickerDelegate <NSObject>
 
-@required
+@optional
 
 /**
  *	@brief	当地区选择器选中地区后
@@ -46,6 +46,14 @@ typedef enum {
  *    @brief   选择取消
  */
 -(void)areaPicker:(CJAreaPicker *)picker didClickCancleWithAddress:(NSString *)address parentID:(NSInteger)parentID;
+
+
+/// 当地区选择器选中地区后
+/// @param picker 选择器
+/// @param address 选中的地址
+/// @param fullAddress 完整路径
+/// @param parentID parentID
+- (void)areaPicker:(CJAreaPicker *)picker didSelectAddress:(NSString *)address withFullAddress:(NSString *)fullAddress parentID:(NSInteger)parentID;
 
 @end
 
@@ -98,4 +106,9 @@ typedef enum {
  *    @brief    当前已经选择的地区parentID
  */
 @property (nonatomic, assign) int  parentID_regionID;
+
+
+@property (nonatomic, copy) NSString *addressInfoDetail;    // 地址信息。使用 空格分割 等级
+
+
 @end

@@ -7,11 +7,12 @@
 //
 // - - - - - - - - - - - - - - 邀请酒店记录cell- - - - - - - - - - - - - - - - - - - - - -
 #import <UIKit/UIKit.h>
-
+#import "CXInviteHotelListModel.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CXInviteHotelStayLogCell : UITableViewCell
 
+@property (nonatomic, strong) CXInviteHotelListModel  *model;    // <#这里是个注释哦～#>
 @property (weak, nonatomic) IBOutlet UILabel *timeLab;
 
 @property (weak, nonatomic) IBOutlet UITextField *shopNameTF;

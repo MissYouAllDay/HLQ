@@ -174,6 +174,7 @@
 
     return [self.memCache objectForKey:key];
 }
+
 -(NSData *)dataFromDiskCacheForKey:(NSString *)key isSizeCache:(BOOL)isSizeCache{
 
     NSString *path = [self sizeCachePathForKey:key];

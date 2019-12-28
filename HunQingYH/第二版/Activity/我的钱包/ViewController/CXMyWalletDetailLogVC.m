@@ -14,6 +14,7 @@
 @interface CXMyWalletDetailLogVC ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) CXBaseTableView  *tabView;    // <#这里是个注释哦～#>
+
 @end
 
 @implementation CXMyWalletDetailLogVC

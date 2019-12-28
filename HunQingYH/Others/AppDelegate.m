@@ -69,7 +69,7 @@
     [AMapServices sharedServices].apiKey = AMapKey;
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    
+    self.window.backgroundColor = [UIColor whiteColor];
     TabBarVC *tabBarC = [[TabBarVC alloc]init];
     self.window.rootViewController = tabBarC;
     

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -178,14 +179,14 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3A2-J6-NNJ">
                                             <rect key="frame" x="73.333333333333343" y="0.0" width="73.333333333333343" height="34"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                            <state key="normal" title=" 婚礼" image="saomachenggong">
+                                            <state key="normal" title=" 婚礼" image="椭圆 1">
                                                 <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                             </state>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vyb-CW-k1X">
                                             <rect key="frame" x="146.66666666666669" y="0.0" width="73.333333333333314" height="34"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                            <state key="normal" title=" 其他" image="saomachenggong">
+                                            <state key="normal" title=" 其他" image="椭圆 1">
                                                 <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                             </state>
                                         </button>
@@ -293,5 +294,6 @@
     </objects>
     <resources>
         <image name="saomachenggong" width="17" height="17"/>
+        <image name="椭圆 1" width="16" height="16"/>
     </resources>
 </document>

@@ -28,25 +28,27 @@
 - (void)notUsed {
     
     self.statuslab.hidden = NO;
+    self.statusImg.hidden = NO;
     self.expiredImg.hidden = YES;
     self.statuslab.text = @"去使用";
-    self.statusImg.image = [UIImage imageNamed:@""];
+    self.statusImg.image = [UIImage imageNamed:@"快过期"];
 }
 
 /// 已使用
 - (void)alreadyUsed {
     self.statuslab.hidden = NO;
+    self.statusImg.hidden = NO;
     self.expiredImg.hidden = YES;
     self.statuslab.text = @"查看";
-    self.statusImg.image = [UIImage imageNamed:@""];
+    self.statusImg.image = [UIImage imageNamed:@"已使用"];
 }
 
 /// 已过期
 - (void)expired {
     self.statuslab.hidden = YES;
+    self.statusImg.hidden = YES;
     self.expiredImg.hidden = NO;
-    self.statusImg.image = [UIImage imageNamed:@""];
-    self.expiredImg.image = [UIImage imageNamed:@""];
+    self.expiredImg.image = [UIImage imageNamed:@"已过期"];
 }
 
 

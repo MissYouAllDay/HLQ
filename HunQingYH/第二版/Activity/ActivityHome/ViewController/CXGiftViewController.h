@@ -13,8 +13,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CXGiftViewController : UIViewController<JXCategoryListContentViewDelegate>
 
-@property (nonatomic, strong) NSArray *dataArr;
-@property (nonatomic, strong) NSArray *allIds;
+
+@property (nonatomic, copy) NSString *categoryId;    // 类型id
+@property (nonatomic, strong) UINavigationController  *mainNav;    // <#这里是个注释哦～#>
+
 
 @end
 

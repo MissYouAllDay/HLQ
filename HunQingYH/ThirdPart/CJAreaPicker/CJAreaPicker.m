@@ -13,12 +13,12 @@
      FMDatabase *dataBase;
      int provinceID ;
     int  cityID;
-    
 }
 
 @end
 
 @implementation CJAreaPicker
+
 -(NSMutableArray *)provinceArray{
     if (!_provinceArray) {
         _provinceArray =[NSMutableArray array];
@@ -114,7 +114,6 @@
     }else{
         
     }
- 
     
 }
 
@@ -181,7 +180,7 @@
             break;
         case CJPlaceTypeCity:
             
-            place = [NSString stringWithFormat:@"%@ %@",_placeName,_cityesArray[indexPath.row]];
+            place = [NSString stringWithFormat:@"%@ %@",_placeName,_places[indexPath.row]];
             if (_delegate && [_delegate respondsToSelector:@selector(areaPicker:didSelectAddress:parentID:)]) {
                 
                 [_delegate areaPicker:self didSelectAddress:_areaArray[0] parentID:_parentID];
@@ -189,12 +188,11 @@
             }
             break;
         case CJPlaceTypeArea:  //最后县级
-            
+            self.addressInfoDetail = [NSString stringWithFormat:@"%@ %@",self.addressInfoDetail,self.places[indexPath.row]];
+
             place = [NSString stringWithFormat:@"%@ %@",_placeName,_places[indexPath.row]];
             if (_delegate && [_delegate respondsToSelector:@selector(areaPicker:didSelectAddress:parentID:)]) {
                 
-               
-               
                 if (indexPath.row ==0) {
                     [_delegate areaPicker:self didSelectAddress:_places[indexPath.row] parentID:_parentID_regionID];
                     
@@ -202,17 +200,15 @@
                     [_delegate areaPicker:self didSelectAddress:_places[indexPath.row] parentID:_parentID];
                     
                 }
-             
             }
             break;
         default:
             break;
     }
     
-    
-    
-    
-
+    if (_delegate && [_delegate respondsToSelector:@selector(areaPicker:didSelectAddress:withFullAddress:parentID:)]) {
+        [_delegate areaPicker:self didSelectAddress:_places[indexPath.row] withFullAddress:self.addressInfoDetail parentID:self.parentID];
+    }
 }
 
 #pragma mark -- UITableViewDataSource
@@ -333,12 +329,14 @@
                 nextPicker.title =  _provinceArray[indexPath.row];
                 
                 nextPicker.placeName = nextPicker.title;
+                nextPicker.addressInfoDetail = _provinceArray[indexPath.row];
             }
  
             break;
         case CJPlaceTypeCity:
             if (indexPath.section==0) {
 
+                NSMutableArray *markIds = [[NSMutableArray alloc] init];
                 [self.areaArray removeAllObjects];
                 [self openDataBase];
                 NSString *selectCity = _places[indexPath.row];
@@ -357,21 +355,19 @@
                 
                 while ([set4 next]) {
                     NSString *cityStr  = [set4 stringForColumn:@"REGION_NAME"];
-                    
                     [self.areaArray addObject:cityStr];
-                    
                 }
                 [self closeDataBase];
                 nextPicker.places   = _areaArray;
                 nextPicker.type = CJPlaceTypeArea;
                 nextPicker.title =  _cityesArray[indexPath.row];
                 nextPicker.placeName = nextPicker.title;
-    
+                nextPicker.addressInfoDetail = [NSString stringWithFormat:@"%@ %@",self.addressInfoDetail,self.places[indexPath.row]];
             }
           
             break;
         case CJPlaceTypeArea:
-            
+
             break;
         default:
             break;

@@ -2037,6 +2037,11 @@
 		F41DE72223AB44D500C48D16 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F41DE72123AB44D500C48D16 /* ListViewController.m */; };
 		F41EA6CB23B0A18F00F84DD7 /* region.db in Resources */ = {isa = PBXBuildFile; fileRef = F41EA6CA23B0A18F00F84DD7 /* region.db */; };
 		F4410419239E8F4B002C316D /* NSString+Check.m in Sources */ = {isa = PBXBuildFile; fileRef = F4410418239E8F4B002C316D /* NSString+Check.m */; };
+		F443719C23B2F4DE001BA36A /* CXHotelSelectList.m in Sources */ = {isa = PBXBuildFile; fileRef = F443719B23B2F4DE001BA36A /* CXHotelSelectList.m */; };
+		F44371A223B30FC8001BA36A /* CXInviteHotelListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F44371A123B30FC8001BA36A /* CXInviteHotelListModel.m */; };
+		F44371AB23B5C9A2001BA36A /* CXGiftGoodDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F44371AA23B5C9A2001BA36A /* CXGiftGoodDetailVC.m */; };
+		F44371F623B5DDC5001BA36A /* CXActivityCatergoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F44371F523B5DDC5001BA36A /* CXActivityCatergoryModel.m */; };
+		F44371F923B5DE06001BA36A /* CXActivityCouponModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F44371F823B5DE06001BA36A /* CXActivityCouponModel.m */; };
 		F44DA94B239DFD77006A07CB /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F44DA948239DFD72006A07CB /* NSObject+YYModel.m */; };
 		F44DA94C239DFD77006A07CB /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F44DA949239DFD74006A07CB /* YYClassInfo.m */; };
 		F44E73EE239CE24E001026BE /* CXActivityAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F44E73ED239CE24D001026BE /* CXActivityAlertView.m */; };
@@ -2044,6 +2049,9 @@
 		F44E73FF239CE8E0001026BE /* CXActivityRuleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F44E73FD239CE8E0001026BE /* CXActivityRuleCell.m */; };
 		F44E7400239CE8E0001026BE /* CXActivityRuleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F44E73FE239CE8E0001026BE /* CXActivityRuleCell.xib */; };
 		F452AE2A23ACFCA5003E3766 /* CXAreaData.m in Sources */ = {isa = PBXBuildFile; fileRef = F452AE2923ACFCA5003E3766 /* CXAreaData.m */; };
+		F466826723B6DEF1005A8C46 /* CXLoadNullView.m in Sources */ = {isa = PBXBuildFile; fileRef = F466826623B6DEF0005A8C46 /* CXLoadNullView.m */; };
+		F466826A23B6DF09005A8C46 /* CXLoadFailView.m in Sources */ = {isa = PBXBuildFile; fileRef = F466826923B6DF09005A8C46 /* CXLoadFailView.m */; };
+		F466826D23B726EE005A8C46 /* CXGoldShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F466826C23B726EE005A8C46 /* CXGoldShopViewController.m */; };
 		F492B263239D19CB00CDF6F5 /* CXApplyPartnerMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = F492B262239D19CB00CDF6F5 /* CXApplyPartnerMainView.m */; };
 		F492B265239D19D100CDF6F5 /* CXApplyPartnerMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F492B264239D19D100CDF6F5 /* CXApplyPartnerMainView.xib */; };
 		F492B26C239D2BBC00CDF6F5 /* CXInviteHotelStayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F492B26B239D2BBC00CDF6F5 /* CXInviteHotelStayVC.m */; };
@@ -5580,6 +5588,17 @@
 		F41EA6CA23B0A18F00F84DD7 /* region.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = region.db; sourceTree = "<group>"; };
 		F4410416239E8F47002C316D /* NSString+Check.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Check.h"; sourceTree = "<group>"; };
 		F4410418239E8F4B002C316D /* NSString+Check.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Check.m"; path = "../New Group/NSString+Check.m"; sourceTree = "<group>"; };
+		F443719A23B2F4DE001BA36A /* CXHotelSelectList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXHotelSelectList.h; sourceTree = "<group>"; };
+		F443719B23B2F4DE001BA36A /* CXHotelSelectList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXHotelSelectList.m; sourceTree = "<group>"; };
+		F44371A023B30FC8001BA36A /* CXInviteHotelListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXInviteHotelListModel.h; sourceTree = "<group>"; };
+		F44371A123B30FC8001BA36A /* CXInviteHotelListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXInviteHotelListModel.m; sourceTree = "<group>"; };
+		F44371A323B342F5001BA36A /* CXSysConfigerList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXSysConfigerList.h; sourceTree = "<group>"; };
+		F44371A923B5C9A2001BA36A /* CXGiftGoodDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXGiftGoodDetailVC.h; sourceTree = "<group>"; };
+		F44371AA23B5C9A2001BA36A /* CXGiftGoodDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXGiftGoodDetailVC.m; sourceTree = "<group>"; };
+		F44371F423B5DDC5001BA36A /* CXActivityCatergoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXActivityCatergoryModel.h; sourceTree = "<group>"; };
+		F44371F523B5DDC5001BA36A /* CXActivityCatergoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXActivityCatergoryModel.m; sourceTree = "<group>"; };
+		F44371F723B5DE06001BA36A /* CXActivityCouponModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXActivityCouponModel.h; sourceTree = "<group>"; };
+		F44371F823B5DE06001BA36A /* CXActivityCouponModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXActivityCouponModel.m; sourceTree = "<group>"; };
 		F44DA947239DFD6F006A07CB /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
 		F44DA948239DFD72006A07CB /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
 		F44DA949239DFD74006A07CB /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
@@ -5593,6 +5612,12 @@
 		F44E73FE239CE8E0001026BE /* CXActivityRuleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CXActivityRuleCell.xib; sourceTree = "<group>"; };
 		F452AE2823ACFCA5003E3766 /* CXAreaData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXAreaData.h; sourceTree = "<group>"; };
 		F452AE2923ACFCA5003E3766 /* CXAreaData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXAreaData.m; sourceTree = "<group>"; };
+		F466826523B6DEF0005A8C46 /* CXLoadNullView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXLoadNullView.h; sourceTree = "<group>"; };
+		F466826623B6DEF0005A8C46 /* CXLoadNullView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXLoadNullView.m; sourceTree = "<group>"; };
+		F466826823B6DF08005A8C46 /* CXLoadFailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXLoadFailView.h; sourceTree = "<group>"; };
+		F466826923B6DF09005A8C46 /* CXLoadFailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXLoadFailView.m; sourceTree = "<group>"; };
+		F466826B23B726EE005A8C46 /* CXGoldShopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXGoldShopViewController.h; sourceTree = "<group>"; };
+		F466826C23B726EE005A8C46 /* CXGoldShopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXGoldShopViewController.m; sourceTree = "<group>"; };
 		F492B261239D19CB00CDF6F5 /* CXApplyPartnerMainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXApplyPartnerMainView.h; sourceTree = "<group>"; };
 		F492B262239D19CB00CDF6F5 /* CXApplyPartnerMainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXApplyPartnerMainView.m; sourceTree = "<group>"; };
 		F492B264239D19D100CDF6F5 /* CXApplyPartnerMainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CXApplyPartnerMainView.xib; sourceTree = "<group>"; };
@@ -5645,20 +5670,13 @@
 		18119A69233DB886002D6920 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				F41DE71423AB432C00C48D16 /* CXUtils.h */,
-				F41DE71523AB432E00C48D16 /* CXUtils.m */,
-				F41DE71723AB433600C48D16 /* CXQRCode.h */,
-				F41DE71823AB433700C48D16 /* CXQRCode.m */,
 				18134D012367D237001A5167 /* FileList.h */,
-				18119A6A233DB8DF002D6920 /* CXDataManager.h */,
-				18119A6B233DB8DF002D6920 /* CXDataManager.m */,
 				18257C2723614F040040A332 /* CXRequestHTTPList.h */,
 				18257C2923614F730040A332 /* CXCommonFileList.h */,
 				18257C2823614F1D0040A332 /* CXColorList.h */,
+				F44371A323B342F5001BA36A /* CXSysConfigerList.h */,
 				F4410417239E8F4B002C316D /* Category */,
 				18257C3223618B530040A332 /* Base */,
-				F452AE2823ACFCA5003E3766 /* CXAreaData.h */,
-				F452AE2923ACFCA5003E3766 /* CXAreaData.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -5770,13 +5788,6 @@
 			path = Activity;
 			sourceTree = "<group>";
 		};
-		18257C10236132A10040A332 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		18257C11236132A10040A332 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -5806,6 +5817,8 @@
 				18AEC7EB23697E6600CD14A2 /* CXGiftViewController.m */,
 				18AEC7F22369916300CD14A2 /* CXScoreStoreVC.h */,
 				18AEC7F32369916300CD14A2 /* CXScoreStoreVC.m */,
+				F466826B23B726EE005A8C46 /* CXGoldShopViewController.h */,
+				F466826C23B726EE005A8C46 /* CXGoldShopViewController.m */,
 				F41592012379A2F800E67B73 /* CXWeddingBackVC.h */,
 				F41592022379A2F800E67B73 /* CXWeddingBackVC.m */,
 			);
@@ -5995,6 +6008,14 @@
 		18257C3223618B530040A332 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				F452AE2823ACFCA5003E3766 /* CXAreaData.h */,
+				F452AE2923ACFCA5003E3766 /* CXAreaData.m */,
+				F41DE71423AB432C00C48D16 /* CXUtils.h */,
+				F41DE71523AB432E00C48D16 /* CXUtils.m */,
+				F41DE71723AB433600C48D16 /* CXQRCode.h */,
+				F41DE71823AB433700C48D16 /* CXQRCode.m */,
+				18119A6A233DB8DF002D6920 /* CXDataManager.h */,
+				18119A6B233DB8DF002D6920 /* CXDataManager.m */,
 				F41DE72023AB44D400C48D16 /* ListViewController.h */,
 				F41DE72123AB44D500C48D16 /* ListViewController.m */,
 				F41DE71D23AB44C400C48D16 /* ContentBaseViewController.h */,
@@ -6005,6 +6026,10 @@
 				18257C2D23616E500040A332 /* CXBaseViewController.m */,
 				45083A8D2332299900276CB4 /* TabBarVC.h */,
 				45083A8E2332299900276CB4 /* TabBarVC.m */,
+				F466826523B6DEF0005A8C46 /* CXLoadNullView.h */,
+				F466826623B6DEF0005A8C46 /* CXLoadNullView.m */,
+				F466826823B6DF08005A8C46 /* CXLoadFailView.h */,
+				F466826923B6DF09005A8C46 /* CXLoadFailView.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -6023,7 +6048,7 @@
 			isa = PBXGroup;
 			children = (
 				18257C12236132A10040A332 /* ViewController */,
-				18257C10236132A10040A332 /* Model */,
+				F44371F323B5DDC5001BA36A /* Model */,
 				18257C11236132A10040A332 /* View */,
 			);
 			path = ActivityHome;
@@ -6043,6 +6068,8 @@
 			children = (
 				18AEC7F7236992C400CD14A2 /* CXReceiveMoneyDetailVC.h */,
 				18AEC7F8236992C400CD14A2 /* CXReceiveMoneyDetailVC.m */,
+				F44371A923B5C9A2001BA36A /* CXGiftGoodDetailVC.h */,
+				F44371AA23B5C9A2001BA36A /* CXGiftGoodDetailVC.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -15063,9 +15090,9 @@
 		F41DE67023AB3E6D00C48D16 /* 券包 */ = {
 			isa = PBXGroup;
 			children = (
+				F41DE68223AB3E6D00C48D16 /* ViewController */,
 				F41DE67123AB3E6D00C48D16 /* Model */,
 				F41DE67223AB3E6D00C48D16 /* View */,
-				F41DE68223AB3E6D00C48D16 /* ViewController */,
 			);
 			path = "券包";
 			sourceTree = "<group>";
@@ -15102,14 +15129,14 @@
 		F41DE68223AB3E6D00C48D16 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				F41DE68323AB3E6D00C48D16 /* CXMyCouponListVC.m */,
 				F41DE68423AB3E6D00C48D16 /* CXMyCouponVC.h */,
-				F41DE68523AB3E6D00C48D16 /* CXMyCouponUseSuccessVC.m */,
-				F41DE68623AB3E6D00C48D16 /* CXMyCouponNotUsedDetailVC.m */,
-				F41DE68723AB3E6D00C48D16 /* CXMyCouponListVC.h */,
-				F41DE68823AB3E6D00C48D16 /* CXMyCouponUseSuccessVC.h */,
 				F41DE68923AB3E6D00C48D16 /* CXMyCouponVC.m */,
+				F41DE68723AB3E6D00C48D16 /* CXMyCouponListVC.h */,
+				F41DE68323AB3E6D00C48D16 /* CXMyCouponListVC.m */,
+				F41DE68823AB3E6D00C48D16 /* CXMyCouponUseSuccessVC.h */,
+				F41DE68523AB3E6D00C48D16 /* CXMyCouponUseSuccessVC.m */,
 				F41DE68A23AB3E6D00C48D16 /* CXMyCouponNotUsedDetailVC.h */,
+				F41DE68623AB3E6D00C48D16 /* CXMyCouponNotUsedDetailVC.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -15117,9 +15144,9 @@
 		F41DE68B23AB3E6E00C48D16 /* 我的钱包 */ = {
 			isa = PBXGroup;
 			children = (
+				F41DE69A23AB3E6E00C48D16 /* ViewController */,
 				F41DE68C23AB3E6E00C48D16 /* Model */,
 				F41DE68D23AB3E6E00C48D16 /* View */,
-				F41DE69A23AB3E6E00C48D16 /* ViewController */,
 			);
 			path = "我的钱包";
 			sourceTree = "<group>";
@@ -15153,15 +15180,15 @@
 		F41DE69A23AB3E6E00C48D16 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				F41DE69B23AB3E6E00C48D16 /* CXMyWalletMoneyVC.h */,
+				F41DE6A123AB3E6E00C48D16 /* CXMyWalletVC.h */,
 				F41DE69C23AB3E6E00C48D16 /* CXMyWalletVC.m */,
-				F41DE69D23AB3E6E00C48D16 /* CXMyWalletBackMoneyLogVC.h */,
-				F41DE69E23AB3E6E00C48D16 /* CXMyWalletDetailLogVC.m */,
+				F41DE69B23AB3E6E00C48D16 /* CXMyWalletMoneyVC.h */,
 				F41DE69F23AB3E6E00C48D16 /* CXMyWalletMoneyVC.m */,
 				F41DE6A023AB3E6E00C48D16 /* CXMyWalletMoneyVC.xib */,
-				F41DE6A123AB3E6E00C48D16 /* CXMyWalletVC.h */,
+				F41DE69D23AB3E6E00C48D16 /* CXMyWalletBackMoneyLogVC.h */,
 				F41DE6A223AB3E6E00C48D16 /* CXMyWalletBackMoneyLogVC.m */,
 				F41DE6A323AB3E6E00C48D16 /* CXMyWalletDetailLogVC.h */,
+				F41DE69E23AB3E6E00C48D16 /* CXMyWalletDetailLogVC.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -15169,9 +15196,9 @@
 		F41DE6A423AB3E6F00C48D16 /* 邀请好友 */ = {
 			isa = PBXGroup;
 			children = (
+				F41DE6AC23AB3E6F00C48D16 /* ViewController */,
 				F41DE6A523AB3E6F00C48D16 /* Model */,
 				F41DE6A623AB3E6F00C48D16 /* View */,
-				F41DE6AC23AB3E6F00C48D16 /* ViewController */,
 			);
 			path = "邀请好友";
 			sourceTree = "<group>";
@@ -15186,10 +15213,10 @@
 		F41DE6A623AB3E6F00C48D16 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F41DE6A723AB3E6F00C48D16 /* CXInvitationFriendInfoView.xib */,
 				F41DE6A823AB3E6F00C48D16 /* CXInvitationFriendInfoView.m */,
-				F41DE6A923AB3E6F00C48D16 /* CXInvitationFriendLogCell.h */,
 				F41DE6AA23AB3E6F00C48D16 /* CXInvitationFriendInfoView.h */,
+				F41DE6A723AB3E6F00C48D16 /* CXInvitationFriendInfoView.xib */,
+				F41DE6A923AB3E6F00C48D16 /* CXInvitationFriendLogCell.h */,
 				F41DE6AB23AB3E6F00C48D16 /* CXInvitationFriendLogCell.m */,
 			);
 			path = View;
@@ -15198,12 +15225,12 @@
 		F41DE6AC23AB3E6F00C48D16 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				F41DE6AD23AB3E6F00C48D16 /* CXInvitationFriendVC.m */,
-				F41DE6AE23AB3E6F00C48D16 /* CXInvitationFriendLogVC.m */,
-				F41DE6AF23AB3E6F00C48D16 /* CXInvitationFriendInfoVC.m */,
 				F41DE6B023AB3E6F00C48D16 /* CXInvitationFriendVC.h */,
-				F41DE6B123AB3E6F00C48D16 /* CXInvitationFriendLogVC.h */,
+				F41DE6AD23AB3E6F00C48D16 /* CXInvitationFriendVC.m */,
 				F41DE6B223AB3E6F00C48D16 /* CXInvitationFriendInfoVC.h */,
+				F41DE6AF23AB3E6F00C48D16 /* CXInvitationFriendInfoVC.m */,
+				F41DE6B123AB3E6F00C48D16 /* CXInvitationFriendLogVC.h */,
+				F41DE6AE23AB3E6F00C48D16 /* CXInvitationFriendLogVC.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -15248,9 +15275,9 @@
 		F41DE6BD23AB3E7100C48D16 /* 券包验证 */ = {
 			isa = PBXGroup;
 			children = (
+				F41DE6C923AB3E7100C48D16 /* ViewController */,
 				F41DE6BE23AB3E7100C48D16 /* Model */,
 				F41DE6BF23AB3E7100C48D16 /* View */,
-				F41DE6C923AB3E7100C48D16 /* ViewController */,
 			);
 			path = "券包验证";
 			sourceTree = "<group>";
@@ -15378,6 +15405,17 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		F44371F323B5DDC5001BA36A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F44371F423B5DDC5001BA36A /* CXActivityCatergoryModel.h */,
+				F44371F523B5DDC5001BA36A /* CXActivityCatergoryModel.m */,
+				F44371F723B5DE06001BA36A /* CXActivityCouponModel.h */,
+				F44371F823B5DE06001BA36A /* CXActivityCouponModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F44E73F2239CE5A9001026BE /* ApplyPartner */ = {
 			isa = PBXGroup;
 			children = (
@@ -15476,6 +15514,8 @@
 		F492B268239D2B9900CDF6F5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F44371A023B30FC8001BA36A /* CXInviteHotelListModel.h */,
+				F44371A123B30FC8001BA36A /* CXInviteHotelListModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -15487,6 +15527,8 @@
 				F492B26B239D2BBC00CDF6F5 /* CXInviteHotelStayVC.m */,
 				F492B277239D422100CDF6F5 /* CXInviteHotelStayLogVC.h */,
 				F492B278239D422100CDF6F5 /* CXInviteHotelStayLogVC.m */,
+				F443719A23B2F4DE001BA36A /* CXHotelSelectList.h */,
+				F443719B23B2F4DE001BA36A /* CXHotelSelectList.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -16748,6 +16790,7 @@
 				1834D439233389BB0012A90E /* UIButton+CXCustomIcon.m in Sources */,
 				2F961108215DB1ED007245C9 /* YPGetFacilitatorMoneyFlowingWaterListData.m in Sources */,
 				2F8B4DF0200D91A500365C5F /* YPReReMyCollectionController.m in Sources */,
+				F44371AB23B5C9A2001BA36A /* CXGiftGoodDetailVC.m in Sources */,
 				AC59198A1F42CD6C005F6431 /* YPNewCarTeamIconCell.m in Sources */,
 				2FD01C50210EE2D900EB8C92 /* YPWXGetUserInfo.m in Sources */,
 				AC591A061F442367005F6431 /* UIView+ZJFrame.m in Sources */,
@@ -17052,6 +17095,7 @@
 				450839CD2332151A00276CB4 /* danjianOrderModel.m in Sources */,
 				AC6E9D3A1F2726FC00B5BC08 /* YPRegistLicenceController.m in Sources */,
 				18257C3A2362E0300040A332 /* CXCommunityViewController.m in Sources */,
+				F466826723B6DEF1005A8C46 /* CXLoadNullView.m in Sources */,
 				452997CC205A3BBD008F1169 /* SidModel.m in Sources */,
 				4569850920734D8B00347B54 /* YPFASearchController.m in Sources */,
 				AA7B3E4F1F4D78E200C1BDCE /* HRHotelTingTableViewController.m in Sources */,
@@ -17060,6 +17104,7 @@
 				ACA425CF1F4BD0A300C91D5B /* YPArrangeNewAddInfoCell.m in Sources */,
 				2F94AAFB20BBA4D3005733F1 /* UIControl+YYAdd.m in Sources */,
 				2FA220C61FE250DD008043DC /* YPFADetailDescCell.m in Sources */,
+				F466826D23B726EE005A8C46 /* CXGoldShopViewController.m in Sources */,
 				F41DE6E223AB3E7200C48D16 /* CXMyCouponDetailShopCell.m in Sources */,
 				AA7B3E621F55120C00C1BDCE /* HRSearchBar.m in Sources */,
 				AA53659E1F6241A900A97FA2 /* UIView+CLSetRect.m in Sources */,
@@ -17203,6 +17248,7 @@
 				450839BB2332151A00276CB4 /* hotelRenManageVC.m in Sources */,
 				AC6E9D1B1F26E96B00B5BC08 /* ZLPhotoPickerAssetsViewController.m in Sources */,
 				2F94AB3220BBACE7005733F1 /* YPReFindController.m in Sources */,
+				F44371F923B5DE06001BA36A /* CXActivityCouponModel.m in Sources */,
 				2FA9C21B1FE77410007202A2 /* YPAssureListCell.m in Sources */,
 				2F8ED0802146041200B46FFB /* YPHotelPayTypeListController.m in Sources */,
 				2F83B0ED2291140E002A3FDA /* YPMe190519MyReserveController.m in Sources */,
@@ -17374,8 +17420,10 @@
 				AC756F841F54FDFA006674A6 /* YPEditMyCarImgCell.m in Sources */,
 				452997B72057A539008F1169 /* HRAddDTVideoViewController.m in Sources */,
 				2FA220C51FE250DD008043DC /* YPFangAnNormalCell.m in Sources */,
+				F443719C23B2F4DE001BA36A /* CXHotelSelectList.m in Sources */,
 				2F8DEC8E213673B8009BB978 /* YPReActivityDetailController.m in Sources */,
 				2F8BAE791FFDC52000CDCE7F /* YPReHomeSupplierColCell.m in Sources */,
+				F466826A23B6DF09005A8C46 /* CXLoadFailView.m in Sources */,
 				AC77CA741F2EC0FB00C44932 /* JJPhotoManeger.m in Sources */,
 				2F89E64420479FB0005C41C1 /* YPReHomeFuLiListCell.m in Sources */,
 				4537ACC2208EC6B700A1B2DB /* ChoosTypeTableViewCell.m in Sources */,
@@ -17579,6 +17627,7 @@
 				AC77CA721F2EC0FB00C44932 /* JJOneScrollView.m in Sources */,
 				18AEC7E42369670000CD14A2 /* CXReceiveMoneyVC.m in Sources */,
 				2F82AA8E2220DD2500918219 /* YPMeTeHuiOrderListController.m in Sources */,
+				F44371F623B5DDC5001BA36A /* CXActivityCatergoryModel.m in Sources */,
 				2F92910820D0ED7A007BD989 /* YPGetWeddingPackageAreaImg.m in Sources */,
 				2F8F274E20A2C2F200B0F14A /* YPReReHomeController.m in Sources */,
 				AC0577B21FA6B97A00732078 /* LPDPhotoArrangeCVlLayout.m in Sources */,
@@ -17614,6 +17663,7 @@
 				45738A0620B3F0C10073A694 /* UIViewController+Nav.m in Sources */,
 				4536D5CD22F278FD005C61DB /* YPKeYuan190513ViewController.m in Sources */,
 				2FE2210220BCE0FE0099B03B /* YPReMeGuanzhuFensiController.m in Sources */,
+				F44371A223B30FC8001BA36A /* CXInviteHotelListModel.m in Sources */,
 				4537ACBB208EC6B700A1B2DB /* GoodsTypeModel.m in Sources */,
 				2F8C15892006017800184B56 /* NJKWebViewProgressView.m in Sources */,
 				AA5366901F6290FE00A97FA2 /* PlayOnFullScreenViewController.m in Sources */,

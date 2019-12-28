@@ -12,7 +12,16 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+    
+    self.mainIcon.contentMode = UIViewContentModeScaleToFill;
 }
 
+- (void)setModel:(YPGetCommodityTypeTableListData *)model {
+    
+    _model = model;
+    
+    [self.mainIcon sd_setImageWithURL:[NSURL URLWithString:self.model.ShowImage] placeholderImage:nil];
+    self.name.text = self.model.Name;
+    self.pricelab.text = [NSString stringWithFormat:@"¥ %@",self.model.Quota];
+}
 @end

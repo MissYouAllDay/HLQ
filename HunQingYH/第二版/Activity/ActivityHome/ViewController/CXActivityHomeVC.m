@@ -16,14 +16,18 @@
 #import "CXGiftViewController.h"
 #import "YPEDuBaseController.h"
 #import "CXWeddingBackVC.h"
+#import "CXGoldShopViewController.h"
 #import "CXAreaData.h"          // 地区
+#import "CXActivityCatergoryModel.h"
+
 //#import "YPMoreBtnControl.h"
 #import "WJAdsView.h"
+#import "CJAreaPicker.h"        // 地区
 
 #define UnselectedColor RGBS(248)
 #define SelectedColor RGB(250, 80, 120)
 
-@interface CXActivityHomeVC ()<JXCategoryViewDelegate,JXCategoryListContainerViewDelegate,WJAdsViewDelegate>
+@interface CXActivityHomeVC ()<JXCategoryViewDelegate,JXCategoryListContainerViewDelegate,WJAdsViewDelegate,CJAreaPickerDelegate>
 {
     FMDatabase *dataBase;
 }
@@ -54,6 +58,7 @@
 /***********************************地址选择*****************************************/
 
 @property (nonatomic, assign) BOOL Popup;    // 是否第一次弹窗
+@property (nonatomic, strong) NSArray  *categoryArr;    // 分类数据
 @end
 
 @implementation CXActivityHomeVC {
@@ -81,11 +86,12 @@
     [super viewDidLoad];
     
     self.automaticallyAdjustsScrollViewInsets = NO;
-    self.topTitleArr = @[@"领现金",@"婚礼福利",@"丽人福利",@"宝妈福利",@"婚礼返还"];
+    self.topTitleArr = @[@"领现金",@"婚礼返还"];
     self.view.backgroundColor = WhiteColor;
     
     [self setupNav];
-    [self setupUI];
+   
+    [self loadCategoryList];
 }
 
 #pragma mark - UI
@@ -126,14 +132,13 @@
 }
 //返回遵从`JXCategoryListContentViewDelegate`协议的实例
 - (id<JXCategoryListContentViewDelegate>)listContainerView:(JXCategoryListContainerView *)listContainerView initListForIndex:(NSInteger)index {
-   
-    switch (index) {
-        case 0:  return [self receiveMoney];
-        case 1:  return [self giftViewController:@[@"晨袍",@"对戒",@"牵手"] withIds:@[@"1",@"2",@"3"]];
-        case 2:  return [self giftViewController:@[@"美甲",@"婚礼福利banner",@"美妆"] withIds:@[@"1",@"2",@"3"]];
-        case 3:  return [self giftViewController:@[@"游泳",@"宝宝照",@"宝妈福利-banner"] withIds:@[@"1",@"2",@"3"]];
-        case 4: return [self payReturnVC];
-        default: break;
+   // @[@"领现金",*********,@"婚礼返还"];
+    if (index == 0) { return [self receiveMoney]; }
+    
+    if (index == self.topTitleArr.count - 1) { return [self payReturnVC];  }
+    
+    if (index > 0 && index < self.topTitleArr.count - 1) {
+        return [self giftViewControllerWithIndex:index - 1];
     }
     return [self receiveMoney];
 }
@@ -144,10 +149,12 @@
     return vc;
 }
 
-- (id)giftViewController:(NSArray *)dataArr withIds:(NSArray *)allIds{
+- (id)giftViewControllerWithIndex:(int)index {
+    
+    CXActivityCatergoryModel *model = self.categoryArr[index];
     CXGiftViewController *vc = [[CXGiftViewController alloc] init];
-    vc.dataArr = dataArr;
-    vc.allIds = allIds;
+    vc.mainNav = self.navigationController;
+    vc.categoryId = model.Id;
     return vc;
 }
 
@@ -155,9 +162,9 @@
     
     CXWeddingBackVC *vc = [[CXWeddingBackVC alloc] init];
     return vc;
-    YPEDuBaseController *edu = [[YPEDuBaseController alloc]init];
-      edu.typeStr = @"1";//婚礼返还
-    return edu;
+//    YPEDuBaseController *edu = [[YPEDuBaseController alloc]init];
+//      edu.typeStr = @"1";//婚礼返还
+//    return edu;
 }
 
 #pragma mark - JXCategoryViewDelegate
@@ -239,51 +246,6 @@
     [self selectDataBase];
 }
 
-//打开数据库
-- (void)openDataBase{
-    NSArray *filePath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentPath = [filePath objectAtIndex:0];
-    NSString *dbFilePath = [documentPath stringByAppendingPathComponent:@"region.db"];
-    
-    dataBase =[[FMDatabase alloc]initWithPath:dbFilePath];
-    BOOL ret = [dataBase open];
-    if (ret) {
-        NSLog(@"打开数据库成功");
-        
-    }else{
-        NSLog(@"打开数据库成功");
-    }
-    
-}
-//关闭数据库
-- (void)closeDataBase{
-    BOOL ret = [dataBase close];
-    if (ret) {
-        NSLog(@"关闭数据库成功");
-    }else{
-        NSLog(@"关闭数据库失败");
-    }
-}
-//查询数据库
--(void)selectDataBase{
-    [self openDataBase];
-    NSString *huanCun = [[NSUserDefaults standardUserDefaults]objectForKey:@"city_name_new"];
-    NSLog(@"缓存城市为%@",huanCun);
-    NSLog(@"_cityInfo*$#$#$##$$%@",self.cityInfo);
-    NSString *selectSql =[NSString stringWithFormat:@"SELECT REGION_ID FROM Region WHERE REGION_NAME ='%@'",self.cityInfo];
-    FMResultSet *set =[dataBase executeQuery:selectSql];
-    while ([set next]) {
-        int ID = [set intForColumn:@"REGION_ID"];
-        NSLog(@"==*****%d",ID);
-        NSString *idStr = [NSString stringWithFormat:@"%d",ID];
-        
-        //6-5
-        //        [[NSUserDefaults standardUserDefaults]setObject:idStr forKey:@"areaid"];
-        //        NSLog(@"areaid ------- %@",[[NSUserDefaults standardUserDefaults] objectForKey:@"areaid"]);
-        self.areaid =idStr;
-    }
-    [self closeDataBase];
-}
 /**  是否有城市缓存 */
 -(BOOL)checkCityInfo{
     if ([[[NSUserDefaults standardUserDefaults]objectForKey:@"city_name_new"] isEqualToString:@""]||![[NSUserDefaults standardUserDefaults]objectForKey:@"city_name_new"] ) {
@@ -295,6 +257,28 @@
     
 }
 
+// MARK: - - - - - - - -  - - - - 请求数据  - - - -  - - - - - - - -  - - - - - - - -
+- (void)loadCategoryList {
+    
+    [[NetworkTool shareManager] requestWithUrlStr:URL_ACTIVITY_CategoryList withParams:nil Success:^(NSDictionary *object) {
+        
+        if ([[[object valueForKey:@"Message"] valueForKey:@"Code"] integerValue] == 200) {
+
+            self.categoryArr = [CXActivityCatergoryModel mj_objectArrayWithKeyValuesArray:object[@"Data"]];
+            NSMutableArray *mark = [[NSMutableArray alloc] initWithArray:@[@"领现金"]];
+            
+            for (CXActivityCatergoryModel *model in self.categoryArr) {
+                [mark addObject:model.Name];
+            }
+            [mark addObject:@"积分商城"];
+            self.topTitleArr = mark;
+        }
+        [self setupUI];
+        
+    } Failure:^(NSError *error) {
+        [self setupUI];
+    }];
+}
 // MARK: - 弹窗
 #pragma mark - 获取广告弹窗接口
 -(void)getADAlertRequest{
@@ -367,7 +351,33 @@
     
 }
 
+// MARK: - 地区选择器
+-(void)cityBtnClick{
+    CJAreaPicker *picker = [[CJAreaPicker alloc]initWithStyle:UITableViewStylePlain];
+    picker.delegate = self;
+    picker.endType = CJPlaceEndCity;
+    UINavigationController *navc = [[UINavigationController alloc]initWithRootViewController:picker];
+    [self presentViewController:navc animated:YES completion:nil];
+}
 
+#pragma mark - CJAreaPickerDelegate
+- (void)areaPicker:(CJAreaPicker *)picker didSelectAddress:(NSString *)address parentID:(NSInteger)parentID{
+    
+    self.parentID = parentID;
 
+    self.cityInfo = address;
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    //  查询address 的 areaIdx
+    [self selectDataBase];
+    
+    [_monthBtn setTitle:address forState:UIControlStateNormal];
+}
+
+// 获取区域id
+-(void)selectDataBase{
+    self.areaid = [CXAreaData selectDataBaseWithCityInfo:self.cityInfo];
+}
 
 @end

@@ -31,14 +31,15 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LmW-9g-L8Y">
+                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LmW-9g-L8Y">
                                         <rect key="frame" x="80" y="0.0" width="235" height="40"/>
+                                        <color key="textColor" red="0.61568627450980395" green="0.61176470588235299" blue="0.61176470588235299" alpha="1" colorSpace="deviceRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bDv-Xy-BuZ">
                                         <rect key="frame" x="0.0" y="39" width="315" height="1"/>
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="RII-lb-2HI"/>
                                         </constraints>
@@ -71,14 +72,15 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ufR-Ep-Zj5">
+                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ufR-Ep-Zj5">
                                         <rect key="frame" x="80" y="0.0" width="235" height="40"/>
+                                        <color key="textColor" red="0.61568627450980395" green="0.61176470588235299" blue="0.61176470588235299" alpha="1" colorSpace="deviceRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cr8-JG-lus">
                                         <rect key="frame" x="0.0" y="39" width="315" height="1"/>
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="ru2-jy-Dpa"/>
                                         </constraints>
@@ -111,21 +113,22 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="1000元" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PXw-pR-EwV">
+                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="1000元" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PXw-pR-EwV">
                                         <rect key="frame" x="80" y="0.0" width="67" height="40"/>
+                                        <color key="textColor" red="0.61568627450980395" green="0.61176470588235299" blue="0.61176470588235299" alpha="1" colorSpace="deviceRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gti-nb-yxC">
                                         <rect key="frame" x="0.0" y="39" width="315" height="1"/>
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="xrh-6I-S7T"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VsW-SF-abX">
                                         <rect key="frame" x="157" y="5" width="1" height="30"/>
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="1" id="gA0-mx-alp"/>
                                         </constraints>
@@ -135,12 +138,13 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="LDA-Ag-HPy"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="20厅" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="luk-Gy-iAv">
+                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="20厅" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="luk-Gy-iAv">
                                         <rect key="frame" x="268" y="0.0" width="47" height="39"/>
+                                        <color key="textColor" red="0.61568627450980395" green="0.61176470588235299" blue="0.61176470588235299" alpha="1" colorSpace="deviceRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -182,8 +186,9 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="已签约" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l9P-0C-KEv">
+                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="已签约" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l9P-0C-KEv">
                                         <rect key="frame" x="80" y="0.0" width="235" height="40"/>
+                                        <color key="textColor" red="0.61568627450980395" green="0.61176470588235299" blue="0.61176470588235299" alpha="1" colorSpace="deviceRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -218,7 +223,7 @@
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="签约时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Nm-Pj-KuW">
-                        <rect key="frame" x="32" y="14" width="53.5" height="16"/>
+                        <rect key="frame" x="15" y="19" width="53.5" height="16"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
                         <color key="textColor" red="1" green="0.086274509803921567" blue="0.30196078431372547" alpha="1" colorSpace="deviceRGB"/>
@@ -226,10 +231,10 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="0Nm-Pj-KuW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="32" id="05t-V8-fkN"/>
+                    <constraint firstItem="0Nm-Pj-KuW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="05t-V8-fkN"/>
                     <constraint firstAttribute="trailing" secondItem="cPk-S0-gjQ" secondAttribute="trailing" constant="15" id="F6X-wI-e5n"/>
                     <constraint firstItem="cPk-S0-gjQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="JPM-HP-4LV"/>
-                    <constraint firstItem="cPk-S0-gjQ" firstAttribute="top" secondItem="0Nm-Pj-KuW" secondAttribute="bottom" constant="10" id="ama-yq-Uxf"/>
+                    <constraint firstItem="cPk-S0-gjQ" firstAttribute="top" secondItem="0Nm-Pj-KuW" secondAttribute="bottom" constant="5" id="ama-yq-Uxf"/>
                     <constraint firstAttribute="bottom" secondItem="cPk-S0-gjQ" secondAttribute="bottom" id="eJK-zR-30q"/>
                     <constraint firstItem="cPk-S0-gjQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="40" id="j1Z-0R-Yg4"/>
                 </constraints>

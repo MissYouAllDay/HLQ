@@ -15,6 +15,7 @@
 @property (nonatomic, strong) UIImageView *icon; //  图片
 
 @end
+
 @implementation CXReviceTaoCanCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
