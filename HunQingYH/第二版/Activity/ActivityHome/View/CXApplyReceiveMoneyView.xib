@@ -24,7 +24,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="275" height="400"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="我要报名" translatesAutoresizingMaskIntoConstraints="NO" id="3eP-sD-LEx">
-                                            <rect key="frame" x="0.0" y="-9" width="275" height="80"/>
+                                            <rect key="frame" x="-3" y="-9" width="278" height="80"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="80" id="iJ0-46-yqV"/>
                                             </constraints>
@@ -314,7 +314,7 @@
                                         <constraint firstItem="rYf-6O-cDK" firstAttribute="leading" secondItem="GjO-yr-ifk" secondAttribute="leading" constant="25" id="lk9-Lh-wzd"/>
                                         <constraint firstItem="Ncc-Di-Wtg" firstAttribute="leading" secondItem="GjO-yr-ifk" secondAttribute="leading" constant="25" id="qfZ-gR-tHX"/>
                                         <constraint firstItem="3eP-sD-LEx" firstAttribute="top" secondItem="GjO-yr-ifk" secondAttribute="top" constant="-9" id="sZx-ig-Qqv"/>
-                                        <constraint firstItem="3eP-sD-LEx" firstAttribute="leading" secondItem="GjO-yr-ifk" secondAttribute="leading" id="uBn-O6-hgt"/>
+                                        <constraint firstItem="3eP-sD-LEx" firstAttribute="leading" secondItem="GjO-yr-ifk" secondAttribute="leading" constant="-3" id="uBn-O6-hgt"/>
                                         <constraint firstAttribute="trailing" secondItem="o9e-Ua-AjT" secondAttribute="trailing" constant="25" id="xho-Zm-Xj9"/>
                                         <constraint firstAttribute="trailing" secondItem="Ncc-Di-Wtg" secondAttribute="trailing" constant="25" id="zQP-Nc-0zM"/>
                                     </constraints>

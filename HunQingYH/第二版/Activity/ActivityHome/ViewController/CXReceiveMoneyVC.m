@@ -36,7 +36,7 @@
 
 - (void)defaSetting {
     
-    // 查看西单立返商家
+    // 查看下单立返商家
     UITapGestureRecognizer *backMoneyTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pushCXBackMoneyVC)];
     [self.mainView.backCustomerImg addGestureRecognizer:backMoneyTap];
 }
@@ -87,7 +87,8 @@
     if (!_mainView) {
         _mainView = [[[NSBundle mainBundle] loadNibNamed:@"CXReceiveMoneyView" owner:nil options:nil] lastObject];
         _mainView.frame = CGRectMake(0, 0, ScreenWidth, Line375(552));
-        [_mainView.reviceMoneyBtn addTarget:self action:@selector(pushTest) forControlEvents:UIControlEventTouchUpInside];
+        // 我要报名
+        [_mainView.reviceMoneyBtn addTarget:self action:@selector(showApplyReceiveMoney) forControlEvents:UIControlEventTouchUpInside];
     }
     return _mainView;
 }

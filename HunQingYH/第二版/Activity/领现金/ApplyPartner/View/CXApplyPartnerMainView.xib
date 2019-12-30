@@ -137,7 +137,7 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <textField opaque="NO" tag="1002" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="黄岛区" textAlignment="natural" minimumFontSize="1002" translatesAutoresizingMaskIntoConstraints="NO" id="dFc-cA-Pdc">
+                                <textField opaque="NO" tag="1002" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请选择地区" textAlignment="natural" minimumFontSize="1002" translatesAutoresizingMaskIntoConstraints="NO" id="dFc-cA-Pdc">
                                     <rect key="frame" x="90" y="0.0" width="211" height="40"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>

@@ -32,8 +32,6 @@
     self.mainBgView.layer.cornerRadius = 10;
     self.mainBgView.clipsToBounds = YES;
     
-    
-    
     CAGradientLayer *layer = [CXUtils gradientLayerWithFrame:CGRectMake(0, 0, ScreenWidth, self.subBtn.height) withColors:@[(id)[CXUtils colorWithHexString:@"#FF8400"].CGColor,(id)[CXUtils colorWithHexString:@"#FDB211"].CGColor,] withStartPoint:CGPointMake(0, 0) withEndPoint:CGPointMake(0, 1) withLocations:nil];
     [self.subBtn.layer addSublayer:layer];
     self.subBtn.layer.cornerRadius = self.subBtn.height/2;

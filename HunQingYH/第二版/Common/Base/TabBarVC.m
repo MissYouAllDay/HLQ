@@ -30,7 +30,7 @@
 // #import "YPHome190223Controller.h"//19-02-23 首页改版
 
 //#import "YPKeYuan190306BaseViewController.h"//19-03-06 客源
-//#import "YPKeYuan190513ViewController.h"
+#import "YPKeYuan190513ViewController.h"
 //#import "ManageViewController.h"//管理
 //#import "YPHome190226FindSupplierController.h"//招商家
 
@@ -53,7 +53,7 @@
      [self createControllerWithTitle:@"婚宴" image:@"canchu"selectedimage:@"canchu-2" className:[CXDingHunYanVC class]];
      [self createControllerWithTitle:@"婚礼" image:@"hunlicehua"selectedimage:@"hunlicehua-2" className:[YPWedSchemeViewController class]];
      [self createControllerWithTitle:@"免费领" image:@"mianfeilingqu"selectedimage:@"mianfeilingqu-2" className:[CXActivityHomeVC class]];
-     [self createControllerWithTitle:@"社区" image:@"shequ"selectedimage:@"shequ-2" className:[CXCommunityViewController class]];
+     [self createControllerWithTitle:@"社区" image:@"shequ"selectedimage:@"shequ-2" className:[YPKeYuan190513ViewController class]];
 //     [self createControllerWithTitle:@"管理" image:@"tabbar_wode"selectedimage:@"tabbar_wode_red" className:[ManageViewController class]];
      [self createControllerWithTitle:@"我的" image:@"guanli"selectedimage:@"guanli-2" className:[YPMe180831Controller class]];
 }
