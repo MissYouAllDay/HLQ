@@ -7,12 +7,15 @@
 //
 
 #import "CXBackMoneyListVC.h"
+#import "YPHYTHBaseListCell.h"  // model
+#import "CXBackMoneyLiseCell.h" // 婚庆、婚纱 cell
+
 #define COLOR_WITH_RGB(R,G,B,A) [UIColor colorWithRed:R green:G blue:B alpha:A]
 
 @interface CXBackMoneyListVC ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) CXBaseTableView  *tableView;    // <#这里是个注释哦～#>
-
+@property (nonatomic, strong) NSMutableArray  *dataArr;    // <#这里是个注释哦～#>
 @end
 
 @implementation CXBackMoneyListVC
@@ -28,21 +31,29 @@
 // MARK: - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 20;
+    return self.dataArr.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell"];
-    
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"UITableViewCell"];
+
+    if (self.type == 0) {
+        YPHYTHBaseListCell *cell = [YPHYTHBaseListCell cellWithTableView:tableView];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        cell.allBackImg.hidden = NO;
+        return cell;
+    }else {
+        CXBackMoneyLiseCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CXBackMoneyLiseCell"];
+        if (!cell) {
+            cell = [[[NSBundle mainBundle] loadNibNamed:@"CXBackMoneyLiseCell" owner:nil options:nil] lastObject];
+        }
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        cell.allBackImg.hidden = NO;
+        return cell;
     }
-    return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    return 70;
+    return self.type == 0 ? 70 : Line375(252);
 }
 
 #pragma mark - JXCategoryListContentViewDelegate

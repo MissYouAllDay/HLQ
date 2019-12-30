@@ -7,6 +7,7 @@
 //
 
 #import "CXReceiveMoneyView.h"
+#import "CXBackMoneyVC.h"   // 全额返现
 
 @implementation CXReceiveMoneyView
 
@@ -14,7 +15,9 @@
     
     [super awakeFromNib];
     
-    UITapGestureRecognizer *tap1 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pushVC)];
+    self.userInteractionEnabled = YES;
+    
+    UITapGestureRecognizer *tap1 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pushCXBackMoneyVC)];
     UITapGestureRecognizer *tap2 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pushVC)];
     UITapGestureRecognizer *tap3 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pushVC)];
     UITapGestureRecognizer *tap4 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pushVC)];
@@ -27,6 +30,13 @@
     [self.shareImg         addGestureRecognizer:tap4];
     [self.shareToFriendsImg addGestureRecognizer:tap5];
     [self.firstOrderimg    addGestureRecognizer:tap6];
+    
+    self.reviceMoney.userInteractionEnabled =
+    self.testImg.userInteractionEnabled =
+    self.backCustomerImg.userInteractionEnabled =
+    self.shareImg.userInteractionEnabled =
+    self.shareToFriendsImg.userInteractionEnabled =
+    self.firstOrderimg.userInteractionEnabled = YES;
     
     CAGradientLayer *layer = [[CAGradientLayer alloc] init];
     layer.frame = self.reviceMoneyBtn.bounds;
@@ -44,11 +54,19 @@
      maskLayer.path = maskPath.CGPath;
      self.reviceMoneyBtn.layer.mask = maskLayer;
     self.reviceMoneyBtn.clipsToBounds = YES;
+    
 }
 
 - (void)pushVC {
     
     // 我要报名
+}
+
+// 全额返现
+- (void)pushCXBackMoneyVC {
+    
+    CXBackMoneyVC *vc = [[CXBackMoneyVC alloc] init];
+    [self.viewController.navigationController pushViewController:vc animated:YES];
 }
 
 @end

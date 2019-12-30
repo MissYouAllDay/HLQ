@@ -529,6 +529,11 @@
 #pragma mark - CJAreaPickerDelegate
 - (void)areaPicker:(CJAreaPicker *)picker didSelectAddress:(NSString *)address parentID:(NSInteger)parentID{
     
+    CXAreaData *areaData = [CXAreaData shareAreaData];
+    areaData.cityId = [NSString stringWithFormat:@"%ld",(long)parentID];
+    areaData.cityName = address;
+    areaData.citysArr = [CXAreaData searchCityListWithParentId:parentID];
+    
     self.parentID = parentID;
     NSLog(@"缓存城市设置为%@",address);
     self.cityInfo = address;

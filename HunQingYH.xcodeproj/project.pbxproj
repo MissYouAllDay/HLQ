@@ -2013,7 +2013,6 @@
 		F41DE70023AB3E7200C48D16 /* CXInvitationFriendInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F41DE6AF23AB3E6F00C48D16 /* CXInvitationFriendInfoVC.m */; };
 		F41DE70123AB3E7200C48D16 /* CXBackMoneyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F41DE6B823AB3E7000C48D16 /* CXBackMoneyVC.m */; };
 		F41DE70223AB3E7200C48D16 /* CXBackMoneyListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F41DE6BA23AB3E7000C48D16 /* CXBackMoneyListVC.m */; };
-		F41DE70323AB3E7200C48D16 /* CXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F41DE6BB23AB3E7000C48D16 /* CXViewController.m */; };
 		F41DE70423AB3E7200C48D16 /* CXStoreMyCouponListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F41DE6C023AB3E7100C48D16 /* CXStoreMyCouponListCell.xib */; };
 		F41DE70523AB3E7200C48D16 /* CXStoreMyCouponListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F41DE6C123AB3E7100C48D16 /* CXStoreMyCouponListCell.m */; };
 		F41DE70623AB3E7200C48D16 /* CXStoreMyCouponEndListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F41DE6C223AB3E7100C48D16 /* CXStoreMyCouponEndListCell.m */; };
@@ -2051,7 +2050,10 @@
 		F452AE2A23ACFCA5003E3766 /* CXAreaData.m in Sources */ = {isa = PBXBuildFile; fileRef = F452AE2923ACFCA5003E3766 /* CXAreaData.m */; };
 		F466826723B6DEF1005A8C46 /* CXLoadNullView.m in Sources */ = {isa = PBXBuildFile; fileRef = F466826623B6DEF0005A8C46 /* CXLoadNullView.m */; };
 		F466826A23B6DF09005A8C46 /* CXLoadFailView.m in Sources */ = {isa = PBXBuildFile; fileRef = F466826923B6DF09005A8C46 /* CXLoadFailView.m */; };
-		F466826D23B726EE005A8C46 /* CXGoldShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F466826C23B726EE005A8C46 /* CXGoldShopViewController.m */; };
+		F466827423B87F60005A8C46 /* CXBackMoneyLiseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F466827223B87F60005A8C46 /* CXBackMoneyLiseCell.m */; };
+		F466827523B87F60005A8C46 /* CXBackMoneyLiseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F466827323B87F60005A8C46 /* CXBackMoneyLiseCell.xib */; };
+		F46682B523B889BB005A8C46 /* CXApplyReceiveMoneyView.m in Sources */ = {isa = PBXBuildFile; fileRef = F46682B423B889BB005A8C46 /* CXApplyReceiveMoneyView.m */; };
+		F46682B723B88A33005A8C46 /* CXApplyReceiveMoneyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F46682B623B88A33005A8C46 /* CXApplyReceiveMoneyView.xib */; };
 		F492B263239D19CB00CDF6F5 /* CXApplyPartnerMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = F492B262239D19CB00CDF6F5 /* CXApplyPartnerMainView.m */; };
 		F492B265239D19D100CDF6F5 /* CXApplyPartnerMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F492B264239D19D100CDF6F5 /* CXApplyPartnerMainView.xib */; };
 		F492B26C239D2BBC00CDF6F5 /* CXInviteHotelStayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F492B26B239D2BBC00CDF6F5 /* CXInviteHotelStayVC.m */; };
@@ -5544,9 +5546,7 @@
 		F41DE6B223AB3E6F00C48D16 /* CXInvitationFriendInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXInvitationFriendInfoVC.h; sourceTree = "<group>"; };
 		F41DE6B723AB3E7000C48D16 /* CXBackMoneyListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXBackMoneyListVC.h; sourceTree = "<group>"; };
 		F41DE6B823AB3E7000C48D16 /* CXBackMoneyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXBackMoneyVC.m; sourceTree = "<group>"; };
-		F41DE6B923AB3E7000C48D16 /* CXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXViewController.h; sourceTree = "<group>"; };
 		F41DE6BA23AB3E7000C48D16 /* CXBackMoneyListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXBackMoneyListVC.m; sourceTree = "<group>"; };
-		F41DE6BB23AB3E7000C48D16 /* CXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXViewController.m; sourceTree = "<group>"; };
 		F41DE6BC23AB3E7000C48D16 /* CXBackMoneyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXBackMoneyVC.h; sourceTree = "<group>"; };
 		F41DE6C023AB3E7100C48D16 /* CXStoreMyCouponListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CXStoreMyCouponListCell.xib; sourceTree = "<group>"; };
 		F41DE6C123AB3E7100C48D16 /* CXStoreMyCouponListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXStoreMyCouponListCell.m; sourceTree = "<group>"; };
@@ -5616,8 +5616,12 @@
 		F466826623B6DEF0005A8C46 /* CXLoadNullView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXLoadNullView.m; sourceTree = "<group>"; };
 		F466826823B6DF08005A8C46 /* CXLoadFailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXLoadFailView.h; sourceTree = "<group>"; };
 		F466826923B6DF09005A8C46 /* CXLoadFailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXLoadFailView.m; sourceTree = "<group>"; };
-		F466826B23B726EE005A8C46 /* CXGoldShopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXGoldShopViewController.h; sourceTree = "<group>"; };
-		F466826C23B726EE005A8C46 /* CXGoldShopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXGoldShopViewController.m; sourceTree = "<group>"; };
+		F466827123B87F60005A8C46 /* CXBackMoneyLiseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXBackMoneyLiseCell.h; sourceTree = "<group>"; };
+		F466827223B87F60005A8C46 /* CXBackMoneyLiseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXBackMoneyLiseCell.m; sourceTree = "<group>"; };
+		F466827323B87F60005A8C46 /* CXBackMoneyLiseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CXBackMoneyLiseCell.xib; sourceTree = "<group>"; };
+		F46682B323B889BB005A8C46 /* CXApplyReceiveMoneyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXApplyReceiveMoneyView.h; sourceTree = "<group>"; };
+		F46682B423B889BB005A8C46 /* CXApplyReceiveMoneyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXApplyReceiveMoneyView.m; sourceTree = "<group>"; };
+		F46682B623B88A33005A8C46 /* CXApplyReceiveMoneyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CXApplyReceiveMoneyView.xib; sourceTree = "<group>"; };
 		F492B261239D19CB00CDF6F5 /* CXApplyPartnerMainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXApplyPartnerMainView.h; sourceTree = "<group>"; };
 		F492B262239D19CB00CDF6F5 /* CXApplyPartnerMainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXApplyPartnerMainView.m; sourceTree = "<group>"; };
 		F492B264239D19D100CDF6F5 /* CXApplyPartnerMainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CXApplyPartnerMainView.xib; sourceTree = "<group>"; };
@@ -5802,6 +5806,9 @@
 				F41592062379A6F500E67B73 /* CXWeddingBackItem.xib */,
 				F44E73EC239CE24D001026BE /* CXActivityAlertView.h */,
 				F44E73ED239CE24D001026BE /* CXActivityAlertView.m */,
+				F46682B323B889BB005A8C46 /* CXApplyReceiveMoneyView.h */,
+				F46682B423B889BB005A8C46 /* CXApplyReceiveMoneyView.m */,
+				F46682B623B88A33005A8C46 /* CXApplyReceiveMoneyView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -5817,8 +5824,6 @@
 				18AEC7EB23697E6600CD14A2 /* CXGiftViewController.m */,
 				18AEC7F22369916300CD14A2 /* CXScoreStoreVC.h */,
 				18AEC7F32369916300CD14A2 /* CXScoreStoreVC.m */,
-				F466826B23B726EE005A8C46 /* CXGoldShopViewController.h */,
-				F466826C23B726EE005A8C46 /* CXGoldShopViewController.m */,
 				F41592012379A2F800E67B73 /* CXWeddingBackVC.h */,
 				F41592022379A2F800E67B73 /* CXWeddingBackVC.m */,
 			);
@@ -15255,6 +15260,9 @@
 		F41DE6B523AB3E7000C48D16 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F466827123B87F60005A8C46 /* CXBackMoneyLiseCell.h */,
+				F466827223B87F60005A8C46 /* CXBackMoneyLiseCell.m */,
+				F466827323B87F60005A8C46 /* CXBackMoneyLiseCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -15264,8 +15272,6 @@
 			children = (
 				F41DE6BC23AB3E7000C48D16 /* CXBackMoneyVC.h */,
 				F41DE6B823AB3E7000C48D16 /* CXBackMoneyVC.m */,
-				F41DE6B923AB3E7000C48D16 /* CXViewController.h */,
-				F41DE6BB23AB3E7000C48D16 /* CXViewController.m */,
 				F41DE6B723AB3E7000C48D16 /* CXBackMoneyListVC.h */,
 				F41DE6BA23AB3E7000C48D16 /* CXBackMoneyListVC.m */,
 			);
@@ -15835,6 +15841,7 @@
 				2FD52F3720B66449001F9481 /* YPHomeInfoPageHeadReusableView.xib in Resources */,
 				45083A7A23321DCE00276CB4 /* CalendarPreviousMonth.png in Resources */,
 				450839F22332151A00276CB4 /* hotelRenYuanell.xib in Resources */,
+				F46682B723B88A33005A8C46 /* CXApplyReceiveMoneyView.xib in Resources */,
 				2F79228321C88FA20083AC3A /* YPHYTHDetailCanBiaoColCell.xib in Resources */,
 				2F8FBB69206DCDB4004613D8 /* YPPopCornScanSucView.xib in Resources */,
 				2F79E45D22363B47004ADF9B /* YPKYGFBannerCell.xib in Resources */,
@@ -15988,6 +15995,7 @@
 				2F8C15872006017800184B56 /* backItemImage@2x.png in Resources */,
 				F41DE6F323AB3E7200C48D16 /* CXMyWalletTableViewHeadView.xib in Resources */,
 				2F7DAD39215C815800E30B7E /* YPReMyWalletBankListCell.xib in Resources */,
+				F466827523B87F60005A8C46 /* CXBackMoneyLiseCell.xib in Resources */,
 				2F7E51DA218AC8DF0019D921 /* YPReLoginWeddingDateHeadView.xib in Resources */,
 				2F8F277020A3E8E800B0F14A /* YPReMeTwoBtnCell.xib in Resources */,
 				ACA425CC1F4BD0A300C91D5B /* YPANAAcceptDetailDriverCell.xib in Resources */,
@@ -16390,6 +16398,7 @@
 				AC3D6C0B1F71F2FC000082CA /* YPGetModelsListBySupplierID.m in Sources */,
 				2F906B9C20CF6D9200BDBFD0 /* YPWedPachageDetailDescController.m in Sources */,
 				4522A4681FFCB9BA00C1AD18 /* HRZiXunViewController.m in Sources */,
+				F466827423B87F60005A8C46 /* CXBackMoneyLiseCell.m in Sources */,
 				45251C921FE798F500CDEB1A /* HRHTTopCell.m in Sources */,
 				2F2D35AE1FBE7005001A0C22 /* HRPresentXQViewController.m in Sources */,
 				2F7C994221C9D58E002D4257 /* YPHYTHDetailAllCanBiaoListCell.m in Sources */,
@@ -16411,6 +16420,7 @@
 				F41DE70523AB3E7200C48D16 /* CXStoreMyCouponListCell.m in Sources */,
 				2F8202212266140B002A29FD /* YYTextAttribute.m in Sources */,
 				2F9247A0213385C900414ADE /* YPReActivityController.m in Sources */,
+				F46682B523B889BB005A8C46 /* CXApplyReceiveMoneyView.m in Sources */,
 				4537ACBD208EC6B700A1B2DB /* GoodsModel.m in Sources */,
 				AC6E9C771F25959300B5BC08 /* DLLabel.m in Sources */,
 				2F94AAF820BBA4D3005733F1 /* UIBarButtonItem+YYAdd.m in Sources */,
@@ -17104,7 +17114,6 @@
 				ACA425CF1F4BD0A300C91D5B /* YPArrangeNewAddInfoCell.m in Sources */,
 				2F94AAFB20BBA4D3005733F1 /* UIControl+YYAdd.m in Sources */,
 				2FA220C61FE250DD008043DC /* YPFADetailDescCell.m in Sources */,
-				F466826D23B726EE005A8C46 /* CXGoldShopViewController.m in Sources */,
 				F41DE6E223AB3E7200C48D16 /* CXMyCouponDetailShopCell.m in Sources */,
 				AA7B3E621F55120C00C1BDCE /* HRSearchBar.m in Sources */,
 				AA53659E1F6241A900A97FA2 /* UIView+CLSetRect.m in Sources */,
@@ -17331,7 +17340,6 @@
 				2F7D735321A3ABE40039556F /* YPSupplierHomePageBaseYouHuiListCell.m in Sources */,
 				45083A6723321DCE00276CB4 /* LTSCalendarDayItem.m in Sources */,
 				2F952978213E3831008CB585 /* YPGetWeddingPackageListAreaData.m in Sources */,
-				F41DE70323AB3E7200C48D16 /* CXViewController.m in Sources */,
 				F41592032379A2F800E67B73 /* CXWeddingBackVC.m in Sources */,
 				2F2DA08D202A9F5B008A7D42 /* YPFreeWeddingInputCell.m in Sources */,
 				2F7EC60D219275DA002C22B6 /* YPWeddingOrderAddWedFanHuanController.m in Sources */,

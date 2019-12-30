@@ -43,7 +43,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [CXAreaData moveToDBFile];
+    [CXAreaData defaSetting];
     [self createTabBar];
     self.selectedIndex = 2;
 }

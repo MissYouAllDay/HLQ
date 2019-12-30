@@ -160,21 +160,10 @@
         _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, self.headerView.bottom, ScreenWidth, ScreenHeight - self.headerView.bottom - HOME_INDICATOR_HEIGHT) collectionViewLayout:flow];
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
-        _collectionView.backgroundColor = [UIColor yellowColor];
+        _collectionView.backgroundColor = [UIColor whiteColor];
         [_collectionView registerNib:[UINib nibWithNibName:@"CXWeddingBackItem" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:@"CXWeddingBackItem"];
     }
     return _collectionView;
-}
-
-- (SegMentView *)segmentView {
-    
-    if (!_segmentView) {
-        _segmentView = [[SegMentView alloc] initWithFrame:CGRectMake(0, self.headerView.bottom, ScreenWidth,Line375(40))];
-        _segmentView.dataArr = @[@"彩妆专区",@"护肤专区",@"美体专区",@"厨具专区",@"箱包专区"];
-        _segmentView.clipsToBounds = YES;
-        [_segmentView makeShow];
-    }
-    return _segmentView;
 }
 
 - (UIView *)listView {

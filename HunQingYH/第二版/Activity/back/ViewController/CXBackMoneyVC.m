@@ -9,6 +9,7 @@
 #import "CXBackMoneyVC.h"
 #import "JXCategoryTitleView.h"
 #import "CXBackMoneyListVC.h"
+#import "CXAreaData.h"
 @interface CXBackMoneyVC ()<JXCategoryViewDelegate>
 
 @property (nonatomic, strong) JXCategoryTitleView *myCategoryView;
@@ -20,7 +21,8 @@
 
 - (void)viewDidLoad {
     if (self.titles == nil) {
-        self.titles = @[@"螃蟹", @"麻辣小龙虾", @"苹果", @"营养胡萝卜", @"葡萄", @"美味西瓜", @"香蕉", @"香甜菠萝", @"鸡肉", @"鱼", @"海星"];
+        CXAreaData *areaData = [CXAreaData shareAreaData];
+        self.titles = areaData.citysArr;
     }
     if (self.segmentData == nil) {
         self.segmentData = @[@"酒店",@"婚庆",@"婚纱"];
@@ -45,7 +47,7 @@
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
 
-    self.topTitleView.frame = CGRectMake(0, NAVIGATION_BAR_HEIGHT, self.view.bounds.size.width, Line375(50));
+    self.topTitleView.frame = CGRectMake(0, 0, self.view.bounds.size.width, Line375(50));
     self.categoryView.frame = CGRectMake(0, self.topTitleView.bottom, self.view.bounds.size.width, [self preferredCategoryViewHeight]);
     self.listContainerView.frame = CGRectMake(0, self.categoryView.bottom, self.view.bounds.size.width, self.view.bounds.size.height - self.categoryView.bottom - HOME_INDICATOR_HEIGHT);
 }
@@ -65,6 +67,7 @@
 
 - (id<JXCategoryListContentViewDelegate>)listContainerView:(JXCategoryListContainerView *)listContainerView initListForIndex:(NSInteger)index {
     CXBackMoneyListVC *list = [[CXBackMoneyListVC alloc] init];
+    list.type = index;
     return list;
 }
 

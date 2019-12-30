@@ -16,7 +16,6 @@
 #import "CXGiftViewController.h"
 #import "YPEDuBaseController.h"
 #import "CXWeddingBackVC.h"
-#import "CXGoldShopViewController.h"
 #import "CXAreaData.h"          // 地区
 #import "CXActivityCatergoryModel.h"
 
@@ -72,7 +71,6 @@
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:NO];
-
 }
 
 - (void)viewWillDisappear:(BOOL)animated{
@@ -92,6 +90,7 @@
     [self setupNav];
    
     [self loadCategoryList];
+
 }
 
 #pragma mark - UI
@@ -363,12 +362,14 @@
 #pragma mark - CJAreaPickerDelegate
 - (void)areaPicker:(CJAreaPicker *)picker didSelectAddress:(NSString *)address parentID:(NSInteger)parentID{
     
+    CXAreaData *areaData = [CXAreaData shareAreaData];
+    areaData.cityId = [NSString stringWithFormat:@"%ld",(long)parentID];
+    areaData.cityName = address;
+    areaData.citysArr = [CXAreaData searchCityListWithParentId:parentID];
+    
     self.parentID = parentID;
-
     self.cityInfo = address;
-    
     [self dismissViewControllerAnimated:YES completion:nil];
-    
     //  查询address 的 areaIdx
     [self selectDataBase];
     

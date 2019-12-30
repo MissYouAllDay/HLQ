@@ -28,6 +28,16 @@ static FMDatabase  *dataBase;
     return areaData;
 }
 
++ (void)defaSetting {
+    
+    [CXAreaData moveToDBFile];
+    
+    CXAreaData *areaData = [CXAreaData shareAreaData];
+    areaData.cityId = @"171";
+    areaData.cityName = @"青岛市";
+    areaData.citysArr = [CXAreaData searchCityListWithParentId:[areaData.cityId intValue]];
+}
+
 #pragma mark --------数据库-------
 + (void)moveToDBFile
 {

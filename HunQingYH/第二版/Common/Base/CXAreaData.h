@@ -13,7 +13,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CXAreaData : NSObject
 
+@property (nonatomic, copy) NSString *cityId;    // 城市id
+@property (nonatomic, copy) NSString *cityName;    // 当前的城市名称
+@property (nonatomic, strong) NSArray  *citysArr;    // 市下方的x区、县集合
+
 + (id)shareAreaData;
+
++ (void)defaSetting;
 
 /// 迁移数据库
 + (void)moveToDBFile;
@@ -30,6 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /// 查询某市级所管辖的县/区
+/// 第一条数据为“全部区域“ 不使用的话可以在外部去掉
 /// @param parentID 某市级的id
 + (NSArray *)searchCityListWithParentId:(NSInteger )parentID;
     

@@ -24,6 +24,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UILabel *lijian;
 @property (weak, nonatomic) IBOutlet UILabel *zhuoshu;
 
+@property (weak, nonatomic) IBOutlet UIImageView *allBackImg;   // 全额返现标签
+
 + (instancetype)cellWithTableView:(UITableView *)tableView;
 
 @end

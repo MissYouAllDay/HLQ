@@ -9,6 +9,7 @@
 #import "CXReceiveMoneyVC.h"
 #import "CXReceiveMoneyView.h"
 #import "CXWeddingBackItem.h"
+#import "CXApplyReceiveMoneyView.h" // 我要报名
 
 #import "CXApplyPartnerVC.h"        // 申请合伙人
 #import "CXInviteHotelStayVC.h"     // 酒店入住
@@ -86,6 +87,7 @@
     if (!_mainView) {
         _mainView = [[[NSBundle mainBundle] loadNibNamed:@"CXReceiveMoneyView" owner:nil options:nil] lastObject];
         _mainView.frame = CGRectMake(0, 0, ScreenWidth, Line375(552));
+        [_mainView.reviceMoneyBtn addTarget:self action:@selector(pushTest) forControlEvents:UIControlEventTouchUpInside];
     }
     return _mainView;
 }
@@ -110,6 +112,14 @@
         [_collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"CXReceiveMoneyView"];
     }
     return _collectionView;
+}
+
+- (void)showApplyReceiveMoney {
+    
+    CXApplyReceiveMoneyView *moneyView = [[[NSBundle mainBundle] loadNibNamed:@"CXApplyReceiveMoneyView" owner:nil options:nil] lastObject];
+    moneyView.frame = CGRectMake(0, 0, ScreenWidth, self.view.height);
+    [moneyView showView];
+    [self.view addSubview:moneyView];
 }
 // MARK: - Push
 // 申请合伙人
